@@ -37,9 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #for rrestapi
     'myapp',
     'rest_framework',
     'corsheaders',
+    
 ]
 
 MIDDLEWARE = [
@@ -53,7 +55,15 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ORIGIN_ALLOW_ALL = True
+# backend/settings.py
+
+CORS_ORIGIN_ALLOW_ALL = True  # This alone is enough to allow all origins
+# backend/settings.py
+
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:3000',  # Frontend running here
+]
+
 
 ROOT_URLCONF = 'backend.urls'
 
