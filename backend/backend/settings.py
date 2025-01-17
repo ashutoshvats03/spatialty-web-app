@@ -41,13 +41,14 @@ INSTALLED_APPS = [
     'myapp',
     'rest_framework',
     'corsheaders',
-    
+    'rest_framework_simplejwt',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
+    'django_ratelimit.middleware.RatelimitMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -55,14 +56,16 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ALLOW_CREDENTIALS = True
 # backend/settings.py
 
-CORS_ORIGIN_ALLOW_ALL = True  # This alone is enough to allow all origins
-# backend/settings.py
-
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',  # Frontend running here
-]
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
+}
 
 
 ROOT_URLCONF = 'backend.urls'
