@@ -17,6 +17,9 @@ from django.contrib import admin
 from django.urls import path
 from myapp import views
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
+from django.conf.urls.static import static
+from django.conf import settings
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('register/', views.RegisterView.as_view(), name='register'),
@@ -25,4 +28,4 @@ urlpatterns = [
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('dashboard/', views.DashboardView.as_view(), name='dashboard'),
     path('index/', views.Index.as_view(), name='index'),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

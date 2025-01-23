@@ -385,35 +385,35 @@ data = {
                     "one",
                     "Highway Expansion",
                     "The Highway Expansion project focuses on widening and upgrading National Highway 2 to improve connectivity and accommodate the increasing volume of vehicles. This includes constructing additional lanes, enhancing road safety features, and implementing modern infrastructure to reduce congestion and travel time for commuters and freight transport.",
-                    25,
+                    "monthly",
                     "2024-05-15"
                 ],
                 [
                     "two",
                     "Bridge Construction",
                     "This ambitious Bridge Construction project involves building a state-of-the-art bridge over the Ganges River in Kolkata. The project aims to enhance transportation efficiency, provide a critical link for commuters and cargo, and alleviate the pressure on existing bridges. It also incorporates advanced engineering techniques to ensure durability and environmental sustainability.",
-                    40,
+                    "quarterly",
                     "2024-07-01"
                 ],
                 [
                     "three",
                     "Road Widening Project",
                     "The Road Widening Project on Park Street, Kolkata, seeks to address the issue of traffic congestion in one of the city's busiest areas. By expanding the road and redesigning the intersections, this project will create a smoother flow of vehicles, enhance accessibility for residents and businesses, and improve the overall urban experience in the heart of the city.",
-                    15,
+                    "yearly",
                     "2024-08-10"
                 ],
                 [
                     "four",
                     "Zebra Crossing Installation",
                     "This project aims to enhance pedestrian safety in the bustling Esplanade area of Kolkata by installing clearly marked zebra crossings. The initiative involves modern road markings, traffic signage, and public awareness campaigns to encourage road safety practices and ensure a secure environment for walkers in this high-footfall region.",
-                    10,
+                    "quarterly",
                     "2024-09-10"
                 ],
                 [
                     "five",
                     "Traffic Signal Upgrade",
                     "The Traffic Signal Upgrade project focuses on modernizing and synchronizing traffic signals along the Bangalore-Mysore Road. This initiative aims to reduce traffic jams, improve travel time, and enhance road safety by incorporating advanced signal systems, real-time traffic monitoring, and adaptive signal technology.",
-                    35,
+                    "yearly",
                     "2024-06-20"
                 ]
             ]

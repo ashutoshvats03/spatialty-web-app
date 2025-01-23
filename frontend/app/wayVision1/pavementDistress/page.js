@@ -7,6 +7,7 @@ import Component from "./components/Main";
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import {useRouter} from "next/navigation"
+import Map1 from './components/map1'
 
 function Map() {
     const router=useRouter();
@@ -37,7 +38,8 @@ function Map() {
         dispatch(setMapSide(e.target.value === "0" ? "LHS" : "RHS"));
     };
 
-    return (
+    
+   return (
         <div className="p-10 mx-16 bg-slate-700 border-white border-2 border-r-4 border-b-4 rounded-sm">
             <div className="text-center font-bold text-3xl">
                 Road Defects/Pavement Distress
@@ -50,11 +52,12 @@ function Map() {
 
             {array && (
                 <>
-                    <div className="  grid grid-cols-2 bg-slate-800 p-10 gap-16">
+                    <div className="  bg-slate-800 ">
                         {array[project] && Object.keys(array[project][mapSide]).length > 0 ? (
                             Object.keys(array[project][mapSide]).map((index, key) => (
-                                <div key={key} className="w-[450px] h-fit ">
-                                    <Component given={array["one"][mapSide][index]} mapSide={mapSide} />
+                                <div key={key} className="w-100vw h-fit flex ">
+                                    <Component  given={array["one"][mapSide][index]} mapSide={mapSide} />
+                                    
                                 </div>
                             ))
                         ) : (

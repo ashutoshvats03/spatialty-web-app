@@ -1,6 +1,7 @@
 "use client";
 import { useContext } from "react";
 import AuthContext from "./context/AuthContext";
+import Link from "next/link";
 
 export default function Home() {
   const { user, loading } = useContext(AuthContext); // Access user and loading state
@@ -24,7 +25,7 @@ export default function Home() {
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">Welcome to the Home Page!</h1>
           <p className="text-lg">
-            Please <a href="/login" className="text-teal-400 underline">log in</a> to access more features.
+            Please <Link href="/login" className="text-teal-400 underline">log in</Link> to access more features.
           </p>
           <button onClick={()=>{localStorage.removeItem("data")}}>Delete</button>
         </div>

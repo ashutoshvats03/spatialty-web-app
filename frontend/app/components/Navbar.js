@@ -1,6 +1,6 @@
 "use client";
 import NavLink from "next/link";
-import { useState, useContext } from "react";
+import { useContext, useState } from "react";
 import { FaChevronCircleDown, FaChevronCircleUp } from "react-icons/fa";
 import { IoIosNotifications } from "react-icons/io";
 import { MdAccountCircle, MdSpaceDashboard } from "react-icons/md";
@@ -41,10 +41,10 @@ export default function Home() {
   };
 
   return (
-    <div className="w-full z-30">
+    <div className="">
       <div className="flex justify-between px-20">
         <div className="text-3xl font-bold">
-          <NavLink href="/">Spatialty</NavLink>
+          <NavLink href="/">SPATIALTY</NavLink>
         </div>
         <div className="flex gap-10">
           <div>
@@ -95,25 +95,13 @@ export default function Home() {
 
           {/* Dashboard icon and dropdown */}
           {user && (
-            <div className="relative">
+            <NavLink href="/wayVision1">
               <MdSpaceDashboard
                 size={40}
-                onClick={toggleDashboard}
                 className="cursor-pointer"
               />
-              <div
-                onMouseLeave={() => setDashboard(false)}
-                className={`absolute bg-white text-black z-10 gap-2 p-2 font-bold flex-col w-32 my-2 shadow-sm shadow-black transform -translate-x-12 translate-y-10 top-0 left-0 ${dashboard ? "flex" : "hidden"
-                  }`}
-              >
-                <div>
-                  <NavLink href="/wayVision1">Way Vision</NavLink>
-                </div>
-                <div>
-                  <NavLink href="/hawkEye1">Hawk Eye</NavLink>
-                </div>
-              </div>
-            </div>
+            </NavLink>
+
           )}
         </div>
       </div>
