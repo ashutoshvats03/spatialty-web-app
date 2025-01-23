@@ -9,10 +9,12 @@ git push -u origin main
 COPY THESE COMMANDS TO CLONE THIS REPO
 "git clone https://github.com/ashutoshvats03/speciality.git" ---->
 
+open new terminal
 "cd backend"---->
-"python .\manage runserver"---->
 "pip install -r requirement.txt"---->
+"python .\manage.py runserver"---->
 
+open new terminal , without closing previous one
 "cd frotnend"---->
 "npm i"---->
 "npm run dev"---->
