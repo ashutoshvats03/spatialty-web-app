@@ -437,7 +437,6 @@ class LoginView(APIView):
         if user is not None:
             refresh = RefreshToken.for_user(user)
             
-            # Fetch the user's role
             user_role = UserRole.objects.filter(user=user).first()
             role = user_role.role.name if user_role else None
             
@@ -451,24 +450,3 @@ class LoginView(APIView):
             })
         else:
             return Response({'error': 'Invalid credentials'}, status=401)
-
-class DashboardView(APIView):
-    permission_classes = [IsAuthenticated,HasRole]
-    required_role='student'
-
-    def get(self, request):
-        user = request.user
-        user_serializer = UserSerializer(user)
-        return Response({
-            'message': 'Welcome to the dashboard', 
-            'user': user_serializer.data,
-        }, status=200)
-
-
-class Index(APIView):
-    # permission_classes = [IsAuthenticated,HasRole]
-    # required_role='student'
-    @method_decorator(ratelimit(key='ip', rate='5/m', block=True))
-    def get(self , request):
-        
-        return Response({'message': 'Welcome to the dashboard'}, status=200)
