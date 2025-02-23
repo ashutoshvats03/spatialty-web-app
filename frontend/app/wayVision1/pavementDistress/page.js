@@ -7,7 +7,6 @@ import Component from "./components/Main";
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import {useRouter} from "next/navigation"
-import Map1 from './components/map1'
 
 function Map() {
     const router=useRouter();
