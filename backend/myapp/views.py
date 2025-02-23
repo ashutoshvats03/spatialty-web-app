@@ -15,6 +15,89 @@ from rest_framework.views import APIView
 from django_ratelimit.decorators import ratelimit
 from django.utils.decorators import method_decorator
 from myapp.models import UserRole
+import os
+import pandas as pd
+
+# Define BASE_DIR and construct the absolute path to the CSV file
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+csv_file_path_RHS = os.path.join(BASE_DIR, "RHS_Delhi-NCR_data.csv")
+df = pd.read_csv(csv_file_path_RHS)
+print(df.columns.tolist())  # Check actual column names
+
+columns = [
+    "Cracking(%)",
+    "Potholes(%)",
+    "Shoving(%)",
+    "Patch work(%)",
+    "Alligator crack(%)",
+    "Longitudinal crack(%)",
+    "Transverse crack(%)",
+    "Bleeding(%)",
+    "Raveling(%)",
+    "Depression(%)",
+    "Edge crack(%)",
+]
+
+# Convert all columns to numeric and filter values > 0
+results = {}
+for col in columns:
+    df[col] = pd.to_numeric(df[col], errors="coerce")  # Convert to numeric
+    filtered_df = df[df[col] > 0][["Chainage", col]].head(100)  # Get top 100 non-zero
+    results[col] = filtered_df.values.tolist()  # Store in dictionary
+
+# Access each list
+RHScrack = results["Cracking(%)"]
+RHSalligator = results["Alligator crack(%)"]
+RHSlongitudinal = results["Longitudinal crack(%)"]
+RHStransverse = results["Transverse crack(%)"]
+RHSpotholes = results["Potholes(%)"]
+RHSshoving = results["Shoving(%)"]
+RHSpatchwork = results["Patch work(%)"]
+RHSbleeding = results["Bleeding(%)"]
+RHSraveling = results["Raveling(%)"]
+RHSdepression = results["Depression(%)"]
+RHSedgecrack = results["Edge crack(%)"]
+
+
+
+
+csv_file_path_LHS = os.path.join(BASE_DIR, "LHS_Delhi-NCR_data.csv")
+df = pd.read_csv(csv_file_path_LHS)
+print(df.columns.tolist())  # Check actual column names
+
+columns = [
+    "Cracking(%)",
+    "Potholes(%)",
+    "Shoving(%)",
+    "Patch work(%)",
+    "Alligator crack(%)",
+    "Longitudinal crack(%)",
+    "Transverse crack(%)",
+    "Bleeding(%)",
+    "Raveling(%)",
+    "Depression(%)",
+    "Edge crack(%)",
+]
+
+# Convert all columns to numeric and filter values > 0
+results = {}
+for col in columns:
+    df[col] = pd.to_numeric(df[col], errors="coerce")  # Convert to numeric
+    filtered_df = df[df[col] > 0][["Chainage", col]].head(100)  # Get top 100 non-zero
+    results[col] = filtered_df.values.tolist()  # Store in dictionary
+
+# Access each list
+RHScrack = results["Cracking(%)"]
+RHSalligator = results["Alligator crack(%)"]
+RHSlongitudinal = results["Longitudinal crack(%)"]
+RHStransverse = results["Transverse crack(%)"]
+RHSpotholes = results["Potholes(%)"]
+RHSshoving = results["Shoving(%)"]
+RHSpatchwork = results["Patch work(%)"]
+RHSbleeding = results["Bleeding(%)"]
+RHSraveling = results["Raveling(%)"]
+RHSdepression = results["Depression(%)"]
+RHSedgecrack = results["Edge crack(%)"]
 
 data = {
             "Road_Furniture": {
@@ -210,175 +293,251 @@ data = {
                 }
             },
             "Pavement_Distress": {
-                "one": {
+                "one":{
                     "LHS": {
-                    "Major Pavement defects(%) per chainage": {
-                        "crack": {
-                            "chartData": [
-                                ["313+507", "0.120"],
-                                ["320+137", "0.060"],
-                                ["326+887", "0.080"],
-                                ["333+517", "0.075"],
-                                ["340+277", "0.020"],
-                                ["346+877", "0.095"],
-                                ["353+627", "0.035"],
-                                ["360+257", "0.015"]
-                            ],
-                            "data": [
-                                "Shoving", "Patchwork", "Rutting"
-                            ],
+                        "Major Pavement defects(%) per chainage": {
+                        "Cracking": {
+                            "chartData": RHScrack,
+                            "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Cracking_severity-based.kml"
                         },
                         "Potholes": {
-                            "chartData": [
-                                ["313+507", "0.110"],
-                                ["320+137", "0.045"],
-                                ["326+887", "0.060"],
-                                ["333+517", "0.055"],
-                                ["340+277", "0.025"],
-                                ["346+877", "0.075"],
-                                ["353+627", "0.040"],
-                                ["360+257", "0.020"]
-                            ],
-                            "data": [
-                                "Shoving", "Rutting", "Potholes"
-                            ],
+                            "chartData": RHSpotholes,
+                            "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Potholes_severity-based.kml"
                         },
-                        "Patchwork": {
-                            "chartData": [
-                                ["313+507", "0.100"],
-                                ["320+137", "0.055"],
-                                ["326+887", "0.075"],
-                                ["333+517", "0.050"],
-                                ["340+277", "0.030"],
-                                ["346+877", "0.065"],
-                                ["353+627", "0.045"],
-                                ["360+257", "0.025"]
-                            ],
-                            "data": [
-                                "Shoving", "Rutting", "Patchwork"
-                            ]
+                        "Patch Work": {
+                            "chartData": RHSpatchwork,
+                            "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Patch_work_severity-based.kml"
+                        }
                         },
-                    },
-                    "Road Cracks (%) per chainage": {
+                        "Road Cracks (%) per chainage": {
+                        "Alligator Crack": {
+                            "chartData": RHSalligator,
+                            "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Alligator_crack.kml"
+                        },
                         "Longitudinal": {
-                            "chartData": [
-                                ["313+507", "0.130"],
-                                ["320+137", "0.070"],
-                                ["326+887", "0.090"],
-                                ["333+517", "0.080"],
-                                ["340+277", "0.035"],
-                                ["346+877", "0.100"],
-                                ["353+627", "0.050"],
-                                ["360+257", "0.030"]
-                            ],
-                            "data": [
-                                "Shoving", "Cracking", "Rutting"
-                            ]
+                            "chartData": RHSlongitudinal,
+                            "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Longitudinal_crack.kml"
                         },
                         "Transverse": {
-                            "chartData": [
-                                ["313+507", "0.110"],
-                                ["320+137", "0.080"],
-                                ["326+887", "0.070"],
-                                ["333+517", "0.085"],
-                                ["340+277", "0.040"],
-                                ["346+877", "0.095"],
-                                ["353+627", "0.060"],
-                                ["360+257", "0.020"]
-                            ],
-                            "data": [
-                                "Rutting", "Cracking", "Patchwork"
-                            ]
-                        }
-                    },
-                    "Pavement Raveling(%) per chainage based on severity": {
-                        "Low": {
-                            "chartData": [
-                                ["313+507", "0.090"],
-                                ["320+137", "0.040"],
-                                ["326+887", "0.060"],
-                                ["333+517", "0.045"],
-                                ["340+277", "0.020"],
-                                ["346+877", "0.080"],
-                                ["353+627", "0.025"],
-                                ["360+257", "0.010"]
-                            ],
-                            "data": [
-                                "Rutting", "Raveling", "Shoving"
-                            ]
+                            "chartData": RHStransverse,
+                            "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Transverse_crack.kml"
                         },
-                        "High": {
-                            "chartData": [
-                                ["313+507", "0.140"],
-                                ["320+137", "0.090"],
-                                ["326+887", "0.110"],
-                                ["333+517", "0.100"],
-                                ["340+277", "0.050"],
-                                ["346+877", "0.120"],
-                                ["353+627", "0.060"],
-                                ["360+257", "0.035"]
-                            ],
-                            "data": [
-                                "Shoving", "Cracking", "Raveling"
-                            ]
+                        "Edge Crack": {
+                            "chartData": RHSedgecrack,
+                            "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Edge_crack_severity-based.kml"
                         }
-                    }
+                        },
+                        # "Pavement Raveling(%) per chainage based on severity": {
+                        # "Low": {
+                        #     "chartData": [
+                        #     ["313+507", "0.090"],
+                        #     ["320+137", "0.040"],
+                        #     ["326+887", "0.060"],
+                        #     ["333+517", "0.045"],
+                        #     ["340+277", "0.020"],
+                        #     ["346+877", "0.080"],
+                        #     ["353+627", "0.025"],
+                        #     ["360+257", "0.010"]
+                        #     ],
+                        #     "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Raveling_severity-based.kml"
+                        # }
+                        # },
+                        "Other Pavement Defects": {
+                        "Bleeding": {
+                            "chartData": RHSbleeding,
+                            "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Bleeding_severity-based.kml"
+                        },
+                        "Depression": {
+                            "chartData": RHSdepression,
+                            "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Depression_severity-based.kml"
+                        },
+                        "Rutting": {
+                            "chartData": [
+                            ["313+507", "0.095"],
+                            ["320+137", "0.050"],
+                            ["326+887", "0.075"],
+                            ["333+517", "0.060"],
+                            ["340+277", "0.035"],
+                            ["346+877", "0.085"],
+                            ["353+627", "0.050"],
+                            ["360+257", "0.030"]
+                            ],
+                            "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Rutting.kml"
+                        },
+                        "Shoving": {
+                            "chartData": RHSshoving,
+                            "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Shoving_severity-based.kml"
+                        }
+                        }
                     },
                     "RHS": {
-                    "Major Pavement defects(%) per chainage": {
-                        "crack": {
+                        "Major Pavement defects(%) per chainage": {
+                            "Cracking": {
+                                "chartData": [
+                                    ["313+507", "0.120"],
+                                    ["320+137", "0.060"],
+                                    ["326+887", "0.080"],
+                                    ["333+517", "0.075"],
+                                    ["340+277", "0.020"],
+                                    ["346+877", "0.095"],
+                                    ["353+627", "0.035"],
+                                    ["360+257", "0.015"]
+                                ],
+                                "url": "http://localhost:8000/media/kml/RHS-20250208T155710Z-001/RHS/RHS_Cracking_severity-based.kml"
+                            },
+                            "Potholes": {
+                                "chartData": [
+                                    ["313+507", "0.110"],
+                                    ["320+137", "0.045"],
+                                    ["326+887", "0.060"],
+                                    ["333+517", "0.055"],
+                                    ["340+277", "0.025"],
+                                    ["346+877", "0.075"],
+                                    ["353+627", "0.040"],
+                                    ["360+257", "0.020"]
+                                ],
+                                "url": "http://localhost:8000/media/kml/RHS-20250208T155710Z-001/RHS/RHS_Potholes_severity-based.kml"
+                            },
+                            "Patch Work": {
+                                "chartData": [
+                                    ["313+507", "0.100"],
+                                    ["320+137", "0.055"],
+                                    ["326+887", "0.075"],
+                                    ["333+517", "0.050"],
+                                    ["340+277", "0.030"],
+                                    ["346+877", "0.065"],
+                                    ["353+627", "0.045"],
+                                    ["360+257", "0.025"]
+                                ],
+                                "url": "http://localhost:8000/media/kml/RHS-20250208T155710Z-001/RHS/RHS_Patch_work_severity-based.kml"
+                            }
+                        },
+                        "Road Cracks (%) per chainage": {
+                            "Alligator Crack": {
+                                "chartData": [
+                                    ["313+507", "0.150"],
+                                    ["320+137", "0.090"],
+                                    ["326+887", "0.110"],
+                                    ["333+517", "0.100"],
+                                    ["340+277", "0.050"],
+                                    ["346+877", "0.120"],
+                                    ["353+627", "0.060"],
+                                    ["360+257", "0.035"]
+                                ],
+                                "url": "http://localhost:8000/media/kml/RHS-20250208T155710Z-001/RHS/RHS_Alligator_crack.kml"
+                            },
+                            "Longitudinal": {
+                                "chartData": [
+                                    ["313+507", "0.130"],
+                                    ["320+137", "0.070"],
+                                    ["326+887", "0.090"],
+                                    ["333+517", "0.080"],
+                                    ["340+277", "0.035"],
+                                    ["346+877", "0.100"],
+                                    ["353+627", "0.050"],
+                                    ["360+257", "0.030"]
+                                ],
+                                "url": "http://localhost:8000/media/kml/RHS-20250208T155710Z-001/RHS/RHS_Longitudinal_crack.kml"
+                            },
+                            "Transverse": {
+                                "chartData": [
+                                    ["313+507", "0.110"],
+                                    ["320+137", "0.080"],
+                                    ["326+887", "0.070"],
+                                    ["333+517", "0.085"],
+                                    ["340+277", "0.040"],
+                                    ["346+877", "0.095"],
+                                    ["353+627", "0.060"],
+                                    ["360+257", "0.020"]
+                                ],
+                                "url": "http://localhost:8000/media/kml/RHS-20250208T155710Z-001/RHS/RHS_Transverse_crack.kml"
+                            },
+                            "Edge Crack": {
+                                "chartData": [
+                                    ["313+507", "0.125"],
+                                    ["320+137", "0.065"],
+                                    ["326+887", "0.085"],
+                                    ["333+517", "0.070"],
+                                    ["340+277", "0.025"],
+                                    ["346+877", "0.095"],
+                                    ["353+627", "0.045"],
+                                    ["360+257", "0.015"]
+                                ],
+                                "url": "http://localhost:8000/media/kml/RHS-20250208T155710Z-001/RHS/RHS_Edge_crack_severity-based.kml"
+                            }
+                        },
+                        "Pavement Raveling(%) per chainage based on severity": {
+                            "Low": {
+                                "chartData": [
+                                    ["313+507", "0.090"],
+                                    ["320+137", "0.040"],
+                                    ["326+887", "0.060"],
+                                    ["333+517", "0.045"],
+                                    ["340+277", "0.020"],
+                                    ["346+877", "0.080"],
+                                    ["353+627", "0.025"],
+                                    ["360+257", "0.010"]
+                                ],
+                                "url": "http://localhost:8000/media/kml/RHS-20250208T155710Z-001/RHS/RHS_Raveling_severity-based.kml"
+                            }
+                        },
+                        "Other Pavement Defects": {
+                        "Bleeding": {
                             "chartData": [
-                                ["313+507", "0.110"],
-                                ["320+137", "0.045"],
-                                ["326+887", "0.065"],
-                                ["333+517", "0.050"],
-                                ["340+277", "0.020"],
-                                ["346+877", "0.070"],
-                                ["353+627", "0.035"],
-                                ["360+257", "0.010"]
+                            ["313+507", "0.060"],
+                            ["320+137", "0.045"],
+                            ["326+887", "0.070"],
+                            ["333+517", "0.050"],
+                            ["340+277", "0.025"],
+                            ["346+877", "0.085"],
+                            ["353+627", "0.040"],
+                            ["360+257", "0.020"]
                             ],
-                            "data": [
-                                "Shoving", "Cracking", "Rutting"
-                            ]
+                            "url": "http://localhost:8000/media/kml/RHS-20250208T155710Z-001/RHS/RHS_Bleeding_severity-based.kml"
+                        },
+                        "Depression": {
+                            "chartData": [
+                            ["313+507", "0.080"],
+                            ["320+137", "0.055"],
+                            ["326+887", "0.090"],
+                            ["333+517", "0.065"],
+                            ["340+277", "0.030"],
+                            ["346+877", "0.095"],
+                            ["353+627", "0.055"],
+                            ["360+257", "0.025"]
+                            ],
+                            "url": "http://localhost:8000/media/kml/RHS-20250208T155710Z-001/RHS/RHS_Depression_severity-based.kml"
+                        },
+                        "Rutting": {
+                            "chartData": [
+                            ["313+507", "0.095"],
+                            ["320+137", "0.050"],
+                            ["326+887", "0.075"],
+                            ["333+517", "0.060"],
+                            ["340+277", "0.035"],
+                            ["346+877", "0.085"],
+                            ["353+627", "0.050"],
+                            ["360+257", "0.030"]
+                            ],
+                            "url": "http://localhost:8000/media/kml/RHS-20250208T155710Z-001/RHS/RHS_Rutting.kml"
+                        },
+                        "Shoving": {
+                            "chartData": [
+                            ["313+507", "0.070"],
+                            ["320+137", "0.045"],
+                            ["326+887", "0.060"],
+                            ["333+517", "0.050"],
+                            ["340+277", "0.030"],
+                            ["346+877", "0.080"],
+                            ["353+627", "0.040"],
+                            ["360+257", "0.025"]
+                            ],
+                            "url": "http://localhost:8000/media/kml/RHS-20250208T155710Z-001/RHS/RHS_Shoving_severity-based.kml"
                         }
-                    },
-                    "Road Cracks (%) per chainage": {
-                        "Alligator": {
-                            "chartData": [
-                                ["313+507", "0.150"],
-                                ["320+137", "0.100"],
-                                ["326+887", "0.120"],
-                                ["333+517", "0.105"],
-                                ["340+277", "0.060"],
-                                ["346+877", "0.130"],
-                                ["353+627", "0.080"],
-                                ["360+257", "0.040"]
-                            ],
-                            "data": [
-                                "Cracking", "Rutting", "Shoving"
-                            ]
-                        }
-                    },
-                    "Pavement Raveling(%) per chainage based on severity": {
-                        "Medium": {
-                            "chartData": [
-                                ["313+507", "0.120"],
-                                ["320+137", "0.070"],
-                                ["326+887", "0.085"],
-                                ["333+517", "0.090"],
-                                ["340+277", "0.040"],
-                                ["346+877", "0.110"],
-                                ["353+627", "0.050"],
-                                ["360+257", "0.030"]
-                            ],
-                            "data": [
-                                "Raveling", "Rutting", "Shoving"
-                            ]
                         }
                     }
-                    }
-                }
-            },
+                }    
+           },               
             "Project": [
                 ["Numbering", "Project Name", "Description", "Frequency Survey", "Last Survey Date"],
                 [
@@ -450,3 +609,15 @@ class LoginView(APIView):
             })
         else:
             return Response({'error': 'Invalid credentials'}, status=401)
+
+class Dashboard(APIView):
+    permission_classes = [IsAuthenticated,HasRole]
+    required_role='student'
+
+    def get(self, request):
+        user = request.user
+        user_serializer = UserSerializer(user)
+        return Response({
+            'message': 'Welcome to the dashboard', 
+            'user': user_serializer.data,
+        }, status=200)

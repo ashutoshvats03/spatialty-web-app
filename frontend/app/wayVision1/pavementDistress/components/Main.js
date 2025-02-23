@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts";
 import { Card, CardContent } from "@/components/ui/card";
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
-import Map1 from "./map1";
+import Map from "./Multi";
 
 
 const chartConfig = {
@@ -13,12 +13,14 @@ const chartConfig = {
 };
 
 const ChartSelector = ({ given, mapSide }) => {
-  const [selectedOption, setSelectedOption] = useState(Object.keys(given)?.[0] || "");
-
+  const [selectedOption, setSelectedOption] = useState(Object.keys(given)?.[0]);
+  const [isMounted, setIsMounted] = useState(false);
   useEffect(() => {
     setSelectedOption(Object.keys(given)?.[0] || "");
+    setIsMounted(true);
   }, [mapSide, given]);
 
+  console.log(given);
   const handleOptionChange = (event) => setSelectedOption(event.target.value);
 
   if (!given || Object.keys(given).length === 0) {
@@ -26,12 +28,13 @@ const ChartSelector = ({ given, mapSide }) => {
   }
 
   const selectedData = given[selectedOption];
+  
+  console.log(selectedData?.url);
   const formattedData = selectedData?.chartData?.map((item) => ({
     defectPercentage: item[1],
     chainage: item[0],
   }));
-
-  const url = "http://localhost:8000/media/kml/geotagged_road_furniture.kml";
+  const url =selectedData?.url
 
   return (
     <div className="relative w-full ">
@@ -93,19 +96,14 @@ const ChartSelector = ({ given, mapSide }) => {
                 </AreaChart>
               </ChartContainer>
             </CardContent>
-            <div className="data-container border absolute top-0 right-0 bg-black rounded-lg text-white m-4 p-4">
-              <ul className="">
-                {selectedData?.data?.map((item, index) => (
-                  <li key={index} className="my-1">
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            
           </Card>
+          
         </div>
-        <Map1 className="flex-1" url={url} color={"blue"} pavementType={selectedOption} />
-      </div>
+        <div className="flex-1">
+           {url ? <Map key={isMounted} url={url} /> : null}
+        </div>
+       </div>
     </div>
   );
 };

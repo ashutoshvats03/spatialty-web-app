@@ -91,8 +91,9 @@ const Home = ({ url }) => {
         if (geoJsonFeatures.length > 0) {
           setGeoJsonData(geoJsonFeatures);
           setFirstCoordinates(geoJsonFeatures[0]?.geometry?.coordinates);
-          
-          setMapKey((prev) => prev + 1); // 🔹 Update key to force remount
+
+
+          setTimeout(() => setMapKey((prev) => prev + 1), 1000); // 🔹 Update key to force remount
         }
       } catch (error) {
         setError("An error occurred while fetching the KML file.");
@@ -103,6 +104,9 @@ const Home = ({ url }) => {
 
     fetchKMLFiles();
   }, [url]);
+  
+
+
 
   return error ? (
     <div className="p-4 text-red-600">{error}</div>
@@ -110,7 +114,7 @@ const Home = ({ url }) => {
     <div className="p-4 text-gray-600">Loading map...</div>
   ) : (
     <>
-      
+
       {/* Map Display */}
       {firstCoordinates && geoJsonData.length > 0 && (
         <MapContainer
@@ -121,24 +125,24 @@ const Home = ({ url }) => {
         >
           <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution="&copy; OpenStreetMap contributors" />
           {geoJsonData.map((feature, index) => (
-              <GeoJSON
-                key={index}
-                data={feature}
-                pointToLayer={(feature, latlng) => {
-                  const icon = L?.divIcon({
-                    className: "custom-icon",
-                    html: `<div style="width: 15px; height: 15px; background-color: ${feature.properties.color}; border-radius: 50%;"></div>`,
-                    iconSize: [15, 15],
-                    iconAnchor: [7.5, 7.5],
-                  });
+            <GeoJSON
+              key={index}
+              data={feature}
+              pointToLayer={(feature, latlng) => {
+                const icon = L?.divIcon({
+                  className: "custom-icon",
+                  html: `<div style="width: 15px; height: 15px; background-color: ${feature.properties.color}; border-radius: 50%;"></div>`,
+                  iconSize: [15, 15],
+                  iconAnchor: [7.5, 7.5],
+                });
 
-                  return L?.marker(latlng, { icon }).bindPopup(`
+                return L?.marker(latlng, { icon }).bindPopup(`
                     <b>${feature.properties.name}</b><br>
-                    ${feature.properties.description}
+                    <div style="overflow: auto; max-height: 100px">${feature.properties.description}</div>
                   `);
-                }}
-              />
-            ))}
+              }}
+            />
+          ))}
         </MapContainer>
       )}
     </>

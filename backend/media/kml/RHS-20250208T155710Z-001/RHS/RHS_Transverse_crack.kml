@@ -1,0 +1,1031 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1967">
+        <Style id="1970">
+            <IconStyle id="1971">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="1972">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="1975">
+            <IconStyle id="1976">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="1977">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="1980">
+            <IconStyle id="1981">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="1982">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="1985">
+            <IconStyle id="1986">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="1987">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="1990">
+            <IconStyle id="1991">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="1992">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="1995">
+            <IconStyle id="1996">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="1997">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2000">
+            <IconStyle id="2001">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2002">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2005">
+            <IconStyle id="2006">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2007">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2010">
+            <IconStyle id="2011">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2012">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2015">
+            <IconStyle id="2016">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2017">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2020">
+            <IconStyle id="2021">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2022">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2025">
+            <IconStyle id="2026">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2027">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2030">
+            <IconStyle id="2031">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2032">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2035">
+            <IconStyle id="2036">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2037">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2040">
+            <IconStyle id="2041">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2042">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2045">
+            <IconStyle id="2046">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2047">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2050">
+            <IconStyle id="2051">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2052">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2055">
+            <IconStyle id="2056">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2057">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2060">
+            <IconStyle id="2061">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2062">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2065">
+            <IconStyle id="2066">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2067">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2070">
+            <IconStyle id="2071">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2072">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2075">
+            <IconStyle id="2076">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2077">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2080">
+            <IconStyle id="2081">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2082">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2085">
+            <IconStyle id="2086">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2087">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2090">
+            <IconStyle id="2091">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2092">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2095">
+            <IconStyle id="2096">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2097">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2100">
+            <IconStyle id="2101">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2102">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2105">
+            <IconStyle id="2106">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2107">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2110">
+            <IconStyle id="2111">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2112">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2115">
+            <IconStyle id="2116">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2117">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2120">
+            <IconStyle id="2121">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2122">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2125">
+            <IconStyle id="2126">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2127">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2130">
+            <IconStyle id="2131">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2132">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2135">
+            <IconStyle id="2136">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2137">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2140">
+            <IconStyle id="2141">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2142">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2145">
+            <IconStyle id="2146">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2147">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2150">
+            <IconStyle id="2151">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2152">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2155">
+            <IconStyle id="2156">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2157">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2160">
+            <IconStyle id="2161">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2162">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2165">
+            <IconStyle id="2166">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2167">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2170">
+            <IconStyle id="2171">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2172">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2175">
+            <IconStyle id="2176">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2177">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2180">
+            <IconStyle id="2181">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2182">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2185">
+            <IconStyle id="2186">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2187">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2190">
+            <IconStyle id="2191">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2192">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2195">
+            <IconStyle id="2196">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2197">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2200">
+            <IconStyle id="2201">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2202">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2205">
+            <IconStyle id="2206">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2207">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2210">
+            <IconStyle id="2211">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2212">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2215">
+            <IconStyle id="2216">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2217">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2220">
+            <IconStyle id="2221">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2222">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2225">
+            <IconStyle id="2226">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2227">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2230">
+            <IconStyle id="2231">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2232">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="2235">
+            <IconStyle id="2236">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="2237">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Placemark id="1969">
+            <name>10+040</name>
+            <description>Chainage: 10+040 to 10+050&lt;br/&gt;&lt;br/&gt;Latitude: 28.11927&lt;br/&gt;&lt;br/&gt;Longitude: 77.03542&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.243109%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAcAPwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwB51O5T5mLMAOMVF9sjucB2YZ6g4Ga5y3lnSQBHzxUs7POo80ur9inGKwMLnQS2NsGV0VQwHBHWn6etyqyM14xG3ChnPH51wk8GsCTdDrE2c8KT2qxaWetKuDqmVPJBB60JDudFdRai4Jku5GGeSGOKkcyzmKG8lSVR9wN2rGNtra2wVL5e2cioJ7TVxGsol3sB1Bq7E2N2Swj3koh2+mKgazhGS0SnmsL7frEJ5lXr60+DXbgnFwm89scUIDeRYGZUh2hVBHSrz6VHMRIiIBjqK5+PU5jD+7j2Z68datSeJZ7aBVXT3YAAZIqtRGobCSM7VUfnVaSwcy7zwR2FYWoeMLt1IW02+uRVA+JdQlhKxxmNuuRU9Ro6F7PUJJiywOFHQ4po0++ZMLEwB7kYrE0jxVd2Uzi9aScOMAk/cq7e+LYTGWM7SODlETKrQ9guXZrKaB9knJx3qaXbFsVlxgcYPFY9l49d5VW+so/LAxkfe/WrP/CU6XdvtW0ZgDnrUgSWt+bWWQhC2Se5qWLW3DMssAK9uDxVa71fRmi4tmEnaqFtrelu+27hmjUdMLn+VOw7HQHVLXy/ltxnPPzVHJcKVWRECgjOM1Qe80eW1WZDNGgbJDJjI9f8+lOTVNGeNG+0kc4KlT0osFjesJluIVDABgeRS3ccUZLYyat6bBpS2f2lJw24bt2f0pLS3ju7nKyK6nnGaLCaMyO7uFI8qNRk8ZHWmTXc32jDxgsD1HatqTTyZjHGQTngVC2nyyS7AqhuhyOc0WBbGRqF2HKEptKnk1A19axD94CDjOQK2b/Sp0jxsV/XArFutPniYNj5T2IqhMuQXtpcovkdcckjFXbUwpCS34D1rHa3lWFQE2KTwQO9QNpF7JD5wvZI2547CgpG9aXsEzOAcKhwSRU4hincMvCY69jXMRaHd23lyNdOYGO6TdxmtuXUlERS2CsIlxj2oC4y/wBNtGuQZIlcEYIPHFZL6XYwSuqQqoZi2Axpt1cXNyPurGCc8PUUTzBMOCT65oC5eihXlh0AxmmtGR908+wq3bgGQqRxTbY5vWUgY54pJCK/2Z1Idz29Ke0IEYO7nPY1fvBiJiOucfoKoQcgg/3qErCLtsJJIcKhPHORVO+u2UeSmdy9e2KvJNJbWxMTYyM81hXTM0rsTkk5NMoa6bzy2TjkelQfZVMnSpYmKtkenerJ5ZeAM+lOwmNit9q9/ar8siLCiumfxFVGPy4qM/MvJPFAFmP7O8+GRNpHQiqN3HaxMwiVDntUoAEZI61XkiQK7Y5HNICuttA7kmMYz0AFW4dPhdWZYoowOhMYJqtCx+Q575rfkbESqAB8uelJgzCktIQxDQxn38sYP6UC1gBwsaqSeoUCr7gc1FJGpbJ9M00CLFpa2wOzy1Y45JqRrWDYf3KAjuAOKrWbHzQM1fzktn0oKuJBawSII5kDL1yQKrz2VnG7PHbQlR1JAqQEscE9qicdFycE80CuZ99NPIyiKVYokAIRDwevrVNb+8iu98Ny6N0PPatKS1ha4CFTg+9JdWdvGAVTGTTsIjsNd1GC7DiVpHHrmprvXdSbeySum45P1qxaafbNKpKnp60SadbPuLBuPQ0iWzLXxJrLKyPMxwOop9vq1+0yu8xbHY1B5SJMwA4zVyygj84HbTYk7kUviLUhdOscSBSMcr0pt7qWotADJIFJ5+UDOfxrfuLS3OMxj7uay7qJPtcC44yRQi0Yja9f+YsM1zdNCBgIxG39KhWS4WKSOLUWgEp5+TP61cuYY8OQMYPrWZMo3Ac0mBZsNK1EqZbTV0cg8hlODUV3Hr6TFUudyjuBUmnEhnUHgdK2IDmPJVevpQB//9k=&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#1970</styleUrl>
+            <Point id="1968">
+                <coordinates>77.03542,28.11927,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1974">
+            <name>10+100</name>
+            <description>Chainage: 10+100 to 10+110&lt;br/&gt;&lt;br/&gt;Latitude: 28.11948&lt;br/&gt;&lt;br/&gt;Longitude: 77.03598&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.108654%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAaAHgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDSOzyyQ5DehqsgbZ821qrXNheSuWR8DPeoZf7Rjj2LEWYcZxXABeWNTkgD6Co3Qg7SnWsUz6uj4ZefTNSCfUioL2kjDPUUWA0Ht2Ayy/rUZJTP7sbfpT7eYquZVKZ7E0+WaGZlhVwreuKAKkcqvJ0xirYjUY4/WhLaKNyWYHB9KHCSNtH55oAsJKigAjg9aUm3dSd3PUZFVPJLfu8t+FS+XDEPvkso6GgCrdrCHyPmH0NNjYhTtAC46Ul9d3IbZFYF0H8Qbmp1j/0YSONhI6UxXI7a5UsysffgVO7hI90gZR2JGKrwQwFmUbiT1I4qKTSI1kLie5dj0DvkClYdxJb5lfYiFie+KKmt9OfOWOVHairSFqdCqsGyX79MVLy/AOMVC/b61Nb9TUIYxyufnjVsd8UxdjEZTFOf+L6/1pB1NMCK7tYpeqqQKjfT7YxglFJAxwMYFTSE4b8KVP4qAKv2aHZydq9OKDp5kjxbts46mnS/c/Gp7Uny+tAFP+z5YYWZrobsdQOaqpbOrZYlye5q3ek56nvUNuTnrS6iuMuEdUxj8jTYIbmSTy96iMjvU7/dFWYAPMTjsKoRDJbi2j+SIys3fOMU2O3uCRvAUfWtNgN3TvTF6tSYFEzJGGj2ksB1FFWJANrcCimgP//Z&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#1975</styleUrl>
+            <Point id="1973">
+                <coordinates>77.03598,28.11948,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1979">
+            <name>14+012</name>
+            <description>Chainage: 14+012 to 14+022&lt;br/&gt;&lt;br/&gt;Latitude: 28.13624&lt;br/&gt;&lt;br/&gt;Longitude: 77.06713&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.162179%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAWAHwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDOW+gQ5Xb+FON/DJ8p+tMaxiAzSCziFYnmluOWKQYTrVkttjBrF/sudpN0TbferMVpdoMFy30oAvGXpUrPujA96zZbO5kAUsy89TVqDQ7mQKwfceuKAJhQarT2moW0S7vu5wKrv9sxQtwZfNMk6Cs9vtmKfbfad53ruGOlUItGgVXDSrITs28daeHdjhulJgtyamt0pgqFpfKct+FItllOtWl+6Kz4bpWbDdAKl/tCJeKCSeRQq596jBIIwepxRRSZTLJA8oHHOaZRRSJFVyhyKsC6aNQwHeiigCSe7aSEKR0Oaz3kBblc0UUAOwcbs8elMkJC8GiigCvEzGU5PGKmoooAVG2saSdE273Xdg5xRRQBXlRFQ+Wu0tyTSSQxlySMmiigD//Z&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAWAGIDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDqDNAFGSvFCzxquAyt+NVjbBud1RtbHHBx9DWJ54s13vk2j7tKmG75qo8EgPynNKPOX7pIz70hF1s01h7VT33Ybjke5pwluOjJ+NMCz9KQ1B5smPu8/SjzJdoyhoBD5QTjpVecY2024nkH3VPvVV7iUkZQ9KAJsD0qG6JCgKvUGmPcSLg7Cc+1N89n5ZSPTigdyH5v7poqbzPY0UCudKpO2gDjnvRRVMGRsRtyOMmnIAOKKKkEH8Rx6CmOcDGBRRQMRW+XaRTG3MRyMUUUCQySME1BMgG2iihjIiisOlRSQ7WwDRRQDGeWf7x/Oiiigk//2Q==&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#1980</styleUrl>
+            <Point id="1978">
+                <coordinates>77.06713,28.13624,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1984">
+            <name>14+022</name>
+            <description>Chainage: 14+022 to 14+032&lt;br/&gt;&lt;br/&gt;Latitude: 28.13632&lt;br/&gt;&lt;br/&gt;Longitude: 77.06718&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.041954%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAQAEIDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCkt3BkE5C+tM1HU4Y7V44iSzjhh1FSyWaeSzMuB6Vg29ubm8IAJUds1ijzy/p01tbosjEtI3Ukd60Le7SXpxzRb2kQQAx7R6Hmiaziz8uV46g1TAklnUCo0k3ZYAj61VezYjAlPXihLa8VdgmYZ5qRMshic/WkZgOTVV4NQU/IFf3LYo8vUVI3wqc+jin0GXBt/vfpRQJzgZtZv++aKLCsf//Z&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#1985</styleUrl>
+            <Point id="1983">
+                <coordinates>77.06718,28.13632,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1989">
+            <name>14+032</name>
+            <description>Chainage: 14+032 to 14+042&lt;br/&gt;&lt;br/&gt;Latitude: 28.1364&lt;br/&gt;&lt;br/&gt;Longitude: 77.06723&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.071227%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAUAGADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCpdTqVI3fWooXjZcKwJ+tOEavnv60/7Iu3AXr6VznniCWHH3xxwakTYc8ioRaIpyse7j1pUhIb0/GqBsmwfakxTfn6AfrQULdTg0EilRTNm35uOlSiBwPv1E8Tk9aQFi2C9cVZbYVAP5VRjkliH3M4qUTTN83k8fSmBL5Ue7cF5p20lhwaiWZjxtxQWdXHPWgZWgACirG4hRj0oopIENcYP40hHNFFMYnpTqKKBMUsaSiigQA4/OtC1O6PBHaiigBsiqG4AoCruXgUUUDR/9k=&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#1990</styleUrl>
+            <Point id="1988">
+                <coordinates>77.06723,28.1364,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1994">
+            <name>14+042</name>
+            <description>Chainage: 14+042 to 14+052&lt;br/&gt;&lt;br/&gt;Latitude: 28.13648&lt;br/&gt;&lt;br/&gt;Longitude: 77.06727&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.045314%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAUAEIDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDL+1qMjJXn0qY3tuxH71QMdxillt42J3R0w2cG7JiU/hXOcJOskbn5SAPc02ZlQbQwPHaoW02NlIBK8dj1qnJYSLkhiG9aAHyuC+M4PemZ/wA7aqSQXCt8h3Y9adtv/wDa2/71AmXI1/jpZv4aZsmT+FqbHHcb97pQCHiik/ef7VFAzf8Aaogox0oooJJGOF4rOmJJwaKKaKQsKilhFFFDBj8CpIUUdqKKQmNNFFFAj//Z&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#1995</styleUrl>
+            <Point id="1993">
+                <coordinates>77.06727,28.13648,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1999">
+            <name>14+052</name>
+            <description>Chainage: 14+052 to 14+062&lt;br/&gt;&lt;br/&gt;Latitude: 28.13657&lt;br/&gt;&lt;br/&gt;Longitude: 77.06731&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.097137%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAWAH4DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDKZiMYXPPrSCYq+RH29atNGpFMWMKxJGRisTgRF9qI5KEfrThcxnqQKkZFIwOKabeNhzGD70gFilikbbuHTNSFlwQCPzqH7Kn8A2n1FVmtJGkwGOPY0wuWNpHJ6Z4oK8ZprWzheJCPc00Qzqcq4b2NAXJAmcY9amcEJ8oqJEuX67OO1PJkjXmJT7hqpBcpTOyuSQfypiO+7ODyKmkYs3+r2+p60Bg2VPb2qWMSLMh4GcVftgF+8B09KqWuIyS2eatCVGAG7H1oESEFjwKNjdx+tHmrtxnvShs96CSNjhAaZuzRRQWOQZNTBRiiipZDGS/IufeoUc5Y0UU0CHZ3ZBpyqAc0UUxiocZpj/NwaKKAEIBU7QAagAUyHA59aKKBilaekOeeKKKAJPIUHOaUIOxxRRQI/9k=&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2000</styleUrl>
+            <Point id="1998">
+                <coordinates>77.06731,28.13657,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2004">
+            <name>14+062</name>
+            <description>Chainage: 14+062 to 14+072&lt;br/&gt;&lt;br/&gt;Latitude: 28.13665&lt;br/&gt;&lt;br/&gt;Longitude: 77.06734&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.059267%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAUAFIDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCoImKcn6VGqTBiS3XtWhFGGjGRTJI2DHisTzSpmY8g4p6iTHJGfercEBdcjAp/lKGClQfWgDPlmdONucVXe4Uj5ozmtOVYxn5RVZo437DNAFNJU7irSSqEG0gAimG1A5Bpv2ckAEZ96drjJVaMkjPP1p0OCSAR1qqbVg24E1MkDKu85z9aLNMCfBoqLb9fzoouwsWY5ZFACtinxyPIfmOfwoopCJ43ZB8vFNZjuz3oooAq3DHc1VlHz575oooAFZmJBNWLU5PNFFNbjexOEXB4pJv9WaKKsClub1ooooGf/9k=&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2005</styleUrl>
+            <Point id="2003">
+                <coordinates>77.06734,28.13665,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2009">
+            <name>14+072</name>
+            <description>Chainage: 14+072 to 14+082&lt;br/&gt;&lt;br/&gt;Latitude: 28.13674&lt;br/&gt;&lt;br/&gt;Longitude: 77.06736&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.171777%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAcANQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwB5uCVJzmojPkduKPLAfOKDCpOdtYnnjlfPzetPD4Xt+NM2BFAFUZUG9mE7g+madxWLslznjjj0qBpmIODVKQsO+PWmHeRxOqntmi4WLHnkN92mi5fzMEfKehqjLNdZKiSM+nFRCSYNy3INIZqPIw5BHI5qHzSTyR+dUpZZpBhiuPpSQvJgj5eDRYRqxMCct/OmXMwyAKqGWRRwB+FQvIT0/GgRO03PXHvSpIOp/OqDO2cetPjB75p2Ha5qQOC3B4qzHKMGsxGIUYP5UfaCnUZoTsPlNRmCoGx1pqSDOfSs03yjqdv1p0VzGx3Fyfw6UgNISA59qFkGeTVH7TAOsgH1Bp63cIHDxn3zQKxpxzhD0qRtQfZheKyluoHODKv4GpDNCE+WVPzoKRpfb5zj94enrTDcMytukb86pBlZeSvTjmlLKE+VlIFAhzyZxQpye1Q+Zj/loop0co68fhSuHMXExtoqv9rUcUUXDmLkfSlao4lHPHemTyMpIGOKYBdMoTaevXpWY4DNuHQ+1Pkld5DnFMc7VyKErgRsmG+9ik2juc00sx5JpQTg0+UBsigDiomA78UsrGmKT81GwCtjtTTQOpoNIY00qDdmikNAyRBtcVOagg6mrHaghj7fqahu/vin0jUFIgVQetOCJTxSgUDCOGN85GcUya3UMNo7VKpI6GnDPByeeKCWRQ26lckEnPUUG0h37XLtn3qWXqvApr8NkCgpPQPs6qoCPIv0erENsqx4eeY/V6rqTknNT5O5RnqKCWP+zoCNkrH6tmnSxZH3hxUZHPU01cc8UrEjPLk7SKPwoqTgcAUUBc//2Q==&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2010</styleUrl>
+            <Point id="2008">
+                <coordinates>77.06736,28.13674,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2014">
+            <name>14+082</name>
+            <description>Chainage: 14+082 to 14+092&lt;br/&gt;&lt;br/&gt;Latitude: 28.13683&lt;br/&gt;&lt;br/&gt;Longitude: 77.06738&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.074651%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAYAFYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCj9l/gOcegpz6PbyqCHccVMt7tIwvXqcVMt4hXA3bvpXPY84yLjR1/hkZcd6gWyuIpAQwIB9ea3jcxkYYcdyajWa2L5yppMakZJW634C1JCs2fmUitMTRZ+Uj6YpVeLzMM2PzpjuisjYHzpz3pA8ZPCH8qtyLH2I596anlo3SgRXKjrsNNIAGStaKPARh/50SxwleNpHpTsJmaUzyBRVtY09QKKLCKgUHtT1TBzRRSAcAO9RMirzk8elFFAEDeoPNRt5jfUc5zRRQBLD5nQnmiUyFSAxB+tFFA0MQSnhnY/jSqJUb7zfiaKKYMcsjd92aKKKLjsf/Z&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2015</styleUrl>
+            <Point id="2013">
+                <coordinates>77.06738,28.13683,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2019">
+            <name>14+152</name>
+            <description>Chainage: 14+152 to 14+162&lt;br/&gt;&lt;br/&gt;Latitude: 28.13745&lt;br/&gt;&lt;br/&gt;Longitude: 77.06752&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.031531%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAASAEwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDA8/kfMuPekeWKQnDLx6NSywK6lVUr+FVGtfLJG4kY5xWJ56JlmCkjdxUYuFVvvD86jSKLcAxP40ye2hY7c4PrmgokeRSd26iGQNIDioPsmE+SX8zU0UcuNryIfYd6dx3LQJIyB+JoDqjAsR+dV2gkf5N4UHvUMunuWGJi3sDSEbEcqMu7BA+lSgxMMjNUIYsQ7VkIx60kfmKgBBH1pWAsRE7zzUVx/F9BRRTJKjfe/GmSf66iigoePumlh/1ooooAsHpSw/60UUUAWEA8t+KVe/1oooA//9k=&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2020</styleUrl>
+            <Point id="2018">
+                <coordinates>77.06752,28.13745,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2024">
+            <name>14+202</name>
+            <description>Chainage: 14+202 to 14+212&lt;br/&gt;&lt;br/&gt;Latitude: 28.13789&lt;br/&gt;&lt;br/&gt;Longitude: 77.0676&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.084133%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAWAHQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDEDkkl13Zp5mBX5QfoaimTeRsbFSpEMLnr61z9DiK7zsH+7j8KnjusJnGeKSW2XqxHtzUIhGNoyKAHm6yCuetJFKvzDP41XNnJknd+tOW1KnJai4rl6K7KrkPRLeymRSrtgVRMLA5UmhYbjjBxSsVzGmNRZB1OaVdQ8xVD+tZwhuT1I/GmCN9+d360uobs1lvoI2zgnnjNX9F1W3jv1d/lQnnNcyQ2/wCbn0pxwQAQT7CiSKb0PXlmt3iVk5UjPFVtQsrS9tmRgd2Mg4rlvCOp+ajWT53oOM+lbsjttOM59jWaQXujl7jTRHMyjoDRW1LaySPu2nmiqsHMefymQHh+lOS6njIGVYE96KK2IJTI83JOPoaGDAAls4NFFADI7hhIVxnIpZp3AoooARJyRyKlDnH4UUUrANaeTHXoai82TPLZ+tFFIIh5p7imvNyAB1NFFBbJtPumtZxcJncK3h4nkBLNFkegooosiC2viNWUHyGoooosgP/Z&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2025</styleUrl>
+            <Point id="2023">
+                <coordinates>77.0676,28.13789,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2029">
+            <name>15+452</name>
+            <description>Chainage: 15+452 to 15+462&lt;br/&gt;&lt;br/&gt;Latitude: 28.14907&lt;br/&gt;&lt;br/&gt;Longitude: 77.06922&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.133236%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAaAGwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDLjtHdyxwM+tXYooIhiQFsdQKr3ep2SMy/aEGOozVBvEFhHn99ux6AVicBpXNzOI9sSEKTwMVk3b3O7LblX0qtdeLYUz5SL14yKzJ/Ed1dP84Tb7CgRreaw+9k57mmzSbiVUnGOxrKk1NwmFTce2BVR9SuhyFC/hQkM2lspJnHBZc1KdM2kglQR1zXOPq16E2iZlyMHBqTTotV1N/Lt5ST/tHir3A3DDGh5kA+pFJ+7AJWQVBc+GLy2tvPubuMY5wGyaxZBKr7ElYgdCB1qbBY6OJivA/lSmbdxuUD0rnoY7x8BDIzegH/ANar9vot/L95yo/umlYC3Jd29u4DEt7DmpRrloBhN4HpgUHQiI/3pPA9az3sYoztzwPWhgVNQiJkIwSwPJHeoPscpGChwPatME5BzV1Cdz/QVVhHMSWbJ1D/AFI4qPlX5OPpW9q3+rP41hS9DVWBFk3zooVAOB3FV5biSUEt/KmL2+lOQDJ4oK6jI1lY9PrVyGSa2G6OQx59ODRD9wU6Xnb9aQDZLi6kJLzMy+hJqSxuIklBmHy+gHSo5elQD71Jgdkus6VbxjZDubb0xiqc/imMNsitCPQ7jXNDqaE++PrUiZ0q69PMjFEx9TWHd3s0k7M+Mn+70oiJ8kc+v86kUDHQUDP/2Q==&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2030</styleUrl>
+            <Point id="2028">
+                <coordinates>77.06922,28.14907,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2034">
+            <name>16+802</name>
+            <description>Chainage: 16+802 to 16+812&lt;br/&gt;&lt;br/&gt;Latitude: 28.1612&lt;br/&gt;&lt;br/&gt;Longitude: 77.07023&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.223355%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAYAOYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCrNeKAVJqH7XGOc5qvMyYIY459KhGzPBJqNThNSG8hPG7n6VI2obWG1vwxWdG0XcfjUwnizkRZxRcRd/tVlXJUt7etV31iTeD5K9ehNNS9VSMwce9LLepglYE/KmIc2tzE7Y4FyehAqP8AtLUWOUiYcddlSw3s5T5IY8diRWhDeTtFxFHu7YXmnZAZYudYkH7uNgfTbjNMkh8RSN8pkUn3rVmu9TCny0C/UVSnvdZLD5gM96cUD2KaWXiB2JlZ+PVqjl0q/YnzMn1+ekuLzWZvus49xVNzrTfLukHuWqtiHcsLoN0+dzEDsS9WE8PXDJuMq7V9GHSqsVlqkifNM+P96nC11BXZGn2jHUtTSYEdxpYQFjIv4moPstvGuXlQkdqSXTnMm+S7A9cGpF0yxwWa7+b6VaBkuyyIUZK59Gp6JZKDudjj3qH7FY4AW4zjvnFW7ZNLibM86v7ZoYrAskC4VeR9M0qzxKGLKG/DpVk3OiD+I/QUkmqaQqgLbncBwcdaQMrtqEZyqW4BHQmomu5WUiOHJ/3ae+rWzZzbL7VGdeZQFjt0UUwGwy3xP3HHPdKtCHUHAYlhntio49ankQrsG32qR9UuAmEzQANHcpJhs5PX5qUo+35pD1qBprmZ9zZ6daQpM8ffNJjRbSJef3g57k09o4UTcQrehBqqkcnXLL7intGNuTIWwehpAyO42sQR+VFOZIhyxIB6UUASTPblj8oJPvTPtFmFwI1yf9r/AOtRRWdrljDc2qksCvHbNNXUYmGAijFFFKwMkS6h+++3A9qsLeWbL0X6YoooAemoWkeCwUKfWiXXraKPMKqWPQYooqkBXfxCzfeVdvpiqV34hDZVTGD7iiimiWVW8SXMYXyjHn1201/EV/IM71z7CiirSQMoz6zqEhw0zAHsDiq7X1y2cysc9cmiinYQ2O4fOGO6rCTsDyCc0UUWAnSR8/KSM9jUqxCST5nUZ7miiiwFhbaFULAhj6iq9wq5wAOPaiimiWSRiHbtcLn1pz+QBkAEj1NFFVYESRyIpUqi4I6CrUcysm0jFFFSxsje4KDg8etSx3ny885oopAh5vUK7Qc1BJcktjcf++aKKLDK01wGbGCAOnFFFFFgP//Z&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2035</styleUrl>
+            <Point id="2033">
+                <coordinates>77.07023,28.1612,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2039">
+            <name>18+002</name>
+            <description>Chainage: 18+002 to 18+012&lt;br/&gt;&lt;br/&gt;Latitude: 28.17194&lt;br/&gt;&lt;br/&gt;Longitude: 77.07081&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.095501%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAaAFQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDy9GHXOPrUgdOm9fzquRkCgR5BJoPNLOR2OaaQSc1SdZV4RunY00zXKtwpYfSlcC+BjginEAAY/nVNbhmHzZ3emKk+0DbtzzRcaLA4PJqbaCgrPNxGGDH86njuoe0mT6ZoTHckIIbGOPXFG0U5JAwyTx605VBPv9aYmRtGSc0VZRcrxzRQIoFc9KcuAuM0DpSGjcBjD5s5FAA3dcCkk++abSsBIEQnNMaNDJzgDFA6U1u9JgRyWsDLyuT35qJ7KFiMcD2NWB9wUi9aY7Ea2pi+5I23sKmiaYDOcmpD9wVJYAfaKBCJLMowM0VYvQPtLcdh/KinYD//2Q==&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2040</styleUrl>
+            <Point id="2038">
+                <coordinates>77.07081,28.17194,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2044">
+            <name>18+072</name>
+            <description>Chainage: 18+072 to 18+082&lt;br/&gt;&lt;br/&gt;Latitude: 28.17257&lt;br/&gt;&lt;br/&gt;Longitude: 77.0707&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.210855%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAeAMoDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDEhFySxZMMOce1SS3DrAQ6degFWjhMsRuOMc1X3Bm3AAYrNM89mckzxtl0I56dalbU4gdoIUY71alG45P8qRbKOVCxjRucciquKxVF1BIeJFP0apjOij/WAfUUHTrZuDbge4HNVZdLi37R5oX0zSCxoWk0IO7exPsOKsFywLADgcVlDR1KgrPMvtupq6fciQiO4c49Wo1Cxp/aJFGSF/Kmi5RuXGDms2WLUVX5XBx6mq4OpgE+UHXPUZppAbTTo3yBhg96luT935h07VzwurkHa9t37ZzVm51EqI91tKrY6E9aoTNKKUrLheeO9SRTq0hB4GefWsiPVoQ+ZIXXjp3pJNUtHbcHCe3elcSOjiK9R69zUjKXIAOQBWHbaraOo3zpuHAyf/r1oW1zHIpMciEdOGouMmcFWIJqKUkcljj6U1pxk7nUHsDSLIjth3UewNFwGrMoYNljzjpWlHKGA+U8is2REdgFc49jVlXYADfgAUwLpZAMncfpSL5Mowd2c+oqvuBH38/SgOysAv60MCxJCAMj0qLYpBDcfjUhnZQBgHI5zVeeTL8dMVLAcwTjk9OxpMJ6moHdgQOOlN3tSAW5YKo4HNVs806Vy+N46elRFtrcd/WoRT1HuKekojjxjvnNQyOQQMClQeZHye/aquPoPW8bdxt/KlLO7bwoIqAQoOQSKsW5KEKDx15ouImjJMeSuMHvTYmCsRwGJzVnGRUbRLy3cCmA64KJCWJBPoBVfJS3z6nPFMZfnC5PIqyUXywOcCncGU7dfMmHyseak1W1Mm0lVUgcVbs8B/lAGKluX80lSBwKV7kmJFaKRueFWbpnH/16guNOgMmTEp47itS2Id3VlXg9hSSOd3QUAZaaRbSDcYsduDinjRbYA4kkj9latBZmCnAFTD95GCf0oGc8dGm3kR3UpGe5qT+y76BcrcH6bq3+O/OO5prOQ4GByPSmgOf8jVolyJ1PPA3Uqz6vGyh0D5966JY0fkqD9RSraxqwwD1z1p3EYo1HUkO02Ofpmnf2ndKwLWrpx0Fb5t0Izls+xqJ49oxwR780XGZUWpq52ukymkOoohIKs3uRWmiDP3V/Kmy20ZcZRSD7UgsUor2KQZY4pTd2/wDeNWJLeFTgRr+VRfY4f7opWCx//9k=&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2045</styleUrl>
+            <Point id="2043">
+                <coordinates>77.0707,28.17257,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2049">
+            <name>18+092</name>
+            <description>Chainage: 18+092 to 18+102&lt;br/&gt;&lt;br/&gt;Latitude: 28.17275&lt;br/&gt;&lt;br/&gt;Longitude: 77.07067&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.109407%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAaAJQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDz3zlXo4/OiO5JIFVTaE4xIetSJayBgxBx6VNzhuWWYk5NPQA9T+tRi3YLxk/jUaxzAfe/AmgC8SFGKhaQjgiq5E0f3mZj6VHI5OOaLAWDM28npUmW/vVVjdyRlDz7VNG7MeRx9KUkFh6JTgr560nnj+7TvOXOMfjU7BsSMwHQUxH+fmojdLnBFRNeDjCn8qBlyHnpVu2kQ8FcfhWekoApwn9CfwoA1t64zUDISOKz5Lhwdo6VchvFY8pQ2IbJE5bhSKFQ96tmRWAIP6UrIpGRjFCQFMRnHIIoqZpEz0/SinYLlARjt/OnhR8uM0kfT8Klj61bVgHKhNMEY/XvU6VDSuBmzLcedkJke1WFhUnlfzFT0tFwGrEBxihY1AxipaSkMiaJMDApvk8dRU9NpWAh+zgnoKb9lj6AZq1UhAzRbQCo9vj7ox9ajETjoB+NaKAbunan7V3fdH5UgMlUc7vlz9acwdf4DWqAPQU2cDaeB0pMRlrPIlWEu3K7AABnqaUAYPAoVVwPlH5UIYg3HqwJ70UsAGG/3jRViP/Z&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2050</styleUrl>
+            <Point id="2048">
+                <coordinates>77.07067,28.17275,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2054">
+            <name>18+312</name>
+            <description>Chainage: 18+312 to 18+322&lt;br/&gt;&lt;br/&gt;Latitude: 28.17472&lt;br/&gt;&lt;br/&gt;Longitude: 77.07041&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.036045%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAaAFIDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDh7eZgcMcc1cSQE9ajEAwDtx7VUuWdXIORzUo8+5ofbEQnBzn3pGvkYADqO9YbXUSyEMv41ItzEAH3BQaGM3I594DcfnSyTxZxuG70rnp75VIERyfWooLz9/ubPvSuJnQlwcZI/Gl4zjIrMOowjkg/Qmj+1IB82DQBoSShDgmmhwzZPTvWa18srcHj8Kt2hDR5Y8GgY/efU0U4eXiigLll2XHynNVJQHJDDvTj940/sPpTuTYxrqyZnYq2B9Krf2bMxI3Aj3rbk6n61EfvGkUjINlIpwQMj0qaG1IOW6mrjk5PNNXpQSyN4EGARmmi0Rz6Z9qn70+P/WD60DQ6DTYEG4gHFSG3Q8A7R6VMv+ppygccUrgVvs0X980VPgelFK7A/9k=&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2055</styleUrl>
+            <Point id="2053">
+                <coordinates>77.07041,28.17472,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2059">
+            <name>18+322</name>
+            <description>Chainage: 18+322 to 18+332&lt;br/&gt;&lt;br/&gt;Latitude: 28.17481&lt;br/&gt;&lt;br/&gt;Longitude: 77.07041&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.120736%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAWAJADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDkGinVsFfl9cUqLIsoIXA71rm9tsKH2475qlqOoW+dsAX3IFcupxMgRJfNJzg4wDUq+bkh+B61DDeIAWLNmpP7StyPu89+KoVhsiyM5wMjtVWUyI20ZDVowXUUnUAU82sMuZM84oK0KEU0m0buW7UyS6ldcS7qvNCi9MfjULWnK/OOlAmZ90RuU5702CUA45z2NW5LFCOZBkc1EbSNJV2tlj2oEXop1CgHripIp083JX86rQ2bBsuWABpZLYhwRux9aQXLU8qMeSKqouzkOPm6GkmhIQkA1TlLhsLnNAFl4pBly4xj1pInGeT37VUMk20oR2qsLkxOQykdKsZvNPzt4xio53ZgqocHPaqsCvIquAw/CrJiYNxluM5zQBmtuJBLEj3pT0IFFFJAiNg2Dz2ogHPXmiimBaV9o44+lSxzyoh+YnPvRRSYEEs8hcksfzpvmydM0UUAxA74PzHrUscjq28nJUcUUUhExupH5J61LHdnAAFFFAFlJdw2kVCwVpCCM49aKKQEsSxoAzRK2femz21u5BMQH0ooqlsNEkaKsYVRwKRgDRRTA//Z&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2060</styleUrl>
+            <Point id="2058">
+                <coordinates>77.07041,28.17481,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2064">
+            <name>18+332</name>
+            <description>Chainage: 18+332 to 18+342&lt;br/&gt;&lt;br/&gt;Latitude: 28.1749&lt;br/&gt;&lt;br/&gt;Longitude: 77.07042&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.904909%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAWAHADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCtgY54oOMjBrNlkvN3HK54G2mma86BMe+KVjz7mg+0/wAXPaojGONxqg014fupz646URPfsDk5/AVLQFxkyDtwaEjyMOV6dM1UNrqkqlklXaB6VWfT74nMkxHsM0rAaMqx9SV9vmqBzGcoGFUZbGUFd0p/OnR6YuSWdmb2ND2At5jVABzxwaakkQfDnavaoIbHy0Y5fI6c0z7JAZ/3jStk9N1KzBFme9tUP3vpjFRT3cbBSpx9aF0y32s6kse+e1R/Y4xL8zDHvU2KGNJHIygyKB3pfPaLIQhh7GleCKNhwCPYU8fZ0AUou7HbvQBom+MQAIJqKW73knyx+dFFbshFZrpg5IReeTQl+y5wP0ooqBkZ1GaRsD5QOw4pw1KU4QgHjg0UUgLxmR4UJU561DNctGu/n0oopPYGZ8l1OdzhsZzgUlv5ksTyO+TnAoopoaI3klVdu/GPSmnzHwXcnNFFSBJ5T8HfwPeoyp87LnJ7UUUDP//Z&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,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&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,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&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2065</styleUrl>
+            <Point id="2063">
+                <coordinates>77.07042,28.1749,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2069">
+            <name>18+782</name>
+            <description>Chainage: 18+782 to 18+792&lt;br/&gt;&lt;br/&gt;Latitude: 28.17887&lt;br/&gt;&lt;br/&gt;Longitude: 77.07101&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.258516%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAWAG4DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDz9NN0u5QFoIDuHQxAcVW/4Rfw3cSuklsN/wB75JSpH4VrxwhSqg5PeqepaXa3dx5sgkjdRjfE2KaPIKZ8DaIwASW6iHbZLn+Ypo8CWOcxa5fx98BwQp/CnP4bBJaPUbxQT1zmoD4cuwMw6zOhB6FTn9KY9idfA16vy2/iO8Y9CShYfmCauReHvFlqgij8SllzwFjbI/wqjFpniOKNRba/jHRZN3WkL+PbfKJf2MuepDkZ/MCk2Ju5stpnjRF41svxxualSPx7Cwxfowx0wKxI73x2vymK1lb2YZpTq3ju3O46QZCOpjXd+madiTokvPHMWDJLav7NGtaFvrXjEELJY2rZHVVxiuTHi/xNFhrrw9dD1xbtWxpPjFpCC+j3MR/izE3+FTbUZ1trqevRNGs1rCCx+dkGQBitiDUJ2Xaw5PX5s/pXGL4tLjH9l3PPfbWtpuryTq0xs5U2jgEdaTiDOlhvpYOVba3rV5vGN3ZDy109ZX6Foxtz9a5DSfEtpd3EkE0UkLJ/eFa8N7GRiJ8+uRU8pakeZvdGEZA5xUCXjuSWGcmiitUZstQzlmGRxVtEV35oookCH7Np4NJ5ajnqc+lFFSIkEm04xVgBG4KDpnpRRQAglYMNrMADwM1aRyy/MSe+KKKaGhYnG8gqOuOlXYlH8PGfwoopsGW7aKLYWdAx9cdalMZhAVQmTzmiigEf/9k=&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,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&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2070</styleUrl>
+            <Point id="2068">
+                <coordinates>77.07101,28.17887,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2074">
+            <name>18+792</name>
+            <description>Chainage: 18+792 to 18+802&lt;br/&gt;&lt;br/&gt;Latitude: 28.17895&lt;br/&gt;&lt;br/&gt;Longitude: 77.07104&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.289745%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAWALgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwBIBqyljNc2zKP9g0ri9CbhLFJz/ChH86sHjkhffFC4x7Vz3PNsZb3OpRy7TBGwU8n1qRbu7Y7Ps6xk960pVyctzxkk1XlIwAuSR60BYpx310J/LPKj+I1Z+3RIrcN65xTBEpbLKB68UlzFFjJGfwoHYrNqMDSsGLKvUcU6LUrKRWUSbSPUVNBZwNiRVGemKiu7SFl+eIA92HFAWCO/tQ6qk65PTNWGuS6gI6deMsBWbPp1kyrICMr0GOtZslrbPMXKe2Nxx+lAI6iKVgAfMUkHBHFWVeQSDL8HpiuOWwhl+WOSSPnqrmrkWjM2P+JjdoO4Z85pWGdQZpgvzKPriprZnAyuBzXKTaXOif6Lq1yMD7rcipbSDV4yA2scY6EUh3O0hlbcFLZ57mppQp+YHt61zlhDqZ+f+0rVgOpeM8Grgn1NAFZ7OUeqZz+tDG0aUeQ2QeDTuDWZe3eoQ26mGCGVj1G/FVE1nUhzLpW0A8hGyTSFY3XUleDUBfB5NVJtVfYGFnIdwyuBWVc+JrOFgs1veK2ecQE00Jo6RXXrmopXB57Cud/4SjTwzLi4A7bo8cVetdWsbhcLdR7mGAC3WmKxfiuMP82foKKoveW8MuJGHB5INFFwsMdiwz2qKWRlXI5wCeTRRTQEdjfNe2IlK7WbgjtT4lYHls8UUUDQkjnPPNV7h2UZXH0NFFACWErgnpj6VZe5kRkMO0Y6hhnNFFADb/FwwlMcaE9kGBVG7tQIBID1PrRRQJjLG2AySeh4wauByJdoJ4oooBFyLa/UY460PEmMgcjuaKKTGEEZDHMjYzyK0o7VY2DDGSMniiipY0OZFU7gAD9KrSuXX6nHNFFAyFri4tyioVKk4xWhA7OhLqhz7UUUITIrm1tpEO+CNvqorLaysVkwlpEpzwwUZFFFMQ0xQHdvhVs9aKKKAP/Z&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAYAGQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDhQ25mOMCht38P408W77iwbB9KRrR2AIlKnvWfKedcEHy/P0qSNctxUIs5NnE4P1pBHPG5xJnHakFy3GgbAHr3FSLDj5cd6roZo9mBuyeOOlSxPebvniHGM4qxFlVC4zjFS7UHaqDT3EcnELdOhNKdQYDdJBJn2WpadxlzYnpTBFhs54NUzqyY5VuOxWn/ANqQ7Qd3yjrmlewWLKIEIABwTikd9jb2+6R61LbXEU0YZGTn3qvK3m7gQCyHIwe1NajsULj7VJKTHC5UcDiinT67LbMsEUI2ouPmAzmipsItxxt8xyOtTLEScgrg0UU2xEj2y7UGWz7UhtN2CoAPfNFFUkMljt8qA2Pl6U1ozuJxzRRSuxWHmPcAWUfhUbwBhuCLx60UUmwTB7VApOwbiODioBZlSWkXKtjHH50UUmO5DPpcDybkkaMeq9f1psWktFvKXEkmRg7mzxRRTiJsSXRbdnzIWB+tFFFAH//Z&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAWANYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwBJIFB4BFU7m0Mg2525q68nOdwOOTzTCyuNwb8q5Is5WZkdhcoCY7nbnpk1KkmrQPvljWRAOqmrbk4H19KkSdujNkUgM461dNOsaRsv41ce/uIolaSMt645q4qRyD5VX8uap3DeXIyg4Pai4FVdat85KupPqtatve2zQqySA57VlOqOMNHubvmnQ2sKSZWMjNAGvNdKIxhwOaSG5i2/NJ+ZqmYEdMHrTPs8ciFOcY5pWAvPcIxyxU8d6lt54SOGTjpjtWI2mxFQqu5XoMmiHTjCCFkbg54NFhm68w3bQ3BNP37G3A7xjmsKa0d9jNJImPQ1ZdpEhOJASBTQnEutKzFsA4pIWU9Tz71gzz35iIR13FuKjhTUxIpeQYzzgmmTax0UpGcD1pq7wcjpVOHztuXbnsKXzLtCcKCo5qSjUDjA7MOtRSygtkD8qopdvvy6HntiphPEeXyp9Cc0DRZjlJHpTlkDHGe/NVVnR3+TnigiVWDIO/SgGWJXA4PrSB9qg/yrMuriVJNr5znpTkvBgDevSmI0JJMjIOfUe1NDfJuz+lRROsyZRlJzztNOkYlcBgCBTAa0oLbSwA60VXSEuSxXminZCuYVvHcq+ZpVbLY4zW3bARwjA68UUVKGTNyuKrMDvHPU4oopAWUkZDuFMnIkYEKB3FFFAEaOME45Bp27IoooAcGK8gCno58vdiiigaGPgEjAxnNObPAHCkDiiimS9yPe3ck0EqwwRRRQgQqxA7MYyfap/IkFv5m5ducYooplEQVi/JHFWCmBgnOR60UUmIiChW4H61I6jaMUUUihqoqnjqe9Tg7WU9hjiiigQ26tormP94Oh7dqzbjRoYyWWRvX1ooqgDyPJR0RihB6rVa4WVMGK4dTjqe9FFA7BHNdxjJmDZ9VooooEf//Z&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2075</styleUrl>
+            <Point id="2073">
+                <coordinates>77.07104,28.17895,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2079">
+            <name>18+812</name>
+            <description>Chainage: 18+812 to 18+822&lt;br/&gt;&lt;br/&gt;Latitude: 28.17913&lt;br/&gt;&lt;br/&gt;Longitude: 77.07108&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.143621%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAWAJYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDocIVz/KozEMkAjimBXBOGJXPIFNikLyOFYVhc4RwxSOEzxn8aY52EjI+uahmnCkEyL9M07isSuqhc4qN0HJxUMl5b7MFznHRaryXy7sKkjgnggVSkJodNEC/NRPDsIznmoXvZzPhbaTC9MjGaZcTai54jRB256U4sTY+WMcbByOvFRM6odrN+OaY0c7DMk2MDnBqu1sHYkyMR9aq6BBJc5YqpGM03zlOANo+tHlRhtpA6cGmkIM9KQDSCxO0Z96FRmPC8dyacsi78KOPrTpH8sYXAz1qW7MNxYreTOVjz75pWsmL7n4p0Op3ECBSkTD1K02TUZ5Sd6oB7CmncLEbwRqSN31xT/JiVVKk89c1XklBfJ60qyHdnP4UXHYkdB5hoq1HtZckrzRRdCsdUqkggSMM+1Vzp1rbMXBmJYDPz0UVlc0YkVnalvmR34x8zGkksLUH5IQPrzRRRckgkSNGCKi4+lOXAPoFBOAKKKaBld5i+V2gDv71E2Nu49PSiimSVppMMQBwR3qpJOy9B1ooquhSKu/e568H1pZMsuOABRRQwRHGdrdBwKkMm5DkciiikwIXlwMc0juSeOM0UUkMj5JySTQT6E0UUMCWJyeCxNFFFAH//2Q==&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2080</styleUrl>
+            <Point id="2078">
+                <coordinates>77.07108,28.17913,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2084">
+            <name>18+822</name>
+            <description>Chainage: 18+822 to 18+832&lt;br/&gt;&lt;br/&gt;Latitude: 28.1792&lt;br/&gt;&lt;br/&gt;Longitude: 77.07114&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.172882%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAWAHoDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwBJI2khDxgYX73NOR4ERfn3N3GOlQR20sowspAHYU6fT5hgBsccGs7Hnk25cmo5mUKCG/GlgsLpYyXlDDtxSfZVkIiaQKSeuaWiAgeTp9aejrnJ/Cn3mnC1YKshdSM5zVTY/OwfMOmaq4Fwsdox39adFciMsh+72xVWzhv5WZX2DAOKnj0y7IHK881DC5bikcn5SSPSnSzDYwIxxVX7FfxltrLwO5xVXZdurhhkjuKTC5IZG52t+Rqxa6pGhEU8q5HTJ6Vjm01cMZLdV2981TudI1OY+aSpYnkDrSGd0Lq3aNWaaMJ2OaDcWxb5LiPPbJriI9NvUUfad6xKOQDzTLVbm4kPlyxjYdoyOcdqLAzvBdx7gu9SfY0n2uL+8PzrmotO1MNnzY2wOO1Rm01TJ6fnQCNS2bawIqS5lLnBz1oorZkIPtBXCY4x601ynDbeRRRUMpD5ZWmUBsYHtVOUBBuHrRRUDFgc8nPStKyu1ZB8rZHHtRRQIm87DEsu4Z6VOqxvHgIBx2oopsZVkiEbCo5WVTu29OlFFSJjZQrICwzn2zWHc6coujJG+OelFFMaL9pJJtwzZxxVjzZPUfkKKKkZ/9k=&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAcAMwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDM/tnVLRP9JtizeynFSQ+Jbg5Z7J1THIAIrqJoY84ZQw96R/LCcJGMDuKrlR5jehzcPiyyA2Na3O4njC5qY+IbIkExzx5/vrWo1lE7+Y0aexAFR3NvESA0Sng44p2RKkUbfV7GZji424PetO0vbSRcJMjfjWTHYRs53R/Ln0qUaDZHJEbDPfcRRYfMX7l0yWDr+dRJ8+CKozaFEExFLKufQ5qsNIuYWzBfSbvQmnYls2pSdmSaqvkrgc1XYX6wYwkjCqz3N9HGd1oz5/u9qBMluIWBJI7cVl3asJAT6cVJd6lPsINlIOPeqUmqqkAle1k7cbetMSLNud68ZxmpSqlsciqtvqNvKCSrRZHQinSXVooH7/J9u35U7FJFxIwR1/OnLGuTjGapx3tsRgTKSenOKdHIXPyNu+hzRYZMWwdq9c0rtnKg4bt71Jb243K7EZ9Catw28ankqAfU0iWUUWUKoxwas2+0ruK5x7VYuYVjXIYBR7daSGLMGAOtJgmQXMEV0AWAxisvUdGVYsxnFbEUO0lcn64qtdRThs9cdMZqU3c0Mu0N3asolZtq9/atpdUtnRVEq7hVMgsCMEt3rm7yOS1vDEV+RjnNUxWOzMm4ZBB3dwaYzODgAmuXW4uSGSONhgfKR3qq2p6jExj+0lcdsVmx2PXZDnGajZQQc9hUpUVHKMAVoQmMJG0Y7VERuzUuOKibg8d6AbQJGoyWoaXHCjPrTXOcUqAEGgVxQwZT8uKgeIvnBxUmOTTlJANMVyBYyqhTS7FReB1pz/MRmorg4VcUWBMrXCbyQ6hl9DUEcSRk4G0Y9Kstk7ck0sgAQEetOwJleS3ieM71U+mRVc6fbSrhkU4rTiOSBSyKMnihjMGbRbNmG2Er7g1LFo9qp+Uup9zWkygmkI5FJAtSqumRKwIkb86U6f1Imce+avScRKRTNxLKDQFiq9hfSIEW6H/AhTYrbUIvladTj0WtnpioJf8AWGlcGtDIke/R8MqsD7YNMnub2Paq2m4f3s8itO4RS4JFMKLvBIosCZiXN68WSLZt7cAnpVa4u7WY/vIPmBznGa6m5hiMeSims67s7YwA+SoJ7gUMq5zoulM7L0hIyCByD2pjWls7bmZcnrmnajbRRyEoCOfWmQqCufepsVc//9k=&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2085</styleUrl>
+            <Point id="2083">
+                <coordinates>77.07114,28.1792,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2089">
+            <name>18+832</name>
+            <description>Chainage: 18+832 to 18+842&lt;br/&gt;&lt;br/&gt;Latitude: 28.17928&lt;br/&gt;&lt;br/&gt;Longitude: 77.07118&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.180857%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAYALYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDKi1G734isrg/ga0Iru4ZcNEYyeoNR+eFyVI6cUsd5EMLJ3PWlc80sZf8Ai/Sk3ZOKT7XAPlRi3uOlRmaMkkFRxTESHoagcNngE1BLdlWIDD86qyXMmc78D61VwL6l88AjtmkLsDH8rbs81nfbJFPytu+tTQ6iQf3ir07nFMDUMpzyDUU0q5544qv/AGtCFwYF7dDUseo2EgzIrZPYClYCsbxI/vMDz0J6VMkiTJuUjFTs2lSD/V49ciq4mtEASPv2xRawEblA33wPoaAyjkNn609Vt3bOB0704QxE8Mv0FK4iPeP9k/SlR1J5FP8As6ngMPzpRbAH7w/OkFhMqeAKVSAegH40NAR0OaTyW6GncY7G4EBhxUJLoDznmpFiOeGFOaNtvy4z6mi42U2djxtJqtLcSRPs8tgp71amik7Ng1UmjcDDHJz1p3uInhmLL8/UdPpRWbIZUOVO7260UWA2XJAyBnmo5V4yBzmiioGxUyB0pWY44GaKKYiBxgEmoGy0XTnNFFNICJjimlj2ooqgEBJp8RwciiigCffwO/PrUm3KAg5PoKKKHsAwxv8AxPx6ZoEZHO5vzooqAHxb0bcrHgc1I08pbcsgX260UUAJ51wekhb6ClS4nQ/M5OfWiigCZrxvL9T7CoVupBJyeKKKBsd5xIJPrVeV8nk0UUIQxZUXtz9KKKKq4H//2Q==&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2090</styleUrl>
+            <Point id="2088">
+                <coordinates>77.07118,28.17928,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2094">
+            <name>18+842</name>
+            <description>Chainage: 18+842 to 18+852&lt;br/&gt;&lt;br/&gt;Latitude: 28.17936&lt;br/&gt;&lt;br/&gt;Longitude: 77.07122&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.150496%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAUAH4DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCqsisuAeadtzmqTQXI4imC561UlivI2wLr9Ke55hsGPmmlQOuKzIzqRPEyN9QKmE14DiRBn2pAXSjD/wDXTbqyS4t2Qj5v4KrrNcMmSFB9Kd9pni++OfSnYT1M+1tp4JtrpjmtMpgct+tU3vLtzny1b6mk+1XGQhtN3oc00StDRBymBUUsJLdO9Uor+aM4e2dN3fNS/aNx4GKZRaxIp4XgdORTRICAGHXrzUcpYRh1/wAKj+1FHCGNvwoJLJhBO09D/SmlVIAz0pi3UpJCxn6kYoN4iAGQc/SmHLoSWcYIZc9Ks7Rjiqsd1DKN6g8elOFwCMqaCbC7mJxn9Khk5b6UUVmajov9bSyE0UUARVFRRQBYRih2r0qaBiVOfWiirJYjIrbiwzzTYI0DEY7+tFFAMbOMEgEipYZX+7xj6UUUCLMZzjIFShVZTuGcUUUFIgZFCniq7RICcDqaKKaIZ//Z&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAUAEgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDkYYmyoB5rQtopBD+8bce5IqFbcsnyMFPrVqG0uBCStxvb0bBzWTR5zHM21MjBBp6TAJjofaqq2d8MkSKR6EUyKC/Uncqke9NIRpQTZ9+fSrkJfbk45NYoF2rHEafWrUE18F2mNfrTA1MNjcpHNNE3O05yDzVZm1BOUVG9QaheS63F5oMD2psSNaNx6iis63uMtgqw+tFIZRi/1argYNWoBtICkiiioAnRjnFRTcOB2ooqug0JGfmIqwhwaKKlDZKjHfT5OYzRRVksrgANnFFFFAj/2Q==&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2095</styleUrl>
+            <Point id="2093">
+                <coordinates>77.07122,28.17936,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2099">
+            <name>18+852</name>
+            <description>Chainage: 18+852 to 18+862&lt;br/&gt;&lt;br/&gt;Latitude: 28.17945&lt;br/&gt;&lt;br/&gt;Longitude: 77.07126&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.044093%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAQAE4DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDnrmWMoT0wORisyS7iD4dsH3NbstnuU7l5+lZl9pkRkyY1PviszzkVPOjK53LUMs2ehGO1WfsMW8BTxjoBUd3Yqv3dwpWGETq3erUBx0PB9apxWqqOHxTmWRchHPHvUjNIKoG5ueamQRcZI21lwrPImN+ee9XLaGTByx+matEsteWm7ORj2NW4okVB8uc9ycVTjQg4PpU8bELtxjFMR//Z&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2100</styleUrl>
+            <Point id="2098">
+                <coordinates>77.07126,28.17945,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2104">
+            <name>18+862</name>
+            <description>Chainage: 18+862 to 18+872&lt;br/&gt;&lt;br/&gt;Latitude: 28.17953&lt;br/&gt;&lt;br/&gt;Longitude: 77.0713&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.394008%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,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&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2105</styleUrl>
+            <Point id="2103">
+                <coordinates>77.0713,28.17953,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2109">
+            <name>18+872</name>
+            <description>Chainage: 18+872 to 18+882&lt;br/&gt;&lt;br/&gt;Latitude: 28.17962&lt;br/&gt;&lt;br/&gt;Longitude: 77.07134&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.082996%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAWAGADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDiVI69TR5o7/ypEiYLwc80ksfycHmpPNHLLn+EmnhwpwQPyqBLd2Od1Pe0bIIPFMCcSAsOccdxSSsA2M1B5MitjqPenOsmRxTEy1kFV+nrSAqBn+tRorY549Ka28HnHX0oES4Rm5oJUVXdyhBA5PtRLPtHINBViYP82KJNuenaqX2j5gAMUrTnr83SgDQVQBgU11BGABzRRSBAkZ9qlC8ZPaiiqQMjbl85OB2p/GRkUUUMQ4gelRsBtPFFFICJgGAHp7VBLk8Z/SiiqQC+WoI45xkUhjG2iipZR//Z&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2110</styleUrl>
+            <Point id="2108">
+                <coordinates>77.07134,28.17962,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2114">
+            <name>18+882</name>
+            <description>Chainage: 18+882 to 18+892&lt;br/&gt;&lt;br/&gt;Latitude: 28.1797&lt;br/&gt;&lt;br/&gt;Longitude: 77.07137&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.162032%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAaAMQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDlorSEOrgk46DNbcUgRAAPyrNMIQg7xkdRmh7qXlVOB9Kagebe5pCWKR/m7etNeeKA7hIrEHpWLci8kT91PGrE8ZFR21reht092rfRafKFzen1mYLhTx/dFZlxevcElv51Xmhn2tscFscVWSK9xyUz3GadhEhJ3Nz3NOUKRuJquYrjkHb19aaxusYAGaEhsmaJXYYI4HrULRJnAwagVL1Tlo9w7YNRs94ucRGncVi2Y1U7s449arylecepwaiE9wRtaNjUbOwHMLEeoFADzIuACQeO1QSyEnA5pCx6C3kPvRuCj5onU0ihFDb8849KkG4HkY56U77Si4yr47cUpuoTyVYY4+7S3FsOSJcbzjBp5MSkknIpBfRYAwyqOpKUqyWzn5D8xOckUAP3O6/uxximRAcgnknvU4uLdUI3qDiq5kTPamAsnQj19Kiwem7v61YDxkAHH/fVDCLnP3fegCsVbr29aPNK8Hin+Yu7YACPpUcseDnqMUAIHY85oqYMuB93p3oo1CxvySMTz1703rSt1P1pv8R+lUIVmO3ANPV1CjioJOgoycCgRI0mSc00TZ/iqMdaiHf6mhalDjIwcjAPNN3kMeM0h60i/eouAv2jjP6Go3b5C2OtNk+831qUgeSP92pBkBJ2rhsU4eaRkdPWhQNw471Zj/1f40xEUZK5UjJzzUyqW4x+dSkDB4FKn+rFSxoqSpIOiqPcCogkpUk4NX5OlNhA2t9aYFdYA0Y3DnHNKqAfLhfbIqcdagP+spAh3kxZy4jP4U1hBniJD9QKVqp5OTTjqBaV7dTykdP32sg2iNM/Ss89TUkPX8abQMvR2tqxyYQfoakaC2K4EO2ooicfhU460hkIsYcf6smipGJz1oouFz//2Q==&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2115</styleUrl>
+            <Point id="2113">
+                <coordinates>77.07137,28.1797,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2119">
+            <name>18+892</name>
+            <description>Chainage: 18+892 to 18+902&lt;br/&gt;&lt;br/&gt;Latitude: 28.17978&lt;br/&gt;&lt;br/&gt;Longitude: 77.07141&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.488194%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,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&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAYAMwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDCW6iB2HdxweKesy44PGeDmpIkyTwOtWYrdAfnAIPbFPQ8l2IkmVgVDdKcAGHWpzbwYyqDJPNV7i2BPCnHsaNBMRlwcdRjrTVjdm4Xr3JqC8t2MIEThWAqraWtwSDLMePQ0gNNkC4OxQe/Peo3BPOec1F5JGBuJ47mpWgYhPn7etMBmFJ+9z6YprKAATnn2qV4GOdr4x7daYI7gN8xXA6ZFKw7jHAUZHNIASM8c+9O2S5JIzzzg05lfrtUfWgrUi8vPNHkkjINS5I4KUxpCD9KAsM8tu1L5Z253fpU6TK0BJXkGozdIf8Alkw+ooJG7Sq7gec8inp5ZHIJP1o8xCgZlPPtS+bbLyW2ZOMkU7jsIPlJwOKkdiV4Xt60iywM21H3H6U4Kh+9mqEJFCqkOG+YjOBVpTxyagzsOQPlHA4p6S5HPGDjBoSAmAGM/pSmIE9PyppkAXHXj1qNrmNEG5wM+pxj86YEpQ5604xDjIU8dxT0lXYpPcdjmpPw/WkBFHEiD7ufxp5iBUHjHWiioELHFkdc02ZBuCbaKKBDTaqVOOD64qHyCCf50UU0CYzyyWyycduaQDOGC9KKKoolyduSDn0pSpwVIzRRSECKAoprxqxyRyKKKkq40qM/d/WoZYVz9aKKAuPitUQhh3HPFWUhiUDkfiKKKBA0aM2Aq8+1RSQFGyQD9RRRQFxmyINkxgk/hTiqscbeO1FFFwQoiQnleacLK3k6p+OTRRTuTcetrCq+Wq4UGq19otpexGOXzAuf4WxRRVFFqys1tbYQxsWA6FuTipSFzyOfrRRQM//Z&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2120</styleUrl>
+            <Point id="2118">
+                <coordinates>77.07141,28.17978,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2124">
+            <name>18+902</name>
+            <description>Chainage: 18+902 to 18+912&lt;br/&gt;&lt;br/&gt;Latitude: 28.17987&lt;br/&gt;&lt;br/&gt;Longitude: 77.07145&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.242397%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,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&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2125</styleUrl>
+            <Point id="2123">
+                <coordinates>77.07145,28.17987,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2129">
+            <name>18+912</name>
+            <description>Chainage: 18+912 to 18+922&lt;br/&gt;&lt;br/&gt;Latitude: 28.17995&lt;br/&gt;&lt;br/&gt;Longitude: 77.07149&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.220466%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAaAOADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDktJkU23XHPSp5ot4yAPpWNYiTyV2sR1p899Pbrj7x7cU0zy2aTERrhlzz0p0bBu2K506nPvzKv41PBqwA59aoLG28iRv1qyHDIrCuduNXiYAlc1as9WQw8RZ+tO4WNlmyakimZRgEH61iNqz5IFuSfWmrqZzho6YJWOmiYMufm5HrTpPugjpisOLXoFfywuGHGMinrrMRHKyZHYdKVybmxGMjkd6r3U2H2qnGOwqsms2u3q+foKDqdmFLE9+9FwJllZlOEx+FQXMjYXGPeom1ez2nBArLudes9xUt9KCrFm+mwuPlPNZFxMRx/KorrWLUNj5j71Sm1O1dCQxH1qWUlYnbUI4gVkLBs5GDTk1CCbJRj06Gsz7XYsSXO4+9Ecth5hZMLimxs1N+Rz+FLbsduCAKpNqFqE25OfWnf2paoAAO3pSEacYXbkgdfSrEeDxisWLVoC3XC+4qR9YgQ/Kd9AGnKMEgYqnK/wA/J7VWuNVtnAwCD3xUJ1CDPO7p2/8A10hl0SccYNLvJqit/bdSWH4f/XoOoWwbhj+VO4y+GIGO9TQSEcZ/DNZYv7diTvbrSi/hB3LuIHU0XBnXWNq0cSqfm5zzTrix8/vt/GrKE5Xn+GkcnPWlyozZhXujyu2Qx46At2qo+jTqwOCV74NdG5O08moyzbPvHr61VibmFHpLluQw/GtOLSGiRTnHt/8Aqq9b/wCsH1q/ITsHPekyyjY2sYOJEBqVrO2Z8CBPwqTJ39aIyd/U0zPmKz6HayyeYIxu9ad/Z8EQ5X8xV/JwajlJ9aCkV0s4I0JEac88qKY8Fu6gNCg+gFWWJx+FVpidw5oGyjNptuzfxdemRiqd9o9kq5A+atck4696qXv3KQou7OYuLGJcg881nyWkQYjdj2rZu+9ZV3/rfwpM0RXNomflPFOSyVjgtU0P3D9akUDfQnqMRdMiI5bmmzaZGBw9W4yfWnS9qpiZRisEU84I+lWfsER5wB9BViMDaOKsKBjpRYdjP+wRjoAfqKY9im7oBx2FaRA9KQgegpMDM+wr24pBp6M/OeBWmQPQUAAMcccVA0Z66bGXyd3PSpTpsY+QZx3qzCzfa4lycbhxmr938s5A4+lUgZ//2Q==&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2130</styleUrl>
+            <Point id="2128">
+                <coordinates>77.07149,28.17995,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2134">
+            <name>18+922</name>
+            <description>Chainage: 18+922 to 18+932&lt;br/&gt;&lt;br/&gt;Latitude: 28.18003&lt;br/&gt;&lt;br/&gt;Longitude: 77.07153&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.192974%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAYANADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDnUI2E7j17mlE5R8Bzjtg1pRWCvGCrDBINJc2iRwPgIWA4JNB5hRW5mLHMmU9akW8deDyKqRRsVJYYOelOZh0wxoTEXBe/Nygx7Gk/tCESBTkc857VRGACcce9RzIjDPbOc07i1NiK5gfkPTmnhb5WPFYkAXadpwfY0rN1XPX3p2BM6CIw7RtfrzjFLjJO3NYGZMcSdO2akS5mDqqvz05osDNlsLlm6dyaniVHUFRmsWaa6kh2senoKdBd3S/KG+VR3FDEbJVkfIyKhkQsRn7uapLeXI5baVqQ3crJjbjPTNGgJEkqHB2jPriogpzkqfypwuX2YIA+tIZJWXhM/hUlXAgkYA5qIW8zMSFOB7UpnkjO7Cgj1FH2uYLlUX6VS2DqRPHMNw2t255p6I+B8jHHelN7KPmAXGOlNi1SQYDRISD1qWA2VZhyImPrgUrl0iO5Gz2zxVz+1cDf5MbZpG1KUqrm3Q8dMjFBLKkJY8j5vbFSQo6gqyHB/SmnUyJDm3T8OacdUJ6Wq4780DRNtBwoU89cnpQ6kYVRk0yLVSTtFuo9Kf8AbUJwYAaChmn6jEkAiKtuA6moXumcnP5UUVIMqtOgbGaru435Xk0UUAJNI4hyRjFRrLmIAnAPvRRVANSXaSeSPrT5GBXIyPqKKKZL3FtyzjAx9acXCvzyV60UU0USJeK6EKeT70xZpPNwoB9iaKKYrFoTvtIbGPQUO5yOtFFS0S0J5+RtOTxUsV4yLjA46UUUrAIbsyfeQc9RViOeNY8MvbFFFNFkcsyfe2LyPSqzPFncdo/Ciik0BNBcWx+XcNw9qtxJbyKFLrjPrRRQQRT2kQbIkAB9qqGFQch85oooKQ1vlYbTilZ3ypB5oooGf//Z&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2135</styleUrl>
+            <Point id="2133">
+                <coordinates>77.07153,28.18003,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2139">
+            <name>18+932</name>
+            <description>Chainage: 18+932 to 18+942&lt;br/&gt;&lt;br/&gt;Latitude: 28.18012&lt;br/&gt;&lt;br/&gt;Longitude: 77.07156&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.175297%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,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&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2140</styleUrl>
+            <Point id="2138">
+                <coordinates>77.07156,28.18012,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2144">
+            <name>18+942</name>
+            <description>Chainage: 18+942 to 18+952&lt;br/&gt;&lt;br/&gt;Latitude: 28.1802&lt;br/&gt;&lt;br/&gt;Longitude: 77.0716&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.141882%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAeAMIDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDBhc4B9RUvnlRgr3pIcHnipQoZsYoPMI0vNr42n8amacMpJ605rUbsipRaqVPGaAKkVwpkx933qZ7nIxuB96R7ZMbSn196zjbGOU/M230B6UAW2fIzimKylzmmpE2MAsaYyShzigCTOTgHj0oZcHrTFjkxnFKVfHT8aBXFzjjikfkUeW+MkGjZkYNDGgQDHWplcBRVc4U454oLY9fypMZcjYZ6ihjk1VWQjqDU8ciHA5NQBLGM4FTqcLgVWBweDUm/jg0wuS5NIyg8mmhsjgnNSRjcBmgCJYxnpUgAx0p2AOhpflziiwkRng4HSlBO3FP2KQfWmlQDimkNiUVMI09KKBGWkeAM1ajIz2qEEd15+tKTk5xVAXOpqZD8oBNU0cqKmDnAoAldFOT3qpLECxYDrUxdj3qORyBx/KgCJRgYIpmArfd/WpEYluT3qQgHnFAmriRhWTpj61E4UOQVz+NTDpxSHGaBcoKqsg4xSeUB6U9RxQx2gEUDSsQmNCxGBSNGgONtTH724HFLjjmgdyoyqDjYD9RTRGrPxx7Vc8tW5xSiJBztGaLARLCpb/69RmHaeGPHbNWwg6gUBRnpUtAQJG23OaXypMcMBV1FULwKUj5sDp1pBczlgnP/AC1/DFOWGcSEl9wHtWnGmV38ZodeeTTEmUmDgZAGT6mot0+/kKwrRCDGOKZsUPnaM+tA2yt5sv8AzzNFWs0UAf/Z&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2145</styleUrl>
+            <Point id="2143">
+                <coordinates>77.0716,28.1802,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2149">
+            <name>18+952</name>
+            <description>Chainage: 18+952 to 18+962&lt;br/&gt;&lt;br/&gt;Latitude: 28.18028&lt;br/&gt;&lt;br/&gt;Longitude: 77.07163&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.033939%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAQADIDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDn4dVjVxEA27AzxxStfI+QeOfSi0REcMyKCeMkVNc2ivucKmCc8d6ix5wyC/hdihdcgdqJLhG5Q1WNlGoLou31qKaIgDaccdjTQiy2GjY7s8VUKjafmqBYZwcBjtJ55pWik6Bj9TVBYdsH94fnRUXky/3xRT0Cx//Z&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2150</styleUrl>
+            <Point id="2148">
+                <coordinates>77.07163,28.18028,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2154">
+            <name>18+962</name>
+            <description>Chainage: 18+962 to 18+972&lt;br/&gt;&lt;br/&gt;Latitude: 28.18037&lt;br/&gt;&lt;br/&gt;Longitude: 77.07167&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.123316%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAWAJYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDl0ukHBOBVxZ0PKsuKmSzgeIDYM49KgezRN20YGeKDzB5uAByy1GH3yjkEelQyQLu5BziofLVRjad3rQBp5QDBOD6UKVHIOapW0LSJuJbr61K9uy4w7D05oAtiYgcH6c1ZQO68sfxzWQbS7Odtzgdt3arNtFfREb7obR68UAjThDh9pHy461K6Z+7z+NZJfUFY5ZWUHjipYJLpCN5GDzxUjLNzujXcV6A9KjspfNLNHPg/3CelJJLetkpEroexqlcpPDtlitykhPOKANeaWVo/KJBbuayriBllxuJ9zTHvLoPuaJx689adHdwSN+9ikyPSi4FizgAG4t9eakkjB+UdPWq8dzGr7UEmPQimf2jGku1kdj+gqhEqx7chiT7GgwtIpwwxSi5tnOQ+w9801poPOVVlHHbpVgR+RjhiPxNFWHMGeZAPxyaKAGWshZQfzp1xnFFFQJFd8ZyajKDdn+RoooGTRARrjrz35oZtz4IooqnsBKhAAB5p5w4PpjoRRRUgRm52HYRkfSrUMiMihlLY9aKKAuTxgomAeDUchyASSc0UUCYmEfgg8DNV3wkwRVXp170UVLKRJJGmclRUXko427RiiihAyKWxiALADNM+ygqAdu3HHGaKKonqNFrGBgAUUUUXGf/Z&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2155</styleUrl>
+            <Point id="2153">
+                <coordinates>77.07167,28.18037,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2159">
+            <name>18+972</name>
+            <description>Chainage: 18+972 to 18+982&lt;br/&gt;&lt;br/&gt;Latitude: 28.18046&lt;br/&gt;&lt;br/&gt;Longitude: 77.0717&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.178251%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAYANQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDii02MlOnf0pyT7B81XAmVx60r24K8gcClc80r+cH4BP41JHtUdT7ZqTyB1GBx6U2SMGNh7U9xCSS4/wCWi/TNCTRuQdwqr9mTIbJ4NTxQYPHSpYEzToDgsB9TSxzIW2+Yv51WmsxI5IbHIyagSw2t/rW607AW513sMMOB60kfy8AnPqKgFocHEj+9PFqwXiRs44NS0O5aSTDFW596c6hhwRVSG2lEmWkB9eankicAYbr7UJDJI129cH6U9kYoxA4qsI50Gd60hnuFBBcYx0oAtQDgZOADyDUuYx3U+lZbzzFj8jYOMU/zXKY2E0WEayiPIOBnrSgfPuA/KsVbmRTtweauW07FdoyPWiWwy67DPA6daSNhhRzUMknkpkgsT6VCt8jHAVgQPSkBo7xikzmqSXqHO706GlW6Vjwy/hTuhF1fvCnSIRVWCYMxG7pU5lLKcmncCKXpTto60g2nIJBp6AHIJApANziipNq0UWAzk4XFSA8YoopggJ4xjiomAIK4PNFFXETIxGF4IqVcDtiiik0AjMBUQ4bJBoooAemMEe/OafjooIP40UVLAkCBeSfpzSST4G3JoopoYwHKjd6VFMAMEDmiipAlWVWXaYwTjrT4496n5duO4FFFADBCC5zkY9KlRFQ57+tFFG4yQfM2cD6GmPDDvysSgjqQKKKmwiCWFTuwOoPWoRAihdisD60UUJDRaihPl7d3JFRmCRV++1FFNCGlJxja1KPtCkbmyc9qKKY0WUMm2iiigVj/2Q==&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2160</styleUrl>
+            <Point id="2158">
+                <coordinates>77.0717,28.18046,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2164">
+            <name>19+342</name>
+            <description>Chainage: 19+342 to 19+352&lt;br/&gt;&lt;br/&gt;Latitude: 28.18371&lt;br/&gt;&lt;br/&gt;Longitude: 77.07249&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.12553%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAaAG4DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCjLpEqxhTGcjOcCs24sJFX5YzjPPFbw187mynOeDis/VNaEg8sYHrXPc8456eIRMcde9VZIWUbuefQVsJLCQWdMg+lWYpdNPDoB65q1JDOafO/7pphSbOMsc+grqhNo8K7wgOPugnNRJfWskmViWk5Bc5eWCYHG1j+FJFC+dxjYfUV1srwSKT5SkYqBmt8DIVQKfMJHNSRMSSM5x0xSRl4l3YNddZQWLNuIU8cZNXBZ2MwyyJge4pc2o9jgTFNM+7BJ+lJ9lkVwuxh68V3rwWsJ+ULgUyaO0iQsyru7YNO9xHGR2MrDcVK/SrC6ftHzEitw3VsOAhz2xUJvEY8pkdqE7BYdNeW5iOBg/8A16peYjk7VIzznPWkkAyvApIifm5qWhksHls2M5PpVtLS2Y8S4Hfms/tTSTxzQthot3VrCuTvOO3zfrTbeKLzAEYt9TUA5C55qxDxKccfSjqJ7lyK32jezhQO1PeBSmQ3Qc89ajuGb7K3zH86y3ZvLPzH8/ehgkXvM8ouA/yjpUTztklXIXviooyfWnzf6iT6UyuhEbtkcMJW/Go5bq4nbYXyp96ib/Vr9KWAnzDzQIe4ygTPOec0INoxTpPuj609/uigGf/Z&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2165</styleUrl>
+            <Point id="2163">
+                <coordinates>77.07249,28.18371,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2169">
+            <name>20+022</name>
+            <description>Chainage: 20+022 to 20+032&lt;br/&gt;&lt;br/&gt;Latitude: 28.18973&lt;br/&gt;&lt;br/&gt;Longitude: 77.07265&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.059161%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAYAHADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDgPJxHg8EVGYXjIcnipTc7uwP1pkk79eMDoKlbHnDyDt+7kGkeFnDKAcVB9tcHBUZ9cU37bNuyDg/ShjsWhbFUyB+lNWJiwVh+IofUrlxsYR9OuKaJ5GG0gY74pJAaWm2UEpKyzxp6E1budDV4yILq2duwJxWEpYAfNzSO0gbcHb86dhXLs+l3FvjzTHgdgwNVmtXLbQ689BVZ5bleRIx+pqNLi6wxYbjxjmkxl64spo1yZV4HY1RMLBSxYZzzTGlnY5ZsE0xjOT8rLn6U0NjipzgtxSqgDZBNV5Unzk4+gp/mOB9360kmKxcBJOKeATxxRRTAT7OC24mk8kBuvFFFCJF2Ds1CHnGc0UUAK2SQQaOe5oooAbISBikR8daKKTKQSBNgPFROUU5HAoopJg2RSSgj5SPyqEsxYEdfaiimNLQ//9k=&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2170</styleUrl>
+            <Point id="2168">
+                <coordinates>77.07265,28.18973,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2174">
+            <name>20+732</name>
+            <description>Chainage: 20+732 to 20+742&lt;br/&gt;&lt;br/&gt;Latitude: 28.19516&lt;br/&gt;&lt;br/&gt;Longitude: 77.06882&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.130036%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAYAJYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDAstP1TP725X2AzT5rW7hzIblSw6h6ke8lBwpx9KjaYyHD9+tYM84IdQv4eF8rB7gGorrUZxy+4+uDipdsQHBwaHaIHqM+9ArGXJqMu/KwNz3zVgXCugLkr+FTSTxruAVcdsVTuJFJyQuKFcCVbpRIoBYrnnmlnuiflGMdsVTjVe+PwNKyg9DiizAl3OxyOKYHdWxu/Wqk0UgfKysPbNRhZFJJOSPequM0vPZc+/vULzbeWBIPbdWezTluGxxUWWX5pW4HXJpNjLs18dp+XjPFMWYscg/Sqi3MEhxtUj0zTTPGH+Xg+lGwF0yOe360olOOBj8aprIWYAdT2plxdxwDDfpTUhF5ZGG455PSnxXTR4IJ465NU7eUSxhs05wQ45zTuBqRaqwHzE47UVlUUx2N0ysAckZ7U17kKuWNFFZ3JK8t4x5Q1CblzyaKKFqAzznY8mgSDoxooqpIaCaXAG01EZiGBJoopIYPPk56/jUZnPJNFFNANE2QBk0Hy5AVY5B60UUgIfs0Qb5Og7Ypps8tkPye1FFDGBs3X5g3PtVaWylc5O4n1ooppDsRILiFwo3flV+2Mz5DcsPaiik9wLiRnbyKKKKq5J//2Q==&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2175</styleUrl>
+            <Point id="2173">
+                <coordinates>77.06882,28.19516,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2179">
+            <name>20+852</name>
+            <description>Chainage: 20+852 to 20+862&lt;br/&gt;&lt;br/&gt;Latitude: 28.19608&lt;br/&gt;&lt;br/&gt;Longitude: 77.06818&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.03932%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAASAFYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDCFyApBGT24qaK5iO3nBzSizjPO4g1LFp8bDAbn3FQeaOgljPG8cnua17dIjHkTIp+tZL6bsG7cT9BTo7GViNpJX04zUtBY6KC03pu85VXHrwaQ6cW/jXr/eqiLS/aERW6/eHOWzis7+ztYG7ezHHoakd9DeubR0xjBwOxqjOjpwwKg96zS+r2/GJCR2IyKrS3mpysC6FWHSgQX0R3ZBPPFULjfHHwS3sKivNSu4W/eqzc9MGoU1V2BH2fbkdea0iTJDROQx3IaKbJcu5yqgd+KKsLHRR9KlgZvMX5j37+1FFQUXgTjGTirdv0oooBmrp33n+lLe8FscUUVPUOhTuf+PUnvmsG9Awpx2ooqeoIzwiGflFPI6is7VAPtcfA60UVrHYGVZQN/QUUUVQj/9k=&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2180</styleUrl>
+            <Point id="2178">
+                <coordinates>77.06818,28.19608,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2184">
+            <name>21+002</name>
+            <description>Chainage: 21+002 to 21+012&lt;br/&gt;&lt;br/&gt;Latitude: 28.19727&lt;br/&gt;&lt;br/&gt;Longitude: 77.06746&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.182042%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAYAJADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDlc9COtWre6Kn5wv41n76YdxPWosebY2heRHkqv5U5J4Gb5kXPrWIWb1pVlKnhv0qbDubn2my7xr9aYq6ZLyTjj1rDMpI5PFQiU0+Vhc6JrbT9mI5Afqwqq1nGCSkit3xnrWS0xK4GKUXLodwGOOKNRF1tMAHIH51HHYyDp834VWW7kz95vzqRL6YHAbrRqGg59NnAztqP7FKD8yke1TLqtwBjr9an/tR1XdJGrUrMrQzHhZWIIPHfFRBCSRtP5VuRX9nJ/rLc/hTi1i3UY/Ci7QHPtAWOM04QEnniugEGnuBtI/A01rO23FRIv0zSuxaGGEycDtTuM45/KtSWx2DINVnQp1H6Vdw0I2bHNM872/WiiqsS3YQye1NLtgcUUU7ANfJGc4pi8k80UUmA8A0yQ84oopDYwEg5pQxBzRRVWEGT6VIxJXGaKKkLir93IqSI46frRRSsUOViO5/CpUcqcliaKKdhC/apCOSfpmo5LgtkEUUUmho//9k=&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2185</styleUrl>
+            <Point id="2183">
+                <coordinates>77.06746,28.19727,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2189">
+            <name>21+342</name>
+            <description>Chainage: 21+342 to 21+352&lt;br/&gt;&lt;br/&gt;Latitude: 28.20021&lt;br/&gt;&lt;br/&gt;Longitude: 77.06649&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.055366%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAWAEgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDgZJY0wrFSMcYNNW4j3ZdwtZrI2etPa0WRQc4GeuazaPNNWKSJ48LIpOOOaiusRIcsuazl0rOSl6v4A1WuLW6DENKzY6c0rFGo0gkxkgH60+GZkfC9PrWCy3aHI3U1bu8i5IbmkNHXLcwhCG4I64qS2u5kkWa23pLGcoynkVwz396j5UNg1cs9XvoiN6sCDUsZ7j4P+KLwtBp/iJWkTolz1x/vA0V5XZarHdHa8RUkcn/9dFTyjuVSAe1NkYgADpRRXQZCI5APOB7VKrZUkkk4HNFFFh3JYlRxytMnhiERIRcfSiioYEUFvG3zFRmnvbxbMbR9aKKRTEhCxEHaG4zyKKKKkR//2Q==&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2190</styleUrl>
+            <Point id="2188">
+                <coordinates>77.06649,28.20021,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2194">
+            <name>21+452</name>
+            <description>Chainage: 21+452 to 21+462&lt;br/&gt;&lt;br/&gt;Latitude: 28.20117&lt;br/&gt;&lt;br/&gt;Longitude: 77.06619&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.295017%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,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&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2195</styleUrl>
+            <Point id="2193">
+                <coordinates>77.06619,28.20117,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2199">
+            <name>22+502</name>
+            <description>Chainage: 22+502 to 22+512&lt;br/&gt;&lt;br/&gt;Latitude: 28.21025&lt;br/&gt;&lt;br/&gt;Longitude: 77.06315&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.107084%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAcAHADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDzxmAHWopCT0/nUEkrD6UxZvU0Hk3sWFBx/wDXpQWU9OKgWbnihrg9MUikWY2JfngYp5PvVIT59qd5oxnIoSJZZY8cU1XANQeZ+VRNN83HWkUjRaQ4zj9aRZCeMfrVEz/L1pvnnsT+FNBc0mY496aCc9Kpi54wSaPtK9mNDJZbkfapz3HFQiUg81F54fjJoLA9DSKROiKTgjtTTbrnNSR/ep5qhMgEC9+KabZc9asGkpMaIVtkz1FKYFqZBk05hgUCZTaAg57U026nqTVqT7tRNSGiMWy+lJ9lG3gd/WrEZJp9AmUvs+Of50CIDqPyqw3SmmgVyIxhRkdaArA5xTzSn7o+tA7n/9k=&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2200</styleUrl>
+            <Point id="2198">
+                <coordinates>77.06315,28.21025,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2204">
+            <name>22+812</name>
+            <description>Chainage: 22+812 to 22+822&lt;br/&gt;&lt;br/&gt;Latitude: 28.21293&lt;br/&gt;&lt;br/&gt;Longitude: 77.06223&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.099571%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAeAG4DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDze1e7tT+9mSVs4+UdKnNzPcOpd1QDjJbA/Gm4Zgdy7ePzpFijMbo4JVhzz1rNnlmw2jatLbh4EjukfGfs7h1/TvVfU7HUrRts1lNCp+6WjIzXOx2tvDlSgXb0wSM1uadrmsqv2S3vrsKRhTJJvwP+BcikG43y3EXHynuTU0SWS2hNysjvzggcVFe3e9TG7eZIPvEcc1FaXqzSpayvHBGePMkHyqPWi4WZEyAcnPPQelJkqfvZI6j2rqP7I8PywEQ+KrCSReuJEAHt6iopvCV8I0mstl1G3IdSNuO3NHMhmPJ5cUUbl2y2cANUAfaVI67uAfT3q3q2m3trKwuYCoHViMLn2pkUPkwLJKqyKRkZ7Ci4twuCHXMbEgdeaWIF4mAUHjg0qzsymEAIpPXHarEi6WiQpDcXJl53+YgVfw54pdRlOOP/AEnzGHy4xt9aGVDwgA9c1PEglkGE5J496kvbYRbfMh2se27FUhGf54aNFD85JH07VA0oVmAyD3NNEflug4J9cVpC2VoxcMqkdCOmaYjJFs1xJlRnNasdlNFEJfK2n+8TVZr6CC8yYpOeyNitdb2O7iYGJgY0zktnPNA0ZV0nHJ2lu4NQW8AUsnzOCO5rRkUS3HygKrdB6U+3tzKyxKQnP3u/SoZRjXNhbzgjGwAYbbxms3+x7u2lzp99dQZP8ExBrr49NH2lw0xKqu4jHWqt3JAEYRxFWHf8KnlGZ8k/jm0sQYfEl4UHBilYsRj69qLTx14ktVSHUdF0nVlB+Z5Iyjn8c4z+FWftMoUAEAE4+v1p0vkyqEeFX3HgsOn61XKK9iJvGWjXcplvPDepWgB5+z3AdD+G0Y/OtHRrzwbqbyS3OsPprs2I47qAgL+PT9aowWcMMsUBjBRpMED/APVWhd6XbtghI17fcBqeojSn0jTUCHS9f029YcuUuQMD6Z4qpNFPMcxW813t+XfHlh+YHP1rPu9A0uSPDW6lu7hcE/lWZJ4YsYm3Ca8iDdPKnxx+VWB//9k=&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2205</styleUrl>
+            <Point id="2203">
+                <coordinates>77.06223,28.21293,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2209">
+            <name>22+822</name>
+            <description>Chainage: 22+822 to 22+832&lt;br/&gt;&lt;br/&gt;Latitude: 28.21302&lt;br/&gt;&lt;br/&gt;Longitude: 77.0622&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.073418%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAUAE4DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDPt/GttGrRXehrBAi4DKQQAPxqIeLvAt+gS4vBZv2zGRWVJZRSgrKc46ZFZN94fsLonfEMnuVzXJY4LI7U6dompon9m+ItPZQM7fNG5v1ptl4avFmdkkgnReyPu/PFcR/wgllPBlGeNyPlIbbWQui67ok7y6NrF5DJu6q5AP681SYrHol5pl9FuMtu67T1IqtG8kW1raV45FP3h2rmrbx38QrJVjuZbPU48Y2SxDOPqMVbHxAvGIh1LwrHGr/ea3O4n3xmncLG0ZLi4Yu8plYnlnPWrdn9mHySgDnqelT6V4l8A3qRieS6sZVUbllhZQD+AIp90/h6Z3nstc04wEfcMqj+ZzRzCsR3SwpMPLw6461qW9zcrapFbpHsXsrYOfesdBJNCfszRyRg8FCCaZvukXaUKMOp9atWIKkZ3XGxuVzVnyI/K3Y5zRRWRQ1HbpmhYo3n+ZAfl70UUDRTNpbi4z5YzVrT7S3kDM0S557UUUDKnkQzSNFLEjoSRgiqt/4a0a462aoR3j+UmiimBh3fh6zsXc2dxe2/+5NisIatrFuGij1a92qxABkzRRTJP//Z&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAYAFIDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCjYeN7hHYajbbY+201Yh8ceF7ncl5N5BHGWrnpLWOaP96M+grC1fw9azuC0agdq5Dzz0qC38P6rbAWGpQfN3Djcap3HhlobhvLmjeMkEHOa8zTwg8rbrW8mtXA42NgVnonizRdQeSz1aZ2j5w7kg/gaAPWL3S7pCUWAheoYCst4QkmyQYYeo61zGlfF/xHaDytS0q3ukAwXAKn/Ct23+KHhfUSJNQ0ye2cHqFBB/WgXKWnkkH8TqO6joaWNXcq7gqCa09GvfDvia53W95FGF/gZguT9K2p/DqpaSvHMsgA+VVNVcXKY1g0RTYRlveq8zobnZs2jPUjvUs1vPAifuivGWNVZrhJMlgSwPHtTuBuJfYRR5I6elFZS6jGFA56UUXCxydnfTMzKxz6VPLPL5a7mwc85NFFBVh0WoxRRsTKAQMBc8mqtxfQXT5ICsB1IooosNGVcwQTHhYyPYU+PTLWZQjW8bD/AHRRRRYTH/2HpsKjyS0LE8mM4pSus2+1LHX76NQOB5jHHt1ooqRojvNW8ZRiPzL77SiHPPf6+tIPG2rQxlb7Rlc5+8i44ooqkFi0vxE0wKA+lPuxz8g60UUUCP/Z&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2210</styleUrl>
+            <Point id="2208">
+                <coordinates>77.0622,28.21302,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2214">
+            <name>22+832</name>
+            <description>Chainage: 22+832 to 22+842&lt;br/&gt;&lt;br/&gt;Latitude: 28.2131&lt;br/&gt;&lt;br/&gt;Longitude: 77.06216&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.037198%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAYADoDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCrdXscJxIQT2xUMF+JRlQ3BrHvtKuGkYieM7ucMxzTbK21C15EcbjuN4NcvKeUnqdC0zsQAfwqSNJHP3c+1YT6jeIQG05l9xV218QQINrhom77qaQ9zcV44YwHG1jUKyo0+STjtg1ntq9nNlmkB9M1Wa/hkkPlygY9KGBsSTDna568c0z7RJ/e/WqVkVl6SqcepqY7/RaXKMjtoTNJubkehq95CIckDJ9KKKohEMswTO1UPrkVnX7GU5MUf4oKKKEUiqdPgnGZERRjjaMZpY9AikUMGZR2waKKoZcttIFiu4SbgeuTSGTk4LfnRRQB/9k=&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2215</styleUrl>
+            <Point id="2213">
+                <coordinates>77.06216,28.2131,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2219">
+            <name>23+362</name>
+            <description>Chainage: 23+362 to 23+372&lt;br/&gt;&lt;br/&gt;Latitude: 28.21769&lt;br/&gt;&lt;br/&gt;Longitude: 77.06063&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.446059%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,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&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2220</styleUrl>
+            <Point id="2218">
+                <coordinates>77.06063,28.21769,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2224">
+            <name>23+432</name>
+            <description>Chainage: 23+432 to 23+442&lt;br/&gt;&lt;br/&gt;Latitude: 28.21831&lt;br/&gt;&lt;br/&gt;Longitude: 77.06057&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.117243%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAWAGoDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDk9sbjcSPpTwtuBlmFZTk9SaRSOuelSjy7mzi2AHz4qJmgycOKx5ZDJ8vIwaIxtHc/jS1EzWZo9uSRioH2HO0mqJZs4PSnjCnPPSmIlMLtyo49aZIkijAHSnrOFTCozU1Ls9HjFIojW0llBOCKc1q6AAip3vwqAIoHoarNfNtxnJzQAGIhuRUUwJI4pPtTljv5GaPtALDCE5NMGOix8oKsPeptqehoRuv7vtSbv9mgmw13x2qGVyOBRRQAxPvD61OKKKYCuxUEj0qEMWzk0UUAiJutKODRRSAR2zTB1oooLH4yQp5q5bpEeNnT3oooQjRtYoGYBlJzx1q8bG0/550UUmM//9k=&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2225</styleUrl>
+            <Point id="2223">
+                <coordinates>77.06057,28.21831,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2229">
+            <name>23+512</name>
+            <description>Chainage: 23+512 to 23+522&lt;br/&gt;&lt;br/&gt;Latitude: 28.219&lt;br/&gt;&lt;br/&gt;Longitude: 77.06081&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.026753%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAWAFADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDGvNXjdgfMAz6Gq39oROSfMHHfNYn2CF5ASDjv83SnG3RVIQ454+lYKNjy9TXW4jLffXn3pk91Cg/1i/nWPPGCMGRsD0NVXsmY/JIxz04qibG39ujx8rg0+G7QgEsfyrB+wXKnIJPvT0trkEZJ/OmJo3mmB+ZW49KaZDn734VkrDdBeGI9KeiXSnO7JpWFqaodsYBqRWOBk/pWYPtIUDAz7VatTKR84osBTQFeSc560Ek9/wBKKKCxhX5ie3pTkUgZ3cdqKKaAkGQoBJNKFyc5oopgPK/JnNOj6bqKKaESBufpTt/tRRSA/9k=&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2230</styleUrl>
+            <Point id="2228">
+                <coordinates>77.06081,28.219,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2234">
+            <name>26+122</name>
+            <description>Chainage: 26+122 to 26+132&lt;br/&gt;&lt;br/&gt;Latitude: 28.24087&lt;br/&gt;&lt;br/&gt;Longitude: 77.07056&lt;br/&gt;&lt;br/&gt;Defect Present: Transverse crack (0.11245%)&lt;br/&gt;&lt;br/&gt;Images:&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAUAIwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDH2oTwacI48ZZ/wqpub1p5JzkGoPJJmhRxw35Uw2Q2khgPqaiMjK3rQLh1bnvQFmONng8t+RpptMjrTZbqQng5xSJeSLxjrQAGykzQtrIOAPrT2vZlBOe3amx6jIBkjJpPYB4tWIGFGe+KRbeQfwE1YS+cjIAqYXuRkqB9BUrcCoLd842MD7VIsLrjCH3yKtPeIQDjvUiXUbdSPfNDEUzGwPK8GomRi2FBxWms8RzjaaGMTAYKjNCY9DKaMjqv6VGVOMYxWxthbuKY0EIySR7VQGQVIPI6+1Jsz0atCaKMLkEHFVtq+1DBlZCT1JqWIls5JoopjEZRnjIz6VWZjkc0UUAw7ZzUZZs/eP50UUCAsx6sfzpVJ9aKKAQ9Cc4yasRkkHJzRRUFgpO7GTipU56iiihCY9PvEUqnAOOxoopkjkYgEjGajvJXXbtYjOaKKaAriWRgcsaNzepoopgf/9k=&quot; alt=&quot;Defect Image&quot; style=&quot;max-width:300px; margin-bottom:20px;&quot;/&gt;&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#2235</styleUrl>
+            <Point id="2233">
+                <coordinates>77.07056,28.24087,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

@@ -20,6 +20,7 @@ export const AuthProvider = ({ children }) => {
                         refresh: refreshToken,
                     });
                     const { access } = response.data;
+                    console.log(access);
 
                     // Save new access token
                     localStorage.setItem("token", access);
@@ -56,8 +57,7 @@ export const AuthProvider = ({ children }) => {
 
             const { access, refresh, user, data } = response.data;
             // Store tokens in localStorage
-            localStorage.setItem("data", JSON.stringify(data));
-            console.log(JSON.parse(localStorage.getItem("data")));
+            localStorage.setItem("data", JSON.stringify(data))
             localStorage.setItem("token", access);
             localStorage.setItem("refreshToken", refresh);
 
