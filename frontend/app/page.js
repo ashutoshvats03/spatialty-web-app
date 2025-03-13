@@ -11,13 +11,13 @@ export default function Home() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-black text-white">
+    <div className=" flex flex-col items-center justify-center h-screen ">
       {user ? (
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">Welcome, {user.username}!</h1>
           <p className="text-lg">Email: {user.email}</p>
           <p className="text-lg">Role: {user.role}</p>
-          <p className="mt-4 text-teal-400">
+          <p className="mt-4 ">
             You are successfully logged in. Enjoy exploring the application!
           </p>
         </div>

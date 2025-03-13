@@ -2,61 +2,134 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { useAppSelector } from "@/app/redux/hooks";
-import { setMapSide } from "@/app/redux/slices/mapSlice"; // Ensure correct path
+// import { setMapSide } from "@/app/redux/slices/mapSlice"; // Ensure correct path
 import Component from "./components/Main";
 import { useState, useEffect } from 'react';
-import axios from 'axios';
-import {useRouter} from "next/navigation"
+import { useRouter } from "next/navigation"
 
 function Map() {
-    const router=useRouter();
+    const router = useRouter();
     const dispatch = useDispatch();
-    const mapSide = useAppSelector((state) => state.mapSide.mapSide); // Adjust selector if needed
+    // const mapSide = useAppSelector((state) => state.mapSide.mapSide); // Adjust selector if needed
     const project = useAppSelector((state) => state.project.project);
 
-
+    const [mapSide, setmapSide] = useState("LHS")
     const [message, setMessage] = useState(null);
     const [isMounted, setIsMounted] = useState(false);
+    const [LHS_chainage, setLHSChainage] = useState([]);
+    const [RHS_chainage, setRHSChainage] = useState([]);
+    const [Upperlimit_RHS, setUpperlimit_RHS] = useState(RHS_chainage[99]);
+    const [Lowerlimit_RHS, setLowerlimit_RHS] = useState(RHS_chainage[0]);
+    const [Upperlimit_LHS, setUpperlimit_LHS] = useState(LHS_chainage[99]);
+    const [Lowerlimit_LHS, setLowerlimit_LHS] = useState(LHS_chainage[0]);
+
+
     useEffect(() => {
         if (localStorage.getItem("data") !== null) {
-            const a = JSON.parse(localStorage.getItem("data")).Pavement_Distress;
-            setMessage(a);
+            const data = JSON.parse(localStorage.getItem("data"));
+            setMessage(data.Pavement_Distress);
+            setLHSChainage(data.LHS_chainage || []);
+            setRHSChainage(data.RHS_chainage || []);
             setIsMounted(true);
         }
-        else{
+        else {
             router.push("/")
         }
-        
+
     }, []);
+
+    useEffect(() => {
+        if (LHS_chainage.length > 0) {
+            setLowerlimit_LHS(LHS_chainage[0]);
+            setUpperlimit_LHS(LHS_chainage[LHS_chainage.length - 1]);
+        }
+    }, [LHS_chainage]);
+
+    useEffect(() => {
+        if (RHS_chainage.length > 0) {
+            setLowerlimit_RHS(RHS_chainage[0]);
+            setUpperlimit_RHS(RHS_chainage[RHS_chainage.length - 1]);
+        }
+    }, [RHS_chainage]);  // Runs when RHS_chainage updates
+
+
     if (!isMounted) {
         return <div>Loading pavement distreess</div>;
     }
-    const array = message;
+
 
     const handleSliderChange = (e) => {
-        dispatch(setMapSide(e.target.value === "0" ? "LHS" : "RHS"));
+        if (e.target.checked) {
+            // dispatch(setMapSide(e.target.value));
+            setmapSide(e.target.value);
+        }
+        else {
+            // dispatch(setMapSide("LHS"));
+            setmapSide("LHS");
+        }
     };
+    const handleLowerlimitLHS = (e) => {
+        setLowerlimit_LHS(e.target.value);
+    }
+    const handleUpperLimitLHS = (e) => {
+        setUpperlimit_LHS(e.target.value);
+    }
+    const handleLowerLimitRHS = (e) => {
+        setLowerlimit_RHS(e.target.value);
+    }
+    const handleUpperLimitRHS = (e) => {
+        setUpperlimit_RHS(e.target.value);
+    }
 
-    
-   return (
-        <div className="p-10 mx-16 bg-slate-700 border-white border-2 border-r-4 border-b-4 rounded-sm">
+    return (
+        <div className="p-10 mx-16 bg-slate-300  border-black  border-4 border-r-4 border-b-4 rounded-sm">
             <div className="text-center font-bold text-3xl">
-                Road Defects/Pavement Distress
+                Pavement Distress
             </div>
-            <div>
+            <div className="text-2xl font-bold flex gap-2">
+                <input type="checkbox" name="mapSide" value="LHS" checked={mapSide === "LHS"} onChange={handleSliderChange} className="" />
                 LHS
-                <input type="range" min="0" max="1" step="1" value={mapSide === "LHS" ? "0" : "1"} onChange={handleSliderChange} className="w-[34px] bg-red-800 rounded-lg" />
+                <input type="checkbox" name="mapSide" value="RHS" checked={mapSide === "RHS"} onChange={handleSliderChange} className="" />
                 RHS
             </div>
+            <div className="flex gap-2">
+                <select
+                    className="rounded-lg px-3 py-1"
+                    onChange={mapSide === "LHS" ? handleLowerlimitLHS : handleLowerLimitRHS}
+                >
+                    {mapSide === "LHS" ? LHS_chainage.map((item, index) => (
+                        <option key={index}>{item}</option>
+                    )) : RHS_chainage.map((item, index) => (
+                        <option key={index}>{item}</option>
+                    ))}
+                </select>
+                <select
+                    className="rounded-lg px-3 py-1"
+                    onChange={mapSide === "LHS" ? handleUpperLimitLHS : handleUpperLimitRHS}
+                >
+                    {mapSide === "LHS" ? LHS_chainage.map((item, index) => (
+                        <option key={index}>{item}</option>
+                    )).reverse() : RHS_chainage.map((item, index) => (
+                        <option key={index}>{item}</option>
+                    )).reverse()}
+                </select>
+            </div>
 
-            {array && (
+            {message && (
                 <>
-                    <div className="  bg-slate-800 ">
-                        {array[project] && Object.keys(array[project][mapSide]).length > 0 ? (
-                            Object.keys(array[project][mapSide]).map((index, key) => (
+                    <div className="   ">
+                        {message[project] && Object.keys(message[project][mapSide]).length > 0 ? (
+                            Object.keys(message[project][mapSide]).map((index, key) => (
                                 <div key={key} className="w-100vw h-fit flex ">
-                                    <Component  given={array["one"][mapSide][index]} mapSide={mapSide} />
-                                    
+                                    <Component
+                                        given={message["one"][mapSide][index]}
+                                        mapSide={mapSide}
+                                        Lowerlimit_LHS={Lowerlimit_LHS}
+                                        Upperlimit_LHS={Upperlimit_LHS}
+                                        Lowerlimit_RHS={Lowerlimit_RHS}
+                                        Upperlimit_RHS={Upperlimit_RHS}
+                                    />
+
                                 </div>
                             ))
                         ) : (
@@ -71,61 +144,4 @@ function Map() {
 
 }
 export default Map;
-// "use client";
-// import React from "react";
-// import { useDispatch } from "react-redux";
-// import { useAppSelector } from "@/app/redux/hooks";
-// import { setMapSide } from "@/app/redux/slices/mapSlice"; // Ensure correct path
-// import Component from "./components/Main";
-// import { useState, useEffect } from 'react';
-// import axios from 'axios';
 
-// function Map() {
-//     const [array, setArray] = useState(null);
-//     if(localStorage.getItem("data")!==null){
-//         setArray(JSON.parse(localStorage.getItem("data")).Pavement_Distress);
-//     }
-//     else{
-//         return <div>Loading pavement distreess</div>
-//     }
-
-//     const [message, setMessage] = useState(null);    
-//     const dispatch = useDispatch();
-//     const mapSide = useAppSelector((state) => state.mapSide.mapSide); // Adjust selector if needed
-//     const project = useAppSelector((state) => state.project.project);
-//     const handleSliderChange = (e) => {
-//         dispatch(setMapSide(e.target.value === "0" ? "LHS" : "RHS"));
-//     };
-
-//     return (
-//         <div className="p-10 mx-16 bg-slate-700 border-white border-2 border-r-4 border-b-4 rounded-sm">
-//             <div className="text-center font-bold text-3xl">
-//                 Road Defects/Pavement Distress
-//             </div>
-//             <div>
-//                 LHS
-//                 <input type="range" min="0" max="1" step="1" value={mapSide === "LHS" ? "0" : "1"} onChange={handleSliderChange} className="w-[34px] bg-red-800 rounded-lg" />
-//                 RHS
-//             </div>
-
-//             {array && (
-//                 <>
-//                     <div className=" mt-5 grid grid-cols-2 bg-slate-800 p-10 gap-16">
-//                         {array[project] && Object.keys(array[project][mapSide]).length > 0 ? (
-//                             Object.keys(array[project][mapSide]).map((index, key) => (
-//                                 <div key={key} className="w-[450px] ">
-//                                     <Component given={array["one"][mapSide][index]} mapSide={mapSide} />
-//                                 </div>
-//                             ))
-//                         ) : (
-//                             <div>No data available</div>
-//                         )}
-
-//                     </div>
-//                 </>
-//             )}
-//         </div>
-//     );
-
-// }
-// export default Map;

@@ -1,11 +1,6 @@
 import { useState, useEffect, React } from 'react';
-import Image from 'next/image';
-import Chart from './components/Chart';
-import Main from './components/Main';
 
-
-
-const YourComponent = ({ piedata, vehicleData, carousel }) => {
+const YourComponent = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleExpand = () => {
@@ -14,17 +9,8 @@ const YourComponent = ({ piedata, vehicleData, carousel }) => {
 
   return (
     <div className="w-full pb-10 mt-10">
-      {/* Parent container */}
-      <div className="components bg-slate-800 flex gap-5 pr-10 py-20">
-        <div className="flex-1">
-          <Chart piedata={piedata} />
-        </div>
-        <div className="flex-1">
-          <Main vehicleData={vehicleData} />
-        </div>
-      </div>
       <div className={`mt-5 ${isExpanded ? "hidden" : "block"}`}>
-        <button onClick={toggleExpand} className={`bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 `}>
+        <button onClick={toggleExpand} className={`bg-red-600 font-bold text-white px-4 py-2 rounded hover:bg-red-700 `}>
           Show More
         </button>
       </div>
@@ -37,7 +23,7 @@ const YourComponent = ({ piedata, vehicleData, carousel }) => {
           adipisci! Distinctio enim nihil eius eveniet!
         </div>
         <div className={`mt-5 ${isExpanded ? "block" : "hidden"}`}>
-          <button onClick={toggleExpand} className={`bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 `}>
+          <button onClick={toggleExpand} className={`bg-red-600 font-bold text-white px-4 py-2 rounded hover:bg-red-700 `}>
             Show Less
           </button>
         </div>

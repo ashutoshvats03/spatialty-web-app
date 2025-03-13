@@ -20,7 +20,6 @@ export const AuthProvider = ({ children }) => {
                         refresh: refreshToken,
                     });
                     const { access } = response.data;
-                    console.log(access);
 
                     // Save new access token
                     localStorage.setItem("token", access);

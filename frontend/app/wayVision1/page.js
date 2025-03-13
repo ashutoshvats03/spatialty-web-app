@@ -84,27 +84,34 @@ function Page() {
     return (
         <PrivateRoute>
             <div>
-                {/* {loading ? (
-                <div className="transition-opacity duration-500 flex items-center justify-center h-screen bg-black">
-                    <div className="animate-spin text-3xl font-extrabold">
-                        Loading...
-                    </div>
-                </div>
-            ) : error ? (
-                <div className="text-3xl font-extrabold text-center my-20">
-                    {error}
-                </div>
-            ) : ( */}
                 <div className="transition-opacity duration-500 flex">
                     {/* Left Navigation */}
-                    <div className={`mt-10 ml-6 mr-20 max-h-[85vh] w-[10vw] ${displayContent ? "hidden" : "block"}`}>
-                        <Menubar
-                            menubar={menubar}
-                            activeProject={activeProject}
-                            handleScroll={handleScroll}
-                        />
+                    <div className={`relative mt-10 ml-6 mr-20 max-h-[85vh] w-[10vw] ${displayContent ? "hidden" : "block"}`} >
+                        <div >
+                            <Menubar
+                                menubar={menubar}
+                                activeProject={activeProject}
+                                handleScroll={handleScroll}
+                            />
+                        </div>
+                        <div className=" absolute bottom-0">
+                            <a
+                                href="/RHS_Delhi-NCR_data.csv"  // Replace with your actual CSV file link
+                                download="RHS_Delhi-NCR_data.csv"
+                                className="bg-blue-500 text-white px-4 py-2 rounded-lg w-full mb-2 hover:bg-blue-700 text-center block"
+                            >
+                                Download CSV
+                            </a>
+                            <a
+                                href="/AUTH.drawio (2).pdf"  // Replace with your actual PDF file link
+                                download="data.pdf"
+                                className="bg-red-500 text-white px-4 py-2 rounded-lg w-full hover:bg-red-700 text-center block"
+                            >
+                                Download PDF
+                            </a>
+                        </div>
                     </div>
-                    <div className="border border-white"></div>
+                    <div className="border border-black"></div>
                     {/* Right Content */}
                     <div className={`${displayContent ? "w-full" : "w-[80vw]"} max-h-[85vh] overflow-auto`}>
                         <div ref={projectRef} id="projects">
