@@ -12,37 +12,52 @@ const chartConfig = {
   chainage: { label: "Chainage" },
 };
 
-const ChartSelector = ({ given, mapSide }) => {
+const ChartSelector = (
+  { given, mapSide, Lowerlimit_LHS, Upperlimit_LHS, Lowerlimit_RHS, Upperlimit_RHS, }) => {
+
   const [selectedOption, setSelectedOption] = useState(Object.keys(given)?.[0]);
   const [isMounted, setIsMounted] = useState(false);
+  const [LowerLimit, setLowerLimit] = useState("dfnvc")
+  const [UpperLimit, setUpperLimit] = useState("djj")
+
   useEffect(() => {
     setSelectedOption(Object.keys(given)?.[0] || "");
+    if (mapSide === "LHS") {
+      setLowerLimit(Lowerlimit_LHS)
+      setUpperLimit(Upperlimit_LHS)
+    } else if (mapSide === "RHS") {
+      setLowerLimit(Lowerlimit_RHS)
+      setUpperLimit(Upperlimit_RHS)
+    }
     setIsMounted(true);
-  }, [mapSide, given]);
+  }, [mapSide, given, Lowerlimit_LHS, Upperlimit_LHS, Lowerlimit_RHS, Upperlimit_RHS]);
 
-  console.log(given);
-  const handleOptionChange = (event) => setSelectedOption(event.target.value);
+
 
   if (!given || Object.keys(given).length === 0) {
     return <div>No data available</div>;
   }
 
+  // console.log(LowerLimit, UpperLimit)
+  const handleOptionChange = (event) => setSelectedOption(event.target.value);
   const selectedData = given[selectedOption];
-  
-  console.log(selectedData?.url);
-  const formattedData = selectedData?.chartData?.map((item) => ({
-    defectPercentage: item[1],
-    chainage: item[0],
-  }));
-  const url =selectedData?.url
+  const formattedData = selectedData?.chartData
+    ?.filter((item) => item[0] >= LowerLimit)
+    .filter((item) => item[0] <= UpperLimit) // Filter items first
+    .map((item) => ({
+      defectPercentage: item[1],
+      chainage: item[0]
+    }));
+  const url = selectedData?.url
+
 
   return (
     <div className="relative w-full ">
-      <div className="optionSelection bg-gray-800 text-white p-4">
+      <div className="optionSelection bg-slate-300  text-white p-4">
         <select
           onChange={handleOptionChange}
           value={selectedOption}
-          className="p-2 bg-gray-700 text-white rounded-md"
+          className="p-2 bg-slate-200 border border-black text-black font-bold rounded-md"
         >
           {Object.keys(given).map((key) => (
             <option key={key} value={key}>
@@ -52,7 +67,7 @@ const ChartSelector = ({ given, mapSide }) => {
         </select>
       </div>
       <div className="flex gap-16  overflow-hidden mb-10 mx-10">
-        <div className="chart-container h-[300px] flex-1  bg-black">
+        <div className="chart-container h-[300px] flex-1  bg-slate-200  border-black  border  rounded-lg">
           <Card className="relative">
             <CardContent className="px-2 pt-4 sm:px-6 sm:pt-6">
               <ChartContainer config={chartConfig} className="aspect-auto h-[250px] w-full">
@@ -76,13 +91,14 @@ const ChartSelector = ({ given, mapSide }) => {
                   <YAxis
                     tickLine={false}
                     axisLine={false}
-                    tickFormatter={(value) => `${(value * 100).toFixed(2)}%`}
+                    tickFormatter={(value) => `${(value).toFixed(2)}%`}
                     domain={[0, 0.08]}
                   />
                   <ChartTooltip
                     cursor={false}
                     content={
                       <ChartTooltipContent
+                        className="bg-white text-red-600 font-bold w-[200px] p-2"
                         labelFormatter={(value) => `Chainage: ${value}`}
                         indicator="dot"
                       />
@@ -90,20 +106,21 @@ const ChartSelector = ({ given, mapSide }) => {
                   />
                   <Area
                     dataKey="defectPercentage"
-                    fill="url(#fillDefect)"
+                    type="monotone"
+                    fill="rgb(255, 107, 107)"
                     stroke="var(--color-defectPercentage)"
                   />
                 </AreaChart>
               </ChartContainer>
             </CardContent>
-            
+
           </Card>
-          
+
         </div>
         <div className="flex-1">
-           {url ? <Map key={isMounted} url={url} /> : null}
+          {url ? <Map key={isMounted} url={url} LowerLimit={LowerLimit}  UpperLimit={UpperLimit} /> : null}
         </div>
-       </div>
+      </div>
     </div>
   );
 };

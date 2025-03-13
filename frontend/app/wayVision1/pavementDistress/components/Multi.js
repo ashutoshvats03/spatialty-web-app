@@ -27,7 +27,7 @@ const convertKMLColorToRGBA = (kmlColor) => {
   return `rgba(${red}, ${green}, ${blue}, ${alpha})`;
 };
 
-const Home = ({ url }) => {
+const Home = ({ url, LowerLimit, UpperLimit }) => {
   const [geoJsonData, setGeoJsonData] = useState([]);
   const [firstCoordinates, setFirstCoordinates] = useState(null);
   const [error, setError] = useState(null);
@@ -68,24 +68,28 @@ const Home = ({ url }) => {
         // Parse Placemarks
         Array.from(placemarks).forEach((placemark) => {
           const name = placemark.getElementsByTagName("name")[0]?.textContent || "Unnamed";
-          const description = placemark.getElementsByTagName("description")[0]?.textContent || "No details.";
-          const point = placemark.getElementsByTagName("Point");
+          if (name >= LowerLimit && name <= UpperLimit) {
+            const description = placemark.getElementsByTagName("description")[0]?.textContent || "No details.";
+            const point = placemark.getElementsByTagName("Point");
 
-          if (point.length === 0) return;
-          const coordinatesString = point[0]?.getElementsByTagName("coordinates")[0]?.textContent || "";
-          if (!coordinatesString) return;
+            if (point.length === 0) return;
+            const coordinatesString = point[0]?.getElementsByTagName("coordinates")[0]?.textContent || "";
+            if (!coordinatesString) return;
 
-          const [lon, lat, alt] = coordinatesString.trim().split(",").map(Number);
-          const styleUrl = placemark.getElementsByTagName("styleUrl")[0]?.textContent || "";
-          const color = styles[styleUrl]?.color || "rgba(0, 0, 0, 1)";
+            const [lon, lat, alt] = coordinatesString.trim().split(",").map(Number);
+            const styleUrl = placemark.getElementsByTagName("styleUrl")[0]?.textContent || "";
+            const color = styles[styleUrl]?.color || "rgba(0, 0, 0, 1)";
 
-          geoJsonFeatures.push({
-            type: "Feature",
-            geometry: { type: "Point", coordinates: [lon, lat, alt] },
-            properties: { name, description, color },
-          });
+            geoJsonFeatures.push({
+              type: "Feature",
+              geometry: { type: "Point", coordinates: [lon, lat, alt] },
+              properties: { name, description, color },
+            });
 
-          colors.add(color);
+            colors.add(color);
+          }
+
+
         });
 
         if (geoJsonFeatures.length > 0) {
@@ -103,8 +107,8 @@ const Home = ({ url }) => {
     };
 
     fetchKMLFiles();
-  }, [url]);
-  
+  }, [url, LowerLimit, UpperLimit]);
+
 
 
 

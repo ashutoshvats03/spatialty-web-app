@@ -1,5 +1,6 @@
 "use client";
 import NavLink from "next/link";
+import Image from "next/image";
 import { useContext, useState } from "react";
 import { FaChevronCircleDown, FaChevronCircleUp } from "react-icons/fa";
 import { IoIosNotifications } from "react-icons/io";
@@ -41,32 +42,34 @@ export default function Home() {
   };
 
   return (
-    <div className="">
+    <div className=" bg-white border-b-2 border-black ">
       <div className="flex justify-between px-20">
-        <div className="text-3xl font-bold">
-          <NavLink href="/">SPATIALTY</NavLink>
+        <div className="text-3xl font-bold m-2">
+          <NavLink href="/">
+            <Image src="/img/logo.png" width={200} height={200} alt="logo" />
+          </NavLink>
         </div>
-        <div className="flex gap-10">
+        <div className="flex gap-16 my-auto">
           <div>
-            <IoIosNotifications size={40} />
+            <IoIosNotifications  size={40} />
           </div>
 
           {/* Arrow to toggle menu */}
           <div className="relative cursor-pointer" onClick={toggleArrowMenu}>
-            {showMenu ? <FaChevronCircleUp size={40} /> : <FaChevronCircleDown size={40} />}
+            {showMenu ? <FaChevronCircleUp   size={40} /> : <FaChevronCircleDown   size={40} />}
             <div
               className={`absolute bg-white text-black z-10 gap-3 py-2 px-3 font-extrabold text flex-col w-fit my-2 shadow-sm shadow-black transform -translate-x-10 translate-y-10 top-0 left-0 ${showMenu ? "flex" : "hidden"
                 }`}
             >
               {user ? (
                 <div className="logout flex" onClick={logout}>
-                  <RiLogoutCircleFill size={30} />
+                  <RiLogoutCircleFill   size={30} />
                   <span>Logout</span>
                 </div>
               ) : (
                 <div className="flex flex-col gap-2">
                   <div className="login flex">
-                    <RiLoginCircleFill size={30} />
+                    <RiLoginCircleFill   size={30} />
                     <NavLink href="/login">Login</NavLink>
                   </div>
                 </div>
@@ -76,7 +79,7 @@ export default function Home() {
 
           {/* Profile icon */}
           <div className="relative cursor-pointer" onClick={toggleProfileMenu}>
-            <MdAccountCircle size={40} />
+            <MdAccountCircle   size={40} />
             <div
               className={`absolute bg-white text-black z-10 gap-3 py-2 px-3 font-extrabold text flex-col w-fit my-2 shadow-sm shadow-black transform -translate-x-10 translate-y-10 top-0 left-0 ${profileMenu ? "flex" : "hidden"
                 }`}
@@ -98,7 +101,7 @@ export default function Home() {
             <NavLink href="/wayVision1">
               <MdSpaceDashboard
                 size={40}
-                className="cursor-pointer"
+                className="cursor-pointer "
               />
             </NavLink>
 

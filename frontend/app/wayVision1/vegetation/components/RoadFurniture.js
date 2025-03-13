@@ -13,59 +13,73 @@ import {
     ChartContainer,
     ChartTooltip,
     ChartTooltipContent,
+    ChartLegendContent,
 } from "@/components/ui/chart";
 
-import { Bar, BarChart, XAxis, YAxis } from "recharts"
+import { Bar, BarChart, XAxis, YAxis, Legend } from "recharts"
 
 const chartConfig = {
     cautionary: {
         label: "cautionary",
-        color: "#A3CEF1", // Light Blue
+        color: "#FF6B6B", // Soft Red
     },
     informatory: {
         label: "informatory",
-        color: "#FFDEB4", // Soft Peach
+        color: "#FFA07A", // Light Salmon
     },
     mandatory: {
         label: "mandatory",
-        color: "#B5EAD7", // Mint Green
-    },
-};
-const chartConfig2 = {
-    value: {
-        label: "value",
-    },
-};
-const chartConfig3 = {
-    cautionary: {
-        label: "cautionary",
-        color: "lightblue",
-    },
-    mandatory: {
-        label: "mandatory",
-        color: "lightpink",
-    },
-    informatory: {
-        label: "informatory",
-        color: "lightgreen",
+        color: "#FF4500", // Orange-Red
     },
 };
 
-function RoadFurniture({array}) {
-     const dispatch = useDispatch();
-        const mapSide = useAppSelector((state) => state.mapSide.mapSide);
-        const project = useAppSelector((state) => state.project.project);
-      const handleSliderChange = (e) => {
-        dispatch(setMapSide(e.target.value === "0" ? "LHS" : "RHS"));
-      };
+const chartConfig2 = {
+    cautionary: {
+        label: "cautionary",
+        color: "#FF6B6B", // Soft Red
+    },
+    informatory: {
+        label: "informatory",
+        color: "#FFA07A", // Light Salmon
+    },
+    mandatory: {
+        label: "mandatory",
+        color: "#FF4500", // Orange-Red
+    },
+};
+
+const chartConfig3 = {
+    cautionary: {
+        label: "cautionary",
+        color: "#FF6B6B", // Soft Red
+    },
+    informatory: {
+        label: "informatory",
+        color: "#FFA07A", // Light Salmon
+    },
+    mandatory: {
+        label: "mandatory",
+        color: "#FF4500", // Orange-Red
+    },
+};
+
+
+function RoadFurniture({ array }) {
+    const dispatch = useDispatch();
+    const mapSide = useAppSelector((state) => state.mapSide.mapSide);
+    const project = useAppSelector((state) => state.project.project);
+    const handleSliderChange = (e) => {
+        dispatch(setMapSide(e.target.value));
+    };
     return (
-        <div className="p-10 mx-16 bg-slate-700 border-white border-2 border-r-4 border-b-4 rounded-sm">
+        <div className="p-10 mx-16 bg-slate-300  border-black border-4 border-r-4 border-b-4 rounded-sm">
             <div className="text-center font-bold text-3xl">
                 Road Furniture
             </div>
-            <div>
+            <div className="font-bold text-2xl flex gap-2">
+                <input type="checkbox" name="mapSide" value="LHS" checked={mapSide === "LHS"} onChange={handleSliderChange} className="" />
                 LHS
-                <input type="range" min="0" max="1" step="1" value={mapSide === "LHS" ? "0" : "1"} onChange={handleSliderChange} className="w-[34px] bg-red-800 rounded-lg" />
+                <input type="checkbox" name="mapSide" value="RHS" checked={mapSide === "RHS"} onChange={handleSliderChange} className="" />
                 RHS
             </div>
             <div className="mt-5  ">
@@ -73,12 +87,15 @@ function RoadFurniture({array}) {
                     Object.keys(array[project][mapSide]).map((item, key) => (
                         <div key={key} className="">
                             <div className=" font-bold text-2xl text-center my-5">{item}</div>
-                            <div className="  text-black text-xl bg-slate-800 p-10 border-white border-2 rounded">
+                            <div className="  text-black text-xl   p-10 border-black border-4 rounded">
                                 <div className="flex flex-wrap justify-center gap-4">
                                     {Object.keys(array[project][mapSide][item]).map((subitem, subkey) => (
                                         <div className={`flex justify-center ${subitem === "doubleBarChart" ? "w-full" : "flex-1"}`} key={subkey}>
                                             {subitem === "pieChart" && (
-                                                <Card className=" flex-1 bg-transparent border-none w-[400px] ">
+                                                <Card
+                                                    className=" flex-1  border-none w-[400px]"
+
+                                                >
                                                     <CardContent className="flex-1 pb-0">
                                                         <ChartContainer
                                                             config={chartConfig}
@@ -90,17 +107,22 @@ function RoadFurniture({array}) {
                                                                     fontSize: "14px",
                                                                     fontWeight: "bold",
                                                                 }}
+
                                                             >
                                                                 <ChartTooltip
                                                                     content={
                                                                         <ChartTooltipContent
+                                                                            className="bg-black text-red-600 font-extrabold text-[14px]"
                                                                             hideLabel
                                                                             formatter={(value, name, entry) =>
                                                                                 `${chartConfig[entry.portion]?.label || name}: ${value}%`
                                                                             }
+
                                                                         />
                                                                     }
+
                                                                 />
+
                                                                 <Pie
                                                                     data={array[project][mapSide][item][subitem]["chartData"].map(
                                                                         ([portion, percentage]) => ({
@@ -123,7 +145,18 @@ function RoadFurniture({array}) {
                                                                         )
                                                                     )}
                                                                 </Pie>
+                                                                <Legend
+                                                                    verticalAlign="bottom"  // Position legend at the bottom
+                                                                    align="center"          // Align legend items to the center
+                                                                    iconType="square" // Change icon shape (can be "square", "circle", "line", etc.)
+                                                                    content={
+                                                                        <ChartLegendContent
+                                                                            className="text-black font-extrabold text-[15px] "
+                                                                        />
+                                                                    }
+                                                                />
                                                             </PieChart>
+
                                                         </ChartContainer>
                                                     </CardContent>
                                                 </Card>
@@ -166,11 +199,13 @@ function RoadFurniture({array}) {
                                                                     tickMargin={10}
                                                                     axisLine={false}
                                                                     tickFormatter={(value) => value}
+
                                                                 />
                                                                 <ChartTooltip
                                                                     cursor={false}
                                                                     content={
                                                                         <ChartTooltipContent
+                                                                            className="bg-black text-red-600 font-extrabold text-[14px]"
                                                                             hideLabel
                                                                             formatter={(value) => {
                                                                                 return (
@@ -183,7 +218,12 @@ function RoadFurniture({array}) {
                                                                         />
                                                                     }
                                                                 />
-                                                                <Bar dataKey="value" fill="lightblue" radius={5} />
+                                                                <Bar
+                                                                    dataKey="value"
+                                                                    fill="red"
+                                                                    radius={5}
+                                                                />
+
                                                             </BarChart>
                                                         </ChartContainer>
                                                     </CardContent>
@@ -244,26 +284,42 @@ function RoadFurniture({array}) {
                                                             <Bar
                                                                 dataKey="cautionary"
                                                                 stackId="a"
-                                                                fill="lightblue"
-                                                                radius={[0, 0, 0, 0]}
+                                                                fill="#FF6B6B" // Deep Red
+                                                                radius={[0, 0, 0, 0]} // No border radius
                                                             />
                                                             <Bar
                                                                 dataKey="informatory"
                                                                 stackId="a"
-                                                                fill="lightpink"
-                                                                radius={[0, 0, 0, 0]}
+                                                                fill="#FFA07A" // Soft Pinkish-Red
+                                                                radius={[0, 0, 0, 0]} // No border radius
                                                             />
                                                             <Bar
                                                                 dataKey="mandatory"
                                                                 stackId="a"
-                                                                fill="lightgreen"
-                                                                radius={[3, 3, 0, 0]}
+                                                                fill="#FF4500" // Bright Red
+                                                                radius={[3, 3, 0, 0]} // Rounded top corners for better visual distinction
                                                             />
+
                                                             <ChartTooltip
                                                                 content={
-                                                                    <ChartTooltipContent className="w-[130px] font-bold bg-red-500" />
+                                                                    <ChartTooltipContent
+                                                                        className="bg-black text-red-600 font-extrabold text-[14px] w-[160px]"
+                                                                    />
                                                                 }
                                                                 cursor={false}
+                                                            />
+                                                            <Legend
+                                                                verticalAlign="top"  // Position legend at the bottom
+                                                                align="center"          // Align legend items to the center
+                                                                iconType="square" // Change icon shape (can be "square", "circle", "line", etc.)
+                                                                // iconSize="22px" // Change icon size
+                                                                // style={{ color: "black" }} // Change legend text color
+                                                                // wrapperStyle={{ fontSize: "25px", fontWeight: "bold" }} // Customize legend text
+                                                                content={
+                                                                    <ChartLegendContent
+                                                                        className="text-black font-extrabold text-[15px] scale-150"
+                                                                    />
+                                                                }
                                                             />
                                                         </BarChart>
                                                     </ChartContainer>
