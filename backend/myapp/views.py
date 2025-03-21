@@ -20,13 +20,14 @@ import pandas as pd
 
 # Define BASE_DIR and construct the absolute path to the CSV file
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-csv_file_path_RHS = os.path.join(BASE_DIR, "RHS_Delhi-NCR_data.csv")
+
+
+csv_file_path_RHS = os.path.join(BASE_DIR, "\\spatialty\\backend\media\csv\RHS_Delhi-NCR_data.csv")
 df = pd.read_csv(csv_file_path_RHS)
 print(df.columns.tolist())  
 
 chainage_column = "Chainage" 
 chainage_values_RHS = df[chainage_column].tolist()
-print("chainage_values:", chainage_values_RHS)  # Print to verify
 
 columns = [
     "Cracking(%)",
@@ -66,13 +67,12 @@ RHSrutting = results["Rutting(%)"]
 
 
 
-csv_file_path_LHS = os.path.join(BASE_DIR, "LHS_Delhi-NCR_data.csv")
+csv_file_path_LHS = os.path.join(BASE_DIR, "\\spatialty\\backend\media\csv\LHS_Delhi-NCR_data.csv")
 df = pd.read_csv(csv_file_path_LHS)
 print(df.columns.tolist())  # Check actual column names
 
 chainage_column = "Chainage" 
 chainage_values_LHS = df[chainage_column].tolist()
-print("chainage_values:", chainage_values_LHS)  # Print to verify
 
 
 columns = [
@@ -110,6 +110,50 @@ LHSraveling = results["Raveling(%)"]
 LHSdepression = results["Depression(%)"]
 LHSedgecrack = results["Edge crack(%)"]
 LHSrutting= results["Rutting(%)"]
+
+
+
+csv_file_path_LHS = os.path.join(BASE_DIR, "\\spatialty\\backend\media\csv\plantation.csv")
+df = pd.read_csv(csv_file_path_LHS)
+print(df.columns.tolist())  # Check actual column names
+
+chainage_column = "Chainage" 
+chainage_values_LHS = df[chainage_column].tolist()
+
+column = "Shrub count"
+df[column] = pd.to_numeric(df[column], errors="coerce")  # Convert to numeric
+filtered_df = df[df[column] > 0][["Chainage", column]]  # Get top 100 non-zero
+result = filtered_df.values.tolist()  # Store in dictionary
+plantation=result;
+
+
+
+csv_file_path_LHS = os.path.join(BASE_DIR, "\\spatialty\\backend\media\csv\Street_light.csv")
+df = pd.read_csv(csv_file_path_LHS)
+print(df.columns.tolist())  # Check actual column names
+
+chainage_column = "Chainage" 
+chainage_values_LHS = df[chainage_column].tolist()
+
+
+columns = [
+    "double arm street light Count",
+    "single arm street light Count",
+    "solar signal light Count",
+    "solar street light Count",
+    "solar-powered pole Count",
+]
+
+# Convert all columns to numeric and filter values > 0
+results = {}
+for col in columns:
+    df[col] = pd.to_numeric(df[col], errors="coerce")  # Convert to numeric
+    filtered_df = df[df[col] > 0][["Chainage", col]]  # Get top 100 non-zero
+    results[col] = filtered_df.values.tolist()  # Store in dictionary
+
+# Access each list
+Double_arm=results["double arm street light Count"],
+
 
 data = {
             "Road_Furniture": {
@@ -485,6 +529,7 @@ data = {
             ],
             "RHS_chainage": chainage_values_RHS,
             "LHS_chainage": chainage_values_LHS,
+            "plantation":plantation,
 
         }
 

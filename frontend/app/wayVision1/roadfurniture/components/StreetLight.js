@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, React } from "react";
 import { useDispatch } from "react-redux";
 import { useAppSelector } from "@/app/redux/hooks";
 import { setMapSide } from "@/app/redux/slices/mapSlice";
@@ -71,7 +71,7 @@ function RoadFurniture({ array }) {
     const dispatch = useDispatch();
     const mapSide = useAppSelector((state) => state.mapSide.mapSide);
     const project = useAppSelector((state) => state.project.project);
-
+    const [info, setinfo] = useState(false)
     const handleSliderChange = (e) => {
         dispatch(setMapSide(e.target.value));
     };
@@ -87,23 +87,30 @@ function RoadFurniture({ array }) {
                 RHS
             </div>
             <div className="mt-5  ">
+                <span
+                    className="text-3xl font-extrabold cursor-pointer"
+                    onClick={() => { info ? setinfo(false) : setinfo(true) }}
+                >Info
+                </span>
                 {array[project] ? (
                     Object.keys(array[project][mapSide]).map((item, key) => (
-                        <div key={key} className="">
-                            <div className=" font-bold text-2xl text-center my-5">{item}</div>
-                            <div className="  text-black text-xl bg-slate-300 p-10 border-black border-4 rounded">
-                                <div className="flex flex-wrap justify-center gap-4">
+                        <div key={key} className="m-5">
+                            <div className="  text-black text-xl bg-slate-300 ">
+                                <div className="relative flex flex-wrap justify-center gap-4">
                                     {Object.keys(array[project][mapSide][item]).map((subitem, subkey) => (
-                                        <div className={`flex justify-center ${subitem === "doubleBarChart" ? "w-full" : "flex-1"}`} key={subkey}>
+                                        <div
+                                            className={` flex justify-center`}
+                                            key={subkey}>
                                             {subitem === "pieChart" && (
-                                                <Card className=" flex-1 bg-transparent border-none w-[400px] ">
-                                                    <CardContent className="flex-1 pb-0">
+                                                <Card className={`bg-transparent mt-5 ml-5 absolute flex-1 z-10 border-2 border-black w-[800px] h-[450px] ${info ? "display" : "hidden"}`}>
+                                                    <CardContent className="flex-1 pb-0 flex items-center justify-center h-full">
                                                         <ChartContainer
                                                             config={chartConfig}
-                                                            className="mx-auto ]"
-                                                            style={{ height: "300px" }}
+                                                            className="w-[100%] h-[100%]"
                                                         >
                                                             <PieChart
+                                                                width={100}
+                                                                height={100}
                                                                 style={{
                                                                     color: "black",
                                                                     fontSize: "14px",
@@ -113,7 +120,7 @@ function RoadFurniture({ array }) {
                                                                 <ChartTooltip
                                                                     content={
                                                                         <ChartTooltipContent
-                                                                            className="bg-black text-red-600 font-extrabold text-[14px]"
+                                                                            className="bg-black text-red-600 font-extrabold text-[16px]"
                                                                             hideLabel
                                                                             formatter={(value, name, entry) =>
                                                                                 `${chartConfig[entry.portion]?.label || name}:` + ` ${value}%`
@@ -132,7 +139,8 @@ function RoadFurniture({ array }) {
                                                                     nameKey="portion"
                                                                     cx="50%"
                                                                     cy="50%"
-                                                                    outerRadius={80}
+                                                                    outerRadius={120}
+                                                                    innerRadius={0}
                                                                 >
                                                                     {array[project][mapSide][item][subitem]["chartData"].map(
                                                                         ([portion], index) => (
@@ -143,22 +151,13 @@ function RoadFurniture({ array }) {
                                                                         )
                                                                     )}
                                                                 </Pie>
-                                                                <Legend
-                                                                    verticalAlign="bottom"  // Position legend at the bottom
-                                                                    align="center"          // Align legend items to the center
-                                                                    iconType="square" // Change icon shape (can be "square", "circle", "line", etc.)
-                                                                    content={
-                                                                        <ChartLegendContent
-                                                                            className="text-black font-extrabold text-[15px] flex flex-wrap gap-4 pr-10 "
-                                                                        />
-                                                                    }
-                                                                />
+
                                                             </PieChart>
                                                         </ChartContainer>
                                                     </CardContent>
                                                 </Card>
                                             )}
-                                            {subitem === "barChart" && (
+                                            {/* {subitem === "barChart" && (
                                                 <Card className=" flex-1 bg-transparent border-none w-[400px]">
                                                     <CardContent>
                                                         <ChartContainer
@@ -217,14 +216,23 @@ function RoadFurniture({ array }) {
                                                                         />
                                                                     }
                                                                 />
-                                                                <Bar dataKey="value" fill="red" radius={5} />
+                                                                <Bar dataKey="value" radius={5} >
+                                                                    {array[project][mapSide][item][subitem]["chartData"].map(
+                                                                        ([month], index) => (
+                                                                            <Cell
+                                                                                key={`cell-${month}`}
+                                                                                fill={["#FF6B6B", "#FF8C8C", "#E63946","#FF4D4D","#FFA07A"][index % 5]}
+                                                                            />
+                                                                        )
+                                                                    )}
+                                                                </Bar>
                                                             </BarChart>
                                                         </ChartContainer>
                                                     </CardContent>
                                                 </Card>
-                                            )}
+                                            )} */}
                                             {subitem === "doubleBarChart" && (
-                                                <Card className="  bg-transparent border-none w-[800px] ">
+                                                <Card className={` w-[800px] h-[450px] flex-1 border-2 border-black ${info ? "opacity-10" : "opacity-100"}`}>
                                                     <CardContent>
                                                         <ChartContainer
                                                             config={chartConfig3}
@@ -244,8 +252,8 @@ function RoadFurniture({ array }) {
                                                                 )}
                                                                 margin={{
                                                                     left: 40,
-                                                                    right: 20,
-                                                                    top: 0,
+                                                                    right: 40,
+                                                                    top: 40,
                                                                     bottom: 40,
                                                                 }}
                                                                 style={{
@@ -321,7 +329,6 @@ function RoadFurniture({ array }) {
                                     ))}
                                 </div>
                             </div>
-
                         </div>
                     ))
                 ) : (
