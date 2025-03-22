@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useEffect, React } from "react";
 import { useDispatch } from "react-redux";
 import { useAppSelector } from "@/app/redux/hooks";
 import { setMapSide } from "@/app/redux/slices/mapSlice";
@@ -16,47 +16,20 @@ import { Bar, BarChart, XAxis, YAxis, CartesianGrid, Line, LineChart, Pie, PieCh
 
 
 const chartConfig = {
-    Double_warm_street_light: {
-        label: "Double_warm_street_light",
-        color: "#FF6B6B", // Soft Red
-    },
-    Solar_signal_light: {
-        label: "Solar_signal_light",
-        color: "#FF8C8C", // Light Coral
-    },
-    Solar_powered_pole: {
-        label: "Solar_powered_pole",
-        color: "#E63946", // Deep Red
-    },
-    Single_arm_street_light: {
-        label: "Single_arm_street_light",
-        color: "#FF4D4D", // Bright Red
-    },
-    Solar_street_light: {
-        label: "Solar_street_light",
-        color: "#FFA07A", // Light Salmon
-    },
-};
-const chartConfig2 = {
-    value: {
-        label: "value",
-    },
-};
-const chartConfig3 = {
     Double_arm: {
-        label: "Double_arm",
+        label: "Double arm",
         color: "#FF6B6B", // Soft Red
     },
     Single_arm: {
-        label: "Single_arm",
+        label: "Single arm",
         color: "#FF8C8C", // Light Coral
     },
-    Solar: {
-        label: "Solar",
+    Solar_street: {
+        label: "Solar street",
         color: "#E63946", // Deep Red
     },
-    Solar_powered: {
-        label: "Solar powered",
+    Solar_pole: {
+        label: "Solar_pole",
         color: "#FF4D4D", // Bright Red
     },
     Solar_signal: {
@@ -71,10 +44,78 @@ function RoadFurniture({ array }) {
     const dispatch = useDispatch();
     const mapSide = useAppSelector((state) => state.mapSide.mapSide);
     const project = useAppSelector((state) => state.project.project);
+    const [info, setinfo] = useState(false)
+    const [LHS_chainage, setLHSChainage] = useState([]);
+    const [RHS_chainage, setRHSChainage] = useState([]);
+    const [isMounted, setIsMounted] = useState(false);
+    const [Upperlimit_RHS, setUpperlimit_RHS] = useState(RHS_chainage[99]);
+    const [Lowerlimit_RHS, setLowerlimit_RHS] = useState(RHS_chainage[0]);
+    const [Upperlimit_LHS, setUpperlimit_LHS] = useState(LHS_chainage[99]);
+    const [Lowerlimit_LHS, setLowerlimit_LHS] = useState(LHS_chainage[0]);
+    const [LowerLimit, setLowerLimit] = useState("dfnvc")
+    const [UpperLimit, setUpperLimit] = useState("djj")
+
+
+    useEffect(() => {
+        if (localStorage.getItem("data") !== null) {
+            const data = JSON.parse(localStorage.getItem("data"));
+            setLHSChainage(data.LHS_chainage || []);
+            setRHSChainage(data.RHS_chainage || []);
+            setIsMounted(true);
+        }
+        else {
+            router.push("/")
+        }
+
+    }, []);
+
+
+    useEffect(() => {
+        if (LHS_chainage.length > 0) {
+            setLowerlimit_LHS(LHS_chainage[0]);
+            setUpperlimit_LHS(LHS_chainage[LHS_chainage.length - 1]);
+        }
+    }, [LHS_chainage]);
+
+    useEffect(() => {
+        if (RHS_chainage.length > 0) {
+            setLowerlimit_RHS(RHS_chainage[0]);
+            setUpperlimit_RHS(RHS_chainage[RHS_chainage.length - 1]);
+        }
+    }, [RHS_chainage]);  // Runs when RHS_chainage updates
+
+    useEffect(() => {
+        if (mapSide === "LHS") {
+            setLowerLimit(Lowerlimit_LHS)
+            setUpperLimit(Upperlimit_LHS)
+        } else if (mapSide === "RHS") {
+            setLowerLimit(Lowerlimit_RHS)
+            setUpperLimit(Upperlimit_RHS)
+        }
+        setIsMounted(true);
+    }, [mapSide, Lowerlimit_LHS, Upperlimit_LHS, Lowerlimit_RHS, Upperlimit_RHS]);
+
+    if (!isMounted) {
+        return <div>Loading pavement distreess</div>;
+    }
+    const handleLowerlimitLHS = (e) => {
+        setLowerlimit_LHS(e.target.value);
+    }
+    const handleUpperLimitLHS = (e) => {
+        setUpperlimit_LHS(e.target.value);
+    }
+    const handleLowerLimitRHS = (e) => {
+        setLowerlimit_RHS(e.target.value);
+    }
+    const handleUpperLimitRHS = (e) => {
+        setUpperlimit_RHS(e.target.value);
+    }
 
     const handleSliderChange = (e) => {
         dispatch(setMapSide(e.target.value));
     };
+
+    console.log(LowerLimit, UpperLimit)
     return (
         <div className="p-10 mx-16 bg-slate-300 border-black border-4 border-r-4 border-b-4 rounded-sm">
             <div className="text-center font-bold text-3xl">
@@ -87,23 +128,52 @@ function RoadFurniture({ array }) {
                 RHS
             </div>
             <div className="mt-5  ">
+                <span
+                    className="text-3xl font-extrabold cursor-pointer"
+                    onClick={() => { info ? setinfo(false) : setinfo(true) }}
+                >Info
+                </span>
+                <div className="flex gap-2">
+                    <select
+                        className="rounded-lg px-3 py-1"
+                        onChange={mapSide === "LHS" ? handleLowerlimitLHS : handleLowerLimitRHS}
+                    >
+                        {mapSide === "LHS" ? LHS_chainage.map((item, index) => (
+                            <option key={index}>{item}</option>
+                        )) : RHS_chainage.map((item, index) => (
+                            <option key={index}>{item}</option>
+                        ))}
+                    </select>
+                    <select
+                        className="rounded-lg px-3 py-1"
+                        onChange={mapSide === "LHS" ? handleUpperLimitLHS : handleUpperLimitRHS}
+                    >
+                        {mapSide === "LHS" ? LHS_chainage.map((item, index) => (
+                            <option key={index}>{item}</option>
+                        )).reverse() : RHS_chainage.map((item, index) => (
+                            <option key={index}>{item}</option>
+                        )).reverse()}
+                    </select>
+                </div>
                 {array[project] ? (
                     Object.keys(array[project][mapSide]).map((item, key) => (
-                        <div key={key} className="">
-                            <div className=" font-bold text-2xl text-center my-5">{item}</div>
-                            <div className="  text-black text-xl bg-slate-300 p-10 border-black border-4 rounded">
-                                <div className="flex flex-wrap justify-center gap-4">
+                        <div key={key} className="m-5">
+                            <div className="  text-black text-xl bg-slate-300 ">
+                                <div className="relative flex flex-wrap justify-center gap-4">
                                     {Object.keys(array[project][mapSide][item]).map((subitem, subkey) => (
-                                        <div className={`flex justify-center ${subitem === "doubleBarChart" ? "w-full" : "flex-1"}`} key={subkey}>
+                                        <div
+                                            className={` flex justify-center`}
+                                            key={subkey}>
                                             {subitem === "pieChart" && (
-                                                <Card className=" flex-1 bg-transparent border-none w-[400px] ">
-                                                    <CardContent className="flex-1 pb-0">
+                                                <Card className={`bg-transparent mt-5 ml-5 absolute flex-1 z-10 border-2 border-black w-[800px] h-[450px] ${info ? "display" : "hidden"}`}>
+                                                    <CardContent className="flex-1 pb-0 flex items-center justify-center h-full">
                                                         <ChartContainer
                                                             config={chartConfig}
-                                                            className="mx-auto ]"
-                                                            style={{ height: "300px" }}
+                                                            className="w-[100%] h-[100%]"
                                                         >
                                                             <PieChart
+                                                                width={100}
+                                                                height={100}
                                                                 style={{
                                                                     color: "black",
                                                                     fontSize: "14px",
@@ -113,7 +183,7 @@ function RoadFurniture({ array }) {
                                                                 <ChartTooltip
                                                                     content={
                                                                         <ChartTooltipContent
-                                                                            className="bg-black text-red-600 font-extrabold text-[14px]"
+                                                                            className="bg-black text-red-600 font-extrabold text-[16px]"
                                                                             hideLabel
                                                                             formatter={(value, name, entry) =>
                                                                                 `${chartConfig[entry.portion]?.label || name}:` + ` ${value}%`
@@ -132,7 +202,8 @@ function RoadFurniture({ array }) {
                                                                     nameKey="portion"
                                                                     cx="50%"
                                                                     cy="50%"
-                                                                    outerRadius={80}
+                                                                    outerRadius={120}
+                                                                    innerRadius={0}
                                                                 >
                                                                     {array[project][mapSide][item][subitem]["chartData"].map(
                                                                         ([portion], index) => (
@@ -143,22 +214,13 @@ function RoadFurniture({ array }) {
                                                                         )
                                                                     )}
                                                                 </Pie>
-                                                                <Legend
-                                                                    verticalAlign="bottom"  // Position legend at the bottom
-                                                                    align="center"          // Align legend items to the center
-                                                                    iconType="square" // Change icon shape (can be "square", "circle", "line", etc.)
-                                                                    content={
-                                                                        <ChartLegendContent
-                                                                            className="text-black font-extrabold text-[15px] flex flex-wrap gap-4 pr-10 "
-                                                                        />
-                                                                    }
-                                                                />
+
                                                             </PieChart>
                                                         </ChartContainer>
                                                     </CardContent>
                                                 </Card>
                                             )}
-                                            {subitem === "barChart" && (
+                                            {/* {subitem === "barChart" && (
                                                 <Card className=" flex-1 bg-transparent border-none w-[400px]">
                                                     <CardContent>
                                                         <ChartContainer
@@ -217,35 +279,47 @@ function RoadFurniture({ array }) {
                                                                         />
                                                                     }
                                                                 />
-                                                                <Bar dataKey="value" fill="red" radius={5} />
+                                                                <Bar dataKey="value" radius={5} >
+                                                                    {array[project][mapSide][item][subitem]["chartData"].map(
+                                                                        ([month], index) => (
+                                                                            <Cell
+                                                                                key={`cell-${month}`}
+                                                                                fill={["#FF6B6B", "#FF8C8C", "#E63946","#FF4D4D","#FFA07A"][index % 5]}
+                                                                            />
+                                                                        )
+                                                                    )}
+                                                                </Bar>
                                                             </BarChart>
                                                         </ChartContainer>
                                                     </CardContent>
                                                 </Card>
-                                            )}
+                                            )} */}
                                             {subitem === "doubleBarChart" && (
-                                                <Card className="  bg-transparent border-none w-[800px] ">
+                                                <Card className={` w-[800px] h-[450px] flex-1 border-2 border-black ${info ? "opacity-10" : "opacity-100"}`}>
                                                     <CardContent>
                                                         <ChartContainer
-                                                            config={chartConfig3}
+                                                            config={chartConfig}
                                                             style={{ height: "400px" }}
                                                         >
                                                             <LineChart
                                                                 accessibilityLayer
-                                                                data={array[project][mapSide][item][subitem]["chartData"].map(
-                                                                    ([chainage, Double_arm, Single_arm, Solar, Solar_powered, Solar_signal]) => ({
-                                                                        chainage,
-                                                                        Double_arm: parseInt(Double_arm, 10), // Convert string to number
-                                                                        Single_arm: parseInt(Single_arm, 10), // Convert string to number
-                                                                        Solar: parseInt(Solar, 10), // Convert string to number
-                                                                        Solar_powered: parseInt(Solar_powered, 10), // Convert string to number
-                                                                        Solar_signal: parseInt(Solar_signal, 10), // Convert string to number
-                                                                    })
-                                                                )}
+                                                                data={array[project][mapSide][item][subitem]["chartData"]
+                                                                    // .filter((item) => item[0] >= LowerLimit)
+                                                                    // .filter((item) => item[0] <= UpperLimit)
+                                                                    .map(
+                                                                        ([chainage, Double_arm, Single_arm, Solar_street, Solar_pole, Solar_signal]) => ({
+                                                                            chainage,
+                                                                            Double_arm: parseInt(Double_arm, 10), // Convert string to number
+                                                                            Single_arm: parseInt(Single_arm, 10), // Convert string to number
+                                                                            Solar_street: parseInt(Solar_street, 10), // Convert string to number
+                                                                            Solar_pole: parseInt(Solar_pole, 10), // Convert string to number
+                                                                            Solar_signal: parseInt(Solar_signal, 10), // Convert string to number
+                                                                        })
+                                                                    )}
                                                                 margin={{
                                                                     left: 40,
-                                                                    right: 20,
-                                                                    top: 0,
+                                                                    right: 40,
+                                                                    top: 40,
                                                                     bottom: 40,
                                                                 }}
                                                                 style={{
@@ -285,14 +359,14 @@ function RoadFurniture({ array }) {
                                                                     dot={true}
                                                                 />
                                                                 <Line
-                                                                    dataKey="Solar"
-                                                                    stroke="var(--color-Solar)"
+                                                                    dataKey="Solar_street"
+                                                                    stroke="var(--color-Solar_street)"
                                                                     strokeWidth={2}
                                                                     dot={true}
                                                                 />
                                                                 <Line
-                                                                    dataKey="Solar_powered"
-                                                                    stroke="var(--color-Solar_powered)"
+                                                                    dataKey="Solar_pole"
+                                                                    stroke="var(--color-Solar_pole)"
                                                                     strokeWidth={2}
                                                                     dot={true}
                                                                 />
@@ -321,7 +395,6 @@ function RoadFurniture({ array }) {
                                     ))}
                                 </div>
                             </div>
-
                         </div>
                     ))
                 ) : (

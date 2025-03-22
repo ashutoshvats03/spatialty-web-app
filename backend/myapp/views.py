@@ -17,16 +17,18 @@ from django.utils.decorators import method_decorator
 from myapp.models import UserRole
 import os
 import pandas as pd
+import numpy as np  # Add this at the top of your script
 
 # Define BASE_DIR and construct the absolute path to the CSV file
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-csv_file_path_RHS = os.path.join(BASE_DIR, "RHS_Delhi-NCR_data.csv")
+
+
+csv_file_path_RHS = os.path.join(BASE_DIR, r"\spatialty\backend\media\csv\RHS_Delhi-NCR_data.csv")
 df = pd.read_csv(csv_file_path_RHS)
-print(df.columns.tolist())  
+# print(df.columns.tolist())  
 
 chainage_column = "Chainage" 
 chainage_values_RHS = df[chainage_column].tolist()
-print("chainage_values:", chainage_values_RHS)  # Print to verify
 
 columns = [
     "Cracking(%)",
@@ -66,13 +68,12 @@ RHSrutting = results["Rutting(%)"]
 
 
 
-csv_file_path_LHS = os.path.join(BASE_DIR, "LHS_Delhi-NCR_data.csv")
+csv_file_path_LHS = os.path.join(BASE_DIR, r"\spatialty\\backend\media\csv\LHS_Delhi-NCR_data.csv")
 df = pd.read_csv(csv_file_path_LHS)
-print(df.columns.tolist())  # Check actual column names
+# print(df.columns.tolist())  # Check actual column names
 
 chainage_column = "Chainage" 
 chainage_values_LHS = df[chainage_column].tolist()
-print("chainage_values:", chainage_values_LHS)  # Print to verify
 
 
 columns = [
@@ -111,17 +112,136 @@ LHSdepression = results["Depression(%)"]
 LHSedgecrack = results["Edge crack(%)"]
 LHSrutting= results["Rutting(%)"]
 
+
+
+
+
+# csv_file_path_LHS = os.path.join(BASE_DIR, r"\spatialty\backend\media\csv\plantation.csv")
+# df = pd.read_csv(csv_file_path_LHS)
+# # print(df.columns.tolist())  # Check actual column names
+
+# chainage_column = "Chainage" 
+# chainage_values_LHS = df[chainage_column].tolist()
+
+# column = "Shrub count"
+# df[column] = pd.to_numeric(df[column], errors="coerce")  # Convert to numeric
+# filtered_df = df[df[column] > 0][["Chainage", column]]  # Get top 100 non-zero
+# result = filtered_df.values.tolist()  # Store in dictionary
+# plantation=result;
+# # print(plantation)
+
+import pandas as pd
+import os
+
+csv_file_path_LHS = os.path.join(BASE_DIR, r"\spatialty\backend\media\csv\Street_light.csv")
+
+# Read the CSV
+df = pd.read_csv(csv_file_path_LHS)
+
+# Check column names
+print(df.columns.tolist())  
+
+# Define the columns we want to work with
+chainage_column = "Chainage"
+data_columns = [
+    "double arm street light Count",
+    "single arm street light Count",
+    "solar signal light Count",
+    "solar street light Count",
+    "solar-powered pole Count"
+]
+
+# Convert columns to numeric
+for col in data_columns:
+    df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0).astype(int)
+
+# Filter rows where at least one of the columns has a value > 0
+combined_df = df[df[data_columns].gt(0).any(axis=1)]
+
+# Convert chainage to string format
+Street_light = [
+    [f"{row[chainage_column]}"] + [str(row[col]) for col in data_columns]
+    for _, row in combined_df.iterrows()
+]
+
+# **CUSTOM NAMES for Pie Chart**
+custom_pie_chart_names = {
+    "double arm street light Count": "Double_arm",
+    "single arm street light Count": "Single_arm",
+    "solar signal light Count": "Solar_signal",
+    "solar street light Count": "Solar_street",
+    "solar-powered pole Count": "Solar_pole"
+}
+
+# Generate Pie Chart Data
+category_counts = {col: df[col].sum() for col in data_columns}
+total_street_lights = sum(category_counts.values()) or 1  # Avoid division by zero
+
+Street_light_pie_chart = [
+    [custom_pie_chart_names[col], f"{round((count / total_street_lights) * 100, 1)}%"]
+    for col, count in category_counts.items()
+]
+
+# Display the results
+print("\nStreet Light Data:")
+print(Street_light)
+
+print("\nStreet Light Pie Chart Data:")
+print(Street_light_pie_chart)
+
+
+
+
+csv_file_path_LHS = os.path.join(BASE_DIR, r"\spatialty\backend\media\csv\LHS_Road furniture.csv")
+
+# Read the CSV
+df = pd.read_csv(csv_file_path_LHS)
+
+chainage_column = "Chainage"
+data_columns = ["Mandatory", "Cautionary", "Informatory"]
+
+# Convert to numeric
+for col in data_columns:
+    df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0).astype(int)
+
+# 1. Generate pie chart data - showing category distribution
+category_counts = {col.lower(): len(df[df[col] > 0]) for col in data_columns}
+
+# Calculate total signs
+total_signs = sum(category_counts.values()) or 1
+
+# Calculate percentages and format for pie chart
+Pie_chart = [[category, f"{round((count / total_signs) * 100, 1)}%"] for category, count in category_counts.items()]
+
+# 2. Generate Road_furniture data - with chainage details
+combined_df = df[df[data_columns].gt(0).any(axis=1)]
+
+# Convert chainage to the required format (e.g., "313+507") and ensure all values are strings
+Road_furniture = [
+    [f"{(row[chainage_column])}",
+     str(row["Mandatory"]), str(row["Cautionary"]), str(row["Informatory"])]
+    for _, row in combined_df.iterrows()
+]
+
+# Print output
+# print("\nPie Chart Data:")
+# print(Pie_chart)
+
+# print("\nRoad Furniture Data:")
+# print(Road_furniture)
+
+
+
+
+
+
 data = {
             "Road_Furniture": {
                 "one": {
                     "LHS": {
                         "Road Furniture counts of different categories": {
                             "pieChart": {
-                                "chartData": [
-                                    ["cautionary", "60.5%"],
-                                    ["informatory", "24.5%"],
-                                    ["mandatory", "15%"],
-                                ],
+                                "chartData":Pie_chart,
                             },
                             "barChart": {
                                 "chartData": [
@@ -133,39 +253,14 @@ data = {
                         },
                         "Distribution of Road Furniture by chainage": {
                             "doubleBarChart": {
-                                "chartData": [
-                                    ["313+507", "12", "1", "28"],
-                                    ["314+437", "11", "5", "15"],
-                                    ["320+077", "8", "1", "24"],
-                                    ["323+567", "6", "6", "20"],
-                                    ["328+037", "8", "6", "18"],
-                                    ["331+627", "9", "3", "20"],
-                                    ["335+457", "10", "5", "20"],
-                                    ["339+137", "13", "7", "15"],
-                                    ["341+737", "12", "8", "17"],
-                                    ["343+947", "6", "6", "18"],
-                                    ["346+507", "11", "4", "11"],
-                                    ["349+557", "18", "4", "22"],
-                                    ["351+737", "9", "3", "28"],
-                                    ["354+017", "6", "4", "20"],
-                                    ["356+947", "7", "5", "21"],
-                                    ["362+387", "5", "10", "27"],
-                                    ["364+927", "4", "6", "26"],
-                                    ["367+187", "8", "6", "22"],
-                                    ["370+267", "9", "12", "12"],
-                                    ["372+147", "5", "4", "10"],
-                                ],
+                                "chartData": Road_furniture,
                             }
                         }
                     },
                     "RHS": {
                         "Road Furniture counts of different categories": {
                             "pieChart": {
-                                "chartData": [
-                                    ["cautionary", "6.5%"],
-                                    ["informatory", "24.5%"],
-                                    ["mandatory", "69%"],
-                                ],
+                                "chartData": Pie_chart,
                             },
                             "barChart": {
                                 "chartData": [
@@ -177,28 +272,7 @@ data = {
                         },
                         "Distribution of Road Furniture by chainage": {
                             "doubleBarChart": {
-                                "chartData": [
-                                    ["313+507", "12", "1", "28"],
-                                    ["314+437", "11", "5", "15"],
-                                    ["320+077", "8", "1", "24"],
-                                    ["323+567", "6", "6", "20"],
-                                    ["328+037", "8", "6", "18"],
-                                    ["331+627", "9", "3", "20"],
-                                    ["335+457", "10", "5", "20"],
-                                    ["339+137", "13", "7", "15"],
-                                    ["341+737", "12", "8", "17"],
-                                    ["343+947", "6", "6", "18"],
-                                    ["346+507", "11", "4", "11"],
-                                    ["349+557", "18", "4", "22"],
-                                    ["351+737", "9", "3", "28"],
-                                    ["354+017", "6", "4", "20"],
-                                    ["356+947", "7", "5", "21"],
-                                    ["362+387", "5", "10", "27"],
-                                    ["364+927", "4", "6", "26"],
-                                    ["367+187", "8", "6", "22"],
-                                    ["370+267", "9", "12", "12"],
-                                    ["372+147", "5", "4", "10"],
-                                ],
+                                "chartData": Road_furniture,
                             }
                         }
                     }
@@ -209,13 +283,7 @@ data = {
                     "LHS": {
                         "Street Light counts of different categories": {
                             "pieChart": {
-                                "chartData": [
-                                    ["Double_warm_street_light", "16.5%"],
-                                    ["Solar_signal_light", "24.5%"],
-                                    ["Solar_powered_pole", "15%"],
-                                    ["Single_arm_street_light", "14"],
-                                    ["Solar_street_light", "14"],
-                                ],
+                                "chartData": Street_light_pie_chart,
                             },
                             "barChart": {
                                 "chartData": [
@@ -229,28 +297,7 @@ data = {
                         },
                         "Distribution of street lights by chainage": {
                             "doubleBarChart": {
-                                "chartData": [
-                                    ["313+507", "12", "1", "28", "4", "10"],
-                                    ["314+437", "11", "5", "15", "6", "12"],
-                                    ["320+077", "8", "1", "24", "3", "14"],
-                                    ["323+567", "6", "6", "20", "5", "11"],
-                                    ["328+037", "8", "6", "18", "7", "13"],
-                                    ["331+627", "9", "3", "20", "4", "10"],
-                                    ["335+457", "10", "5", "20", "6", "12"],
-                                    ["339+137", "13", "7", "15", "8", "14"],
-                                    ["341+737", "12", "8", "17", "9", "16"],
-                                    ["343+947", "6", "6", "18", "5", "11"],
-                                    ["346+507", "11", "4", "11", "6", "13"],
-                                    ["349+557", "18", "4", "22", "8", "17"],
-                                    ["351+737", "9", "3", "28", "7", "15"],
-                                    ["354+017", "6", "4", "20", "4", "12"],
-                                    ["356+947", "7", "5", "21", "5", "11"],
-                                    ["362+387", "5", "10", "27", "3", "14"],
-                                    ["364+927", "4", "6", "26", "2", "10"],
-                                    ["367+187", "8", "6", "22", "6", "13"],
-                                    ["370+267", "9", "12", "12", "7", "15"],
-                                    ["372+147", "5", "4", "10", "3", "8"],
-                                ]
+                                "chartData": Street_light
                             }
                         },
                         
@@ -258,13 +305,7 @@ data = {
                     "RHS": {
                         "Road Furniture counts of different categories": {
                             "pieChart": {
-                                "chartData": [
-                                    ["Double_warm_street_light", "32.3%"],
-                                    ["Solar_signal_light", "11.7%"],
-                                    ["Solar_powered_pole", "6.1%"],
-                                    ["Single_arm_street_light", "19.5%"],
-                                    ["Solar_street_light", "30.4%"],
-                                ],
+                                "chartData": Street_light_pie_chart,
                             },
 
                             "barChart": {
@@ -279,28 +320,7 @@ data = {
                         },
                         "Distribution of Road Furniture by chainage": {
                             "doubleBarChart": {
-                                "chartData": [
-                                    ["313+507", "14", "2", "26", "5", "9"],
-                                    ["314+437", "10", "4", "14", "7", "11"],
-                                    ["320+077", "7", "3", "23", "2", "13"],
-                                    ["323+567", "5", "7", "19", "6", "12"],
-                                    ["328+037", "9", "5", "17", "8", "14"],
-                                    ["331+627", "8", "2", "21", "3", "9"],
-                                    ["335+457", "12", "4", "19", "5", "13"],
-                                    ["339+137", "14", "8", "14", "9", "15"],
-                                    ["341+737", "10", "7", "16", "8", "17"],
-                                    ["343+947", "7", "5", "19", "6", "12"],
-                                    ["346+507", "12", "3", "12", "7", "14"],
-                                    ["349+557", "19", "6", "23", "9", "16"],
-                                    ["351+737", "8", "4", "27", "6", "14"],
-                                    ["354+017", "5", "5", "22", "5", "11"],
-                                    ["356+947", "9", "6", "20", "4", "10"],
-                                    ["362+387", "6", "11", "25", "4", "13"],
-                                    ["364+927", "3", "7", "24", "3", "9"],
-                                    ["367+187", "7", "5", "21", "5", "12"],
-                                    ["370+267", "11", "10", "13", "8", "16"],
-                                    ["372+147", "6", "3", "11", "4", "7"],
-                                ]
+                                "chartData": Street_light
                             }
                         }
                     }
@@ -485,6 +505,7 @@ data = {
             ],
             "RHS_chainage": chainage_values_RHS,
             "LHS_chainage": chainage_values_LHS,
+            # "plantation":plantation,
 
         }
 
@@ -531,3 +552,6 @@ class Dashboard(APIView):
             'message': 'Welcome to the dashboard', 
             'user': user_serializer.data,
         }, status=200)
+    
+
+
