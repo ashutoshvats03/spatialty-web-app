@@ -22,7 +22,7 @@
 //         else{
 //             router.push("/")
 //         }
-        
+
 //     }, []);
 //     if (!isMounted) {
 //         return <div>Loading vegetation</div>;
@@ -43,8 +43,6 @@
 
 // export default page
 
-
-
 import React from 'react'
 
 function page() {
@@ -56,6 +54,7 @@ function page() {
 }
 
 export default page
+
 
 
 

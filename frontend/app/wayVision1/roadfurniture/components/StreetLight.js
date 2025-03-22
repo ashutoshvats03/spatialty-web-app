@@ -1,4 +1,4 @@
-import { useState, React } from "react";
+import { useState, useEffect, React } from "react";
 import { useDispatch } from "react-redux";
 import { useAppSelector } from "@/app/redux/hooks";
 import { setMapSide } from "@/app/redux/slices/mapSlice";
@@ -16,47 +16,20 @@ import { Bar, BarChart, XAxis, YAxis, CartesianGrid, Line, LineChart, Pie, PieCh
 
 
 const chartConfig = {
-    Double_warm_street_light: {
-        label: "Double_warm_street_light",
-        color: "#FF6B6B", // Soft Red
-    },
-    Solar_signal_light: {
-        label: "Solar_signal_light",
-        color: "#FF8C8C", // Light Coral
-    },
-    Solar_powered_pole: {
-        label: "Solar_powered_pole",
-        color: "#E63946", // Deep Red
-    },
-    Single_arm_street_light: {
-        label: "Single_arm_street_light",
-        color: "#FF4D4D", // Bright Red
-    },
-    Solar_street_light: {
-        label: "Solar_street_light",
-        color: "#FFA07A", // Light Salmon
-    },
-};
-const chartConfig2 = {
-    value: {
-        label: "value",
-    },
-};
-const chartConfig3 = {
     Double_arm: {
-        label: "Double_arm",
+        label: "Double arm",
         color: "#FF6B6B", // Soft Red
     },
     Single_arm: {
-        label: "Single_arm",
+        label: "Single arm",
         color: "#FF8C8C", // Light Coral
     },
-    Solar: {
-        label: "Solar",
+    Solar_street: {
+        label: "Solar street",
         color: "#E63946", // Deep Red
     },
-    Solar_powered: {
-        label: "Solar powered",
+    Solar_pole: {
+        label: "Solar_pole",
         color: "#FF4D4D", // Bright Red
     },
     Solar_signal: {
@@ -72,9 +45,77 @@ function RoadFurniture({ array }) {
     const mapSide = useAppSelector((state) => state.mapSide.mapSide);
     const project = useAppSelector((state) => state.project.project);
     const [info, setinfo] = useState(false)
+    const [LHS_chainage, setLHSChainage] = useState([]);
+    const [RHS_chainage, setRHSChainage] = useState([]);
+    const [isMounted, setIsMounted] = useState(false);
+    const [Upperlimit_RHS, setUpperlimit_RHS] = useState(RHS_chainage[99]);
+    const [Lowerlimit_RHS, setLowerlimit_RHS] = useState(RHS_chainage[0]);
+    const [Upperlimit_LHS, setUpperlimit_LHS] = useState(LHS_chainage[99]);
+    const [Lowerlimit_LHS, setLowerlimit_LHS] = useState(LHS_chainage[0]);
+    const [LowerLimit, setLowerLimit] = useState("dfnvc")
+    const [UpperLimit, setUpperLimit] = useState("djj")
+
+
+    useEffect(() => {
+        if (localStorage.getItem("data") !== null) {
+            const data = JSON.parse(localStorage.getItem("data"));
+            setLHSChainage(data.LHS_chainage || []);
+            setRHSChainage(data.RHS_chainage || []);
+            setIsMounted(true);
+        }
+        else {
+            router.push("/")
+        }
+
+    }, []);
+
+
+    useEffect(() => {
+        if (LHS_chainage.length > 0) {
+            setLowerlimit_LHS(LHS_chainage[0]);
+            setUpperlimit_LHS(LHS_chainage[LHS_chainage.length - 1]);
+        }
+    }, [LHS_chainage]);
+
+    useEffect(() => {
+        if (RHS_chainage.length > 0) {
+            setLowerlimit_RHS(RHS_chainage[0]);
+            setUpperlimit_RHS(RHS_chainage[RHS_chainage.length - 1]);
+        }
+    }, [RHS_chainage]);  // Runs when RHS_chainage updates
+
+    useEffect(() => {
+        if (mapSide === "LHS") {
+            setLowerLimit(Lowerlimit_LHS)
+            setUpperLimit(Upperlimit_LHS)
+        } else if (mapSide === "RHS") {
+            setLowerLimit(Lowerlimit_RHS)
+            setUpperLimit(Upperlimit_RHS)
+        }
+        setIsMounted(true);
+    }, [mapSide, Lowerlimit_LHS, Upperlimit_LHS, Lowerlimit_RHS, Upperlimit_RHS]);
+
+    if (!isMounted) {
+        return <div>Loading pavement distreess</div>;
+    }
+    const handleLowerlimitLHS = (e) => {
+        setLowerlimit_LHS(e.target.value);
+    }
+    const handleUpperLimitLHS = (e) => {
+        setUpperlimit_LHS(e.target.value);
+    }
+    const handleLowerLimitRHS = (e) => {
+        setLowerlimit_RHS(e.target.value);
+    }
+    const handleUpperLimitRHS = (e) => {
+        setUpperlimit_RHS(e.target.value);
+    }
+
     const handleSliderChange = (e) => {
         dispatch(setMapSide(e.target.value));
     };
+
+    console.log(LowerLimit, UpperLimit)
     return (
         <div className="p-10 mx-16 bg-slate-300 border-black border-4 border-r-4 border-b-4 rounded-sm">
             <div className="text-center font-bold text-3xl">
@@ -92,6 +133,28 @@ function RoadFurniture({ array }) {
                     onClick={() => { info ? setinfo(false) : setinfo(true) }}
                 >Info
                 </span>
+                <div className="flex gap-2">
+                    <select
+                        className="rounded-lg px-3 py-1"
+                        onChange={mapSide === "LHS" ? handleLowerlimitLHS : handleLowerLimitRHS}
+                    >
+                        {mapSide === "LHS" ? LHS_chainage.map((item, index) => (
+                            <option key={index}>{item}</option>
+                        )) : RHS_chainage.map((item, index) => (
+                            <option key={index}>{item}</option>
+                        ))}
+                    </select>
+                    <select
+                        className="rounded-lg px-3 py-1"
+                        onChange={mapSide === "LHS" ? handleUpperLimitLHS : handleUpperLimitRHS}
+                    >
+                        {mapSide === "LHS" ? LHS_chainage.map((item, index) => (
+                            <option key={index}>{item}</option>
+                        )).reverse() : RHS_chainage.map((item, index) => (
+                            <option key={index}>{item}</option>
+                        )).reverse()}
+                    </select>
+                </div>
                 {array[project] ? (
                     Object.keys(array[project][mapSide]).map((item, key) => (
                         <div key={key} className="m-5">
@@ -235,21 +298,24 @@ function RoadFurniture({ array }) {
                                                 <Card className={` w-[800px] h-[450px] flex-1 border-2 border-black ${info ? "opacity-10" : "opacity-100"}`}>
                                                     <CardContent>
                                                         <ChartContainer
-                                                            config={chartConfig3}
+                                                            config={chartConfig}
                                                             style={{ height: "400px" }}
                                                         >
                                                             <LineChart
                                                                 accessibilityLayer
-                                                                data={array[project][mapSide][item][subitem]["chartData"].map(
-                                                                    ([chainage, Double_arm, Single_arm, Solar, Solar_powered, Solar_signal]) => ({
-                                                                        chainage,
-                                                                        Double_arm: parseInt(Double_arm, 10), // Convert string to number
-                                                                        Single_arm: parseInt(Single_arm, 10), // Convert string to number
-                                                                        Solar: parseInt(Solar, 10), // Convert string to number
-                                                                        Solar_powered: parseInt(Solar_powered, 10), // Convert string to number
-                                                                        Solar_signal: parseInt(Solar_signal, 10), // Convert string to number
-                                                                    })
-                                                                )}
+                                                                data={array[project][mapSide][item][subitem]["chartData"]
+                                                                    // .filter((item) => item[0] >= LowerLimit)
+                                                                    // .filter((item) => item[0] <= UpperLimit)
+                                                                    .map(
+                                                                        ([chainage, Double_arm, Single_arm, Solar_street, Solar_pole, Solar_signal]) => ({
+                                                                            chainage,
+                                                                            Double_arm: parseInt(Double_arm, 10), // Convert string to number
+                                                                            Single_arm: parseInt(Single_arm, 10), // Convert string to number
+                                                                            Solar_street: parseInt(Solar_street, 10), // Convert string to number
+                                                                            Solar_pole: parseInt(Solar_pole, 10), // Convert string to number
+                                                                            Solar_signal: parseInt(Solar_signal, 10), // Convert string to number
+                                                                        })
+                                                                    )}
                                                                 margin={{
                                                                     left: 40,
                                                                     right: 40,
@@ -293,14 +359,14 @@ function RoadFurniture({ array }) {
                                                                     dot={true}
                                                                 />
                                                                 <Line
-                                                                    dataKey="Solar"
-                                                                    stroke="var(--color-Solar)"
+                                                                    dataKey="Solar_street"
+                                                                    stroke="var(--color-Solar_street)"
                                                                     strokeWidth={2}
                                                                     dot={true}
                                                                 />
                                                                 <Line
-                                                                    dataKey="Solar_powered"
-                                                                    stroke="var(--color-Solar_powered)"
+                                                                    dataKey="Solar_pole"
+                                                                    stroke="var(--color-Solar_pole)"
                                                                     strokeWidth={2}
                                                                     dot={true}
                                                                 />

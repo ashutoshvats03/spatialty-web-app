@@ -40,7 +40,9 @@ const ChartSelector = (
 
   // console.log(LowerLimit, UpperLimit)
   const handleOptionChange = (event) => setSelectedOption(event.target.value);
+
   const selectedData = given[selectedOption];
+  
   const formattedData = selectedData?.chartData
     ?.filter((item) => item[0] >= LowerLimit)
     .filter((item) => item[0] <= UpperLimit) // Filter items first
@@ -48,6 +50,7 @@ const ChartSelector = (
       defectPercentage: item[1],
       chainage: item[0]
     }));
+
   const url = selectedData?.url
 
 

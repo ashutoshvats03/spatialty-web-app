@@ -1,16 +1,13 @@
 "use client";
-import axios from "axios";
-import { useEffect, useRef, useState, useContext } from "react";
+import { setdisplayContent } from "@/app/redux/slices/contentSlice";
+import { useEffect, useRef, useState } from "react";
+import PrivateRoute from "../middleware/PrivateRoute";
 import { useAppSelector } from "../redux/hooks";
-import Menubar from "./components/menubar";
 import Pavement from "./pavementDistress/page";
 import Project from "./projects/page";
-import sinages from "./roadfurniture/components/sinage";
-import RoadFurniture from "./roadfurniture/page";
+import signage from "./roadfurniture/components/signage";
 import StreetLight from "./roadfurniture/components/StreetLight";
-import PrivateRoute from "../middleware/PrivateRoute";
-import { setdisplayContent } from "@/app/redux/slices/contentSlice";
-import { current } from "@reduxjs/toolkit";
+import RoadFurniture from "./roadfurniture/page";
 // import AuthContext from "/spatialty/speciality2/app/context/AuthContext";
 
 function Page() {
@@ -64,7 +61,7 @@ function Page() {
             hasSubMenu: true,
             subMenu: [
                 { name: "Street Light", ref: streetlightRef, element: StreetLight, id: "street-light" },
-                { name: "Sinages", ref: sinagesRef, element: sinages, id: "sinages" },
+                { name: "Signage", ref: sinagesRef, element: signage, id: "signage" },
             ]
         },
     ];
@@ -245,7 +242,7 @@ function Page() {
                                             className="section w-full">
                                             {submenu.element === StreetLight ? (
                                                 <submenu.element array={array2} />
-                                            ) : submenu.element === sinages ? (
+                                            ) : submenu.element === signage ? (
                                                 <submenu.element array={array1} />
                                             ) : (
                                                 <submenu.element />

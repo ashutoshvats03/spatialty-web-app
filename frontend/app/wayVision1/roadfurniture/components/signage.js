@@ -1,8 +1,9 @@
-import { useState, React } from "react";
+import { useState, useEffect, React } from "react";
 import { useDispatch } from "react-redux";
 import { useAppSelector } from "@/app/redux/hooks";
 import { setMapSide } from "@/app/redux/slices/mapSlice";
 import { Pie, PieChart, Cell, Label } from "recharts";
+
 
 import {
     Card,
@@ -68,11 +69,77 @@ function RoadFurniture({ array }) {
     const mapSide = useAppSelector((state) => state.mapSide.mapSide);
     const project = useAppSelector((state) => state.project.project);
     const [info, setinfo] = useState(false)
+    const [LHS_chainage, setLHSChainage] = useState([]);
+    const [RHS_chainage, setRHSChainage] = useState([]);
+    const [isMounted, setIsMounted] = useState(false);
+    const [Upperlimit_RHS, setUpperlimit_RHS] = useState(RHS_chainage[99]);
+    const [Lowerlimit_RHS, setLowerlimit_RHS] = useState(RHS_chainage[0]);
+    const [Upperlimit_LHS, setUpperlimit_LHS] = useState(LHS_chainage[99]);
+    const [Lowerlimit_LHS, setLowerlimit_LHS] = useState(LHS_chainage[0]);
+    const [LowerLimit, setLowerLimit] = useState("dfnvc")
+    const [UpperLimit, setUpperLimit] = useState("djj")
+
+    useEffect(() => {
+        if (localStorage.getItem("data") !== null) {
+            const data = JSON.parse(localStorage.getItem("data"));
+            setLHSChainage(data.LHS_chainage || []);
+            setRHSChainage(data.RHS_chainage || []);
+            setIsMounted(true);
+        }
+        else {
+            router.push("/")
+        }
+
+    }, []);
+
+
+    useEffect(() => {
+        if (LHS_chainage.length > 0) {
+            setLowerlimit_LHS(LHS_chainage[0]);
+            setUpperlimit_LHS(LHS_chainage[LHS_chainage.length - 1]);
+        }
+    }, [LHS_chainage]);
+
+    useEffect(() => {
+        if (RHS_chainage.length > 0) {
+            setLowerlimit_RHS(RHS_chainage[0]);
+            setUpperlimit_RHS(RHS_chainage[RHS_chainage.length - 1]);
+        }
+    }, [RHS_chainage]);  // Runs when RHS_chainage updates
+
+    useEffect(() => {
+        if (mapSide === "LHS") {
+            setLowerLimit(Lowerlimit_LHS)
+            setUpperLimit(Upperlimit_LHS)
+        } else if (mapSide === "RHS") {
+            setLowerLimit(Lowerlimit_RHS)
+            setUpperLimit(Upperlimit_RHS)
+        }
+        setIsMounted(true);
+    }, [mapSide, Lowerlimit_LHS, Upperlimit_LHS, Lowerlimit_RHS, Upperlimit_RHS]);
+
+
+    if (!isMounted) {
+        return <div>Loading pavement distreess</div>;
+    }
+
+    const handleLowerlimitLHS = (e) => {
+        setLowerlimit_LHS(e.target.value);
+    }
+    const handleUpperLimitLHS = (e) => {
+        setUpperlimit_LHS(e.target.value);
+    }
+    const handleLowerLimitRHS = (e) => {
+        setLowerlimit_RHS(e.target.value);
+    }
+    const handleUpperLimitRHS = (e) => {
+        setUpperlimit_RHS(e.target.value);
+    }
     const handleSliderChange = (e) => {
         dispatch(setMapSide(e.target.value));
     };
 
-    
+    console.log(LowerLimit, UpperLimit)
     return (
         <div className="p-10 mx-16 bg-slate-300  border-black border-4 border-r-4 border-b-4 rounded-sm">
             <div className="text-center font-bold text-3xl">
@@ -87,9 +154,31 @@ function RoadFurniture({ array }) {
             <div className="mt-5  ">
                 <span
                     className="text-3xl font-extrabold cursor-pointer"
-                    onClick={() => { info?setinfo(false):setinfo(true) }}
+                    onClick={() => { info ? setinfo(false) : setinfo(true) }}
                 >Info
                 </span>
+                <div className="flex gap-2">
+                    <select
+                        className="rounded-lg px-3 py-1"
+                        onChange={mapSide === "LHS" ? handleLowerlimitLHS : handleLowerLimitRHS}
+                    >
+                        {mapSide === "LHS" ? LHS_chainage.map((item, index) => (
+                            <option key={index}>{item}</option>
+                        )) : RHS_chainage.map((item, index) => (
+                            <option key={index}>{item}</option>
+                        ))}
+                    </select>
+                    <select
+                        className="rounded-lg px-3 py-1"
+                        onChange={mapSide === "LHS" ? handleUpperLimitLHS : handleUpperLimitRHS}
+                    >
+                        {mapSide === "LHS" ? LHS_chainage.map((item, index) => (
+                            <option key={index}>{item}</option>
+                        )).reverse() : RHS_chainage.map((item, index) => (
+                            <option key={index}>{item}</option>
+                        )).reverse()}
+                    </select>
+                </div>
                 {array[project] ? (
                     Object.keys(array[project][mapSide]).map((item, key) => (
                         <div key={key} className="m-5">
@@ -151,7 +240,7 @@ function RoadFurniture({ array }) {
                                                                         )
                                                                     )}
                                                                 </Pie>
-                                                                
+
                                                             </PieChart>
                                                         </ChartContainer>
                                                     </CardContent>
@@ -239,7 +328,7 @@ function RoadFurniture({ array }) {
                                                 </Card>
                                             )} */}
                                             {subitem === "doubleBarChart" && (
-                                                <Card className={` w-[800px] max-h-[700px] flex-1 border-2 border-black ${info? "opacity-10": "opacity-100"}`}>
+                                                <Card className={` w-[800px] max-h-[700px] flex-1 border-2 border-black ${info ? "opacity-10" : "opacity-100"}`}>
                                                     <ChartContainer
                                                         style={{
                                                             width: "100%",
@@ -248,14 +337,17 @@ function RoadFurniture({ array }) {
                                                         config={chartConfig3}>
                                                         <BarChart
                                                             accessibilityLayer
-                                                            data={array[project][mapSide][item][subitem]["chartData"].map(
-                                                                ([chainage, cautionary, informatory, mandatory]) => ({
-                                                                    chainage,
-                                                                    cautionary: parseInt(cautionary), // Convert string to number
-                                                                    informatory: parseInt(informatory),
-                                                                    mandatory: parseInt(mandatory),
-                                                                })
-                                                            ) || []}
+                                                            data={array[project][mapSide][item][subitem]["chartData"]
+                                                                // .filter((item) => item[0] >= LowerLimit)
+                                                                // .filter((item) => item[0] <= UpperLimit)
+                                                                .map(
+                                                                    ([chainage, cautionary, informatory, mandatory]) => ({
+                                                                        chainage,
+                                                                        cautionary: parseInt(cautionary), // Convert string to number
+                                                                        informatory: parseInt(informatory),
+                                                                        mandatory: parseInt(mandatory),
+                                                                    })
+                                                                ) || []}
                                                             barSize={24}
                                                             style={{
                                                                 width: "100%",
@@ -272,19 +364,13 @@ function RoadFurniture({ array }) {
                                                         >
                                                             <XAxis
                                                                 dataKey="chainage"
-                                                                interval={1} // Display every tick (this will show all 100 dates if the space allows)
+                                                                interval={30} // Display every tick (this will show all 100 dates if the space allows)
                                                                 axisLine={false}
-                                                                tickMargin={10}
-
                                                                 tick={{
-                                                                    angle: -45,
+                                                                    angle: -55,
                                                                     textAnchor: "end",
                                                                 }}
-                                                                style={{
-                                                                    fontSize: "14px",
-                                                                    fontWeight: "bold",
-                                                                    color: "black",
-                                                                }}
+
                                                             />
 
 
