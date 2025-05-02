@@ -1,11 +1,8 @@
 "use client"
-import React from 'react'
-import { useEffect } from 'react';
 import Image from 'next/image';
 import NavLink from 'next/link';
-import { useState } from 'react';
-import { FaInfoCircle } from "react-icons/fa";
-import { FaEye } from "react-icons/fa";
+import { useEffect, useState } from 'react';
+import { FaEye, FaInfoCircle } from "react-icons/fa";
 
 function Page() {
   const roadProjects = [
@@ -70,7 +67,7 @@ function Page() {
       <div className='w-full flex gap-5 justify-around flex-wrap'>
         {roadProjects.map((roadProject, index) => (
           <div key={index} className='w-1/4 h-fit shadow-black shadow-sm'>
-            <div className='w-full h-full bg-white p-5 shadow-black shadow-sm'>
+            <div className='w-full h-full  bg-slate-800 p-5 shadow-black shadow-sm'>
               <div className='relative'>
                 <Image
                   className='m-auto overflow-hidden'

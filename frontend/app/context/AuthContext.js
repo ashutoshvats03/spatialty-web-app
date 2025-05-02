@@ -62,7 +62,7 @@ export const AuthProvider = ({ children }) => {
 
             axios.defaults.headers.common["Authorization"] = `Bearer ${access}`;
             setUser(user);
-            router.push("/");
+            router.push("/wayVision1");
         } catch (error) {
             console.log("Error logging in:", error);
             alert("Login failed. Please check your credentials.");

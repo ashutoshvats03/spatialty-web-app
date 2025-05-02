@@ -28,7 +28,7 @@ df = pd.read_csv(csv_file_path_RHS)
 # print(df.columns.tolist())  
 
 chainage_column = "Chainage" 
-chainage_values_RHS = df[chainage_column].tolist()
+chainage_values_RHS = df[chainage_column].tolist() # Get all chainage values of RHS 
 
 columns = [
     "Cracking(%)",
@@ -73,7 +73,7 @@ df = pd.read_csv(csv_file_path_LHS)
 # print(df.columns.tolist())  # Check actual column names
 
 chainage_column = "Chainage" 
-chainage_values_LHS = df[chainage_column].tolist()
+chainage_values_LHS = df[chainage_column].tolist()# Get all chainage values of LHS 
 
 
 columns = [
@@ -116,30 +116,26 @@ LHSrutting= results["Rutting(%)"]
 
 
 
-# csv_file_path_LHS = os.path.join(BASE_DIR, r"\spatialty\backend\media\csv\plantation.csv")
-# df = pd.read_csv(csv_file_path_LHS)
-# # print(df.columns.tolist())  # Check actual column names
+csv_file_path_LHS = os.path.join(BASE_DIR, r"\spatialty\backend\media\csv\plantation.csv")
+df = pd.read_csv(csv_file_path_LHS)
+# print(df.columns.tolist())  # Check actual column names
 
-# chainage_column = "Chainage" 
-# chainage_values_LHS = df[chainage_column].tolist()
+chainage_column = "Chainage" 
+column = "Shrub count"
+df[column] = pd.to_numeric(df[column], errors="coerce").fillna(0).astype(int)  # Convert to numeric
+filtered_df = df[df[column] > 0][[chainage_column, column]]  # Get top 100 non-zero
+result = filtered_df.values.tolist()  # Store in dictionary
+plantation = [
+        row for row in result
+        if not (isinstance(row[0], float) and np.isnan(row[0]))
+    ]
+print(plantation)
 
-# column = "Shrub count"
-# df[column] = pd.to_numeric(df[column], errors="coerce")  # Convert to numeric
-# filtered_df = df[df[column] > 0][["Chainage", column]]  # Get top 100 non-zero
-# result = filtered_df.values.tolist()  # Store in dictionary
-# plantation=result;
-# # print(plantation)
 
-import pandas as pd
-import os
+
 
 csv_file_path_LHS = os.path.join(BASE_DIR, r"\spatialty\backend\media\csv\Street_light.csv")
-
-# Read the CSV
 df = pd.read_csv(csv_file_path_LHS)
-
-# Check column names
-print(df.columns.tolist())  
 
 # Define the columns we want to work with
 chainage_column = "Chainage"
@@ -175,7 +171,7 @@ custom_pie_chart_names = {
 
 # Generate Pie Chart Data
 category_counts = {col: df[col].sum() for col in data_columns}
-total_street_lights = sum(category_counts.values()) or 1  # Avoid division by zero
+total_street_lights = sum(category_counts.values())   # Avoid division by zero
 
 Street_light_pie_chart = [
     [custom_pie_chart_names[col], f"{round((count / total_street_lights) * 100, 1)}%"]
@@ -183,11 +179,11 @@ Street_light_pie_chart = [
 ]
 
 # Display the results
-print("\nStreet Light Data:")
-print(Street_light)
+# print("\nStreet Light Data:")
+# print(Street_light)
 
-print("\nStreet Light Pie Chart Data:")
-print(Street_light_pie_chart)
+# print("\nStreet Light Pie Chart Data:")
+# print(Street_light_pie_chart)
 
 
 
@@ -328,9 +324,8 @@ data = {
                 }
             },
             "Pavement_Distress": {
-                "one":{
+                "one": {
                     "RHS": {
-                        "Major Pavement defects(%) per chainage": {
                         "Cracking": {
                             "chartData": RHScrack,
                             "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Cracking_severity-based.kml"
@@ -342,9 +337,7 @@ data = {
                         "Patch Work": {
                             "chartData": RHSpatchwork,
                             "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Patch_work_severity-based.kml"
-                        }
                         },
-                        "Road Cracks (%) per chainage": {
                         "Alligator Crack": {
                             "chartData": RHSalligator,
                             "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Alligator_crack.kml"
@@ -360,24 +353,7 @@ data = {
                         "Edge Crack": {
                             "chartData": RHSedgecrack,
                             "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Edge_crack_severity-based.kml"
-                        }
                         },
-                        # "Pavement Raveling(%) per chainage based on severity": {
-                        # "Low": {
-                        #     "chartData": [
-                        #     ["313+507", "0.090"],
-                        #     ["320+137", "0.040"],
-                        #     ["326+887", "0.060"],
-                        #     ["333+517", "0.045"],
-                        #     ["340+277", "0.020"],
-                        #     ["346+877", "0.080"],
-                        #     ["353+627", "0.025"],
-                        #     ["360+257", "0.010"]
-                        #     ],
-                        #     "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Raveling_severity-based.kml"
-                        # }
-                        # },
-                        "Other Pavement Defects": {
                         "Bleeding": {
                             "chartData": RHSbleeding,
                             "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Bleeding_severity-based.kml"
@@ -394,57 +370,36 @@ data = {
                             "chartData": RHSshoving,
                             "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Shoving_severity-based.kml"
                         }
-                        }
                     },
                     "LHS": {
-                        "Major Pavement defects(%) per chainage": {
-                            "Cracking": {
-                                "chartData": LHScrack,
-                                "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Cracking_severity-based.kml"
-                            },
-                            "Potholes": {
-                                "chartData": LHSpotholes,
-                                "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Potholes_severity-based.kml"
-                            },
-                            "Patch Work": {
-                                "chartData": LHSpatchwork,
-                                "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Patch_work_severity-based.kml"
-                            }
+                        "Cracking": {
+                            "chartData": LHScrack,
+                            "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Cracking_severity-based.kml"
                         },
-                        "Road Cracks (%) per chainage": {
-                            "Alligator Crack": {
-                                "chartData": LHSalligator,
-                                "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Alligator_crack.kml"
-                            },
-                            "Longitudinal": {
-                                "chartData": LHSlongitudinal,
-                                "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Longitudinal_crack.kml"
-                            },
-                            "Transverse": {
-                                "chartData": LHStransverse,
-                                "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Transverse_crack.kml"
-                            },
-                            "Edge Crack": {
-                                "chartData": LHSedgecrack,
-                                "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Edge_crack_severity-based.kml"
-                            }
+                        "Potholes": {
+                            "chartData": LHSpotholes,
+                            "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Potholes_severity-based.kml"
                         },
-                        # "Pavement Raveling(%) per chainage based on severity": {
-                        #     "Low": {
-                        #         "chartData": [
-                        #             ["313+507", "0.090"],
-                        #             ["320+137", "0.040"],
-                        #             ["326+887", "0.060"],
-                        #             ["333+517", "0.045"],
-                        #             ["340+277", "0.020"],
-                        #             ["346+877", "0.080"],
-                        #             ["353+627", "0.025"],
-                        #             ["360+257", "0.010"]
-                        #         ],
-                        #         "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Raveling_severity-based.kml"
-                        #     }
-                        # },
-                        "Other Pavement Defects": {
+                        "Patch Work": {
+                            "chartData": LHSpatchwork,
+                            "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Patch_work_severity-based.kml"
+                        },
+                        "Alligator Crack": {
+                            "chartData": LHSalligator,
+                            "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Alligator_crack.kml"
+                        },
+                        "Longitudinal": {
+                            "chartData": LHSlongitudinal,
+                            "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Longitudinal_crack.kml"
+                        },
+                        "Transverse": {
+                            "chartData": LHStransverse,
+                            "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Transverse_crack.kml"
+                        },
+                        "Edge Crack": {
+                            "chartData": LHSedgecrack,
+                            "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Edge_crack_severity-based.kml"
+                        },
                         "Bleeding": {
                             "chartData": LHSbleeding,
                             "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Bleeding_severity-based.kml"
@@ -454,17 +409,16 @@ data = {
                             "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Depression_severity-based.kml"
                         },
                         "Rutting": {
-                            "chartData": LHSrutting ,
+                            "chartData": LHSrutting,
                             "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Rutting.kml"
                         },
                         "Shoving": {
                             "chartData": LHSshoving,
                             "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Shoving_severity-based.kml"
                         }
-                        }
                     }
-                }    
-           },               
+                }
+            },
             "Project": [
                 ["Numbering", "Project Name", "Description", "Frequency Survey", "Last Survey Date"],
                 [
@@ -505,8 +459,388 @@ data = {
             ],
             "RHS_chainage": chainage_values_RHS,
             "LHS_chainage": chainage_values_LHS,
-            # "plantation":plantation,
+            "RF_chainage": [row[0] for row in Road_furniture],
+            "plantation": plantation,
+            "Survey": {
+                "survey1":{
+                    "Road_Furniture": {
+                        "one": {
+                                "LHS": {
+                                    "Road Furniture counts of different categories": {
+                                        "pieChart": {
+                                            "chartData":Pie_chart,
+                                        },
+                                        "barChart": {
+                                            "chartData": [
+                                                ["informatory", "157"],
+                                                ["cautionary", "388"],
+                                                ["mandatory", "96"],
+                                            ]
+                                        }
+                                    },
+                                    "Distribution of Road Furniture by chainage": {
+                                        "doubleBarChart": {
+                                            "chartData": Road_furniture,
+                                        }
+                                    }
+                                },
+                                "RHS": {
+                                    "Road Furniture counts of different categories": {
+                                        "pieChart": {
+                                            "chartData": Pie_chart,
+                                        },
+                                        "barChart": {
+                                            "chartData": [
+                                                ["informatory", "357"],
+                                                ["cautionary", "88"],
+                                                ["mandatory", "296"],
+                                            ]
+                                        }
+                                    },
+                                    "Distribution of Road Furniture by chainage": {
+                                        "doubleBarChart": {
+                                            "chartData": Road_furniture,
+                                        }
+                                    }
+                                }
+                            }
+                    },
+                    "Street_Light": {
+                        "one": {
+                            "LHS": {
+                                "Street Light counts of different categories": {
+                                    "pieChart": {
+                                        "chartData": Street_light_pie_chart,
+                                    },
+                                    "barChart": {
+                                        "chartData": [
+                                            ["Double arm", "119"],
+                                            ["Single arm", "77"],
+                                            ["Solar", "33"],
+                                            ["Solar powered", "12"],
+                                            ["Solar signal", "39"],
+                                        ]
+                                    }
+                                },
+                                "Distribution of street lights by chainage": {
+                                    "doubleBarChart": {
+                                        "chartData": Street_light
+                                    }
+                                },
+                                
+                            },
+                            "RHS": {
+                                "Road Furniture counts of different categories": {
+                                    "pieChart": {
+                                        "chartData": Street_light_pie_chart,
+                                    },
 
+                                    "barChart": {
+                                        "chartData": [
+                                            ["Double arm", "121"],
+                                            ["Single arm", "80"],
+                                            ["Solar", "35"],
+                                            ["Solar powered", "10"],
+                                            ["Solar signal", "41"],
+                                        ]
+                                    }
+                                },
+                                "Distribution of Road Furniture by chainage": {
+                                    "doubleBarChart": {
+                                        "chartData": Street_light
+                                    }
+                                }
+                            }
+
+                        }
+                    },
+                    "Pavement_Distress": {
+                        "one": {
+                            "RHS": {
+                                "Cracking": {
+                                    "chartData": RHScrack,
+                                    "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Cracking_severity-based.kml"
+                                },
+                                "Potholes": {
+                                    "chartData": RHSpotholes,
+                                    "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Potholes_severity-based.kml"
+                                },
+                                "Patch Work": {
+                                    "chartData": RHSpatchwork,
+                                    "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Patch_work_severity-based.kml"
+                                },
+                                "Alligator Crack": {
+                                    "chartData": RHSalligator,
+                                    "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Alligator_crack.kml"
+                                },
+                                "Longitudinal": {
+                                    "chartData": RHSlongitudinal,
+                                    "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Longitudinal_crack.kml"
+                                },
+                                "Transverse": {
+                                    "chartData": RHStransverse,
+                                    "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Transverse_crack.kml"
+                                },
+                                "Edge Crack": {
+                                    "chartData": RHSedgecrack,
+                                    "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Edge_crack_severity-based.kml"
+                                },
+                                "Bleeding": {
+                                    "chartData": RHSbleeding,
+                                    "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Bleeding_severity-based.kml"
+                                },
+                                "Depression": {
+                                    "chartData": RHSdepression,
+                                    "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Depression_severity-based.kml"
+                                },
+                                "Rutting": {
+                                    "chartData": RHSrutting,
+                                    "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Rutting.kml"
+                                },
+                                "Shoving": {
+                                    "chartData": RHSshoving,
+                                    "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Shoving_severity-based.kml"
+                                }
+                            },
+                            "LHS": {
+                                "Cracking": {
+                                    "chartData": LHScrack,
+                                    "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Cracking_severity-based.kml"
+                                },
+                                "Potholes": {
+                                    "chartData": LHSpotholes,
+                                    "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Potholes_severity-based.kml"
+                                },
+                                "Patch Work": {
+                                    "chartData": LHSpatchwork,
+                                    "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Patch_work_severity-based.kml"
+                                },
+                                "Alligator Crack": {
+                                    "chartData": LHSalligator,
+                                    "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Alligator_crack.kml"
+                                },
+                                "Longitudinal": {
+                                    "chartData": LHSlongitudinal,
+                                    "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Longitudinal_crack.kml"
+                                },
+                                "Transverse": {
+                                    "chartData": LHStransverse,
+                                    "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Transverse_crack.kml"
+                                },
+                                "Edge Crack": {
+                                    "chartData": LHSedgecrack,
+                                    "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Edge_crack_severity-based.kml"
+                                },
+                                "Bleeding": {
+                                    "chartData": LHSbleeding,
+                                    "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Bleeding_severity-based.kml"
+                                },
+                                "Depression": {
+                                    "chartData": LHSdepression,
+                                    "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Depression_severity-based.kml"
+                                },
+                                "Rutting": {
+                                    "chartData": LHSrutting,
+                                    "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Rutting.kml"
+                                },
+                                "Shoving": {
+                                    "chartData": LHSshoving,
+                                    "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Shoving_severity-based.kml"
+                                }
+                            }
+                        }
+                    }
+                    },
+                "survey2":{
+                    "Road_Furniture": {
+                        "one": {
+                                "LHS": {
+                                    "Road Furniture counts of different categories": {
+                                        "pieChart": {
+                                            "chartData":Pie_chart,
+                                        },
+                                        "barChart": {
+                                            "chartData": [
+                                                ["informatory", "157"],
+                                                ["cautionary", "388"],
+                                                ["mandatory", "96"],
+                                            ]
+                                        }
+                                    },
+                                    "Distribution of Road Furniture by chainage": {
+                                        "doubleBarChart": {
+                                            "chartData": Road_furniture,
+                                        }
+                                    }
+                                },
+                                "RHS": {
+                                    "Road Furniture counts of different categories": {
+                                        "pieChart": {
+                                            "chartData": Pie_chart,
+                                        },
+                                        "barChart": {
+                                            "chartData": [
+                                                ["informatory", "357"],
+                                                ["cautionary", "88"],
+                                                ["mandatory", "296"],
+                                            ]
+                                        }
+                                    },
+                                    "Distribution of Road Furniture by chainage": {
+                                        "doubleBarChart": {
+                                            "chartData": Road_furniture,
+                                        }
+                                    }
+                                }
+                            }
+                    },
+                    "Street_Light": {
+                        "one": {
+                            "LHS": {
+                                "Street Light counts of different categories": {
+                                    "pieChart": {
+                                        "chartData": Street_light_pie_chart,
+                                    },
+                                    "barChart": {
+                                        "chartData": [
+                                            ["Double arm", "119"],
+                                            ["Single arm", "77"],
+                                            ["Solar", "33"],
+                                            ["Solar powered", "12"],
+                                            ["Solar signal", "39"],
+                                        ]
+                                    }
+                                },
+                                "Distribution of street lights by chainage": {
+                                    "doubleBarChart": {
+                                        "chartData": Street_light
+                                    }
+                                },
+                                
+                            },
+                            "RHS": {
+                                "Road Furniture counts of different categories": {
+                                    "pieChart": {
+                                        "chartData": Street_light_pie_chart,
+                                    },
+
+                                    "barChart": {
+                                        "chartData": [
+                                            ["Double arm", "121"],
+                                            ["Single arm", "80"],
+                                            ["Solar", "35"],
+                                            ["Solar powered", "10"],
+                                            ["Solar signal", "41"],
+                                        ]
+                                    }
+                                },
+                                "Distribution of Road Furniture by chainage": {
+                                    "doubleBarChart": {
+                                        "chartData": Street_light
+                                    }
+                                }
+                            }
+
+                        }
+                    },
+                    "Pavement_Distress": {
+                        "one": {
+                            "RHS": {
+                                "Cracking": {
+                                    "chartData": RHScrack,
+                                    "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Cracking_severity-based.kml"
+                                },
+                                "Potholes": {
+                                    "chartData": RHSpotholes,
+                                    "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Potholes_severity-based.kml"
+                                },
+                                "Patch Work": {
+                                    "chartData": RHSpatchwork,
+                                    "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Patch_work_severity-based.kml"
+                                },
+                                "Alligator Crack": {
+                                    "chartData": RHSalligator,
+                                    "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Alligator_crack.kml"
+                                },
+                                "Longitudinal": {
+                                    "chartData": RHSlongitudinal,
+                                    "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Longitudinal_crack.kml"
+                                },
+                                "Transverse": {
+                                    "chartData": RHStransverse,
+                                    "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Transverse_crack.kml"
+                                },
+                                "Edge Crack": {
+                                    "chartData": RHSedgecrack,
+                                    "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Edge_crack_severity-based.kml"
+                                },
+                                "Bleeding": {
+                                    "chartData": RHSbleeding,
+                                    "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Bleeding_severity-based.kml"
+                                },
+                                "Depression": {
+                                    "chartData": RHSdepression,
+                                    "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Depression_severity-based.kml"
+                                },
+                                "Rutting": {
+                                    "chartData": RHSrutting,
+                                    "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Rutting.kml"
+                                },
+                                "Shoving": {
+                                    "chartData": RHSshoving,
+                                    "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Shoving_severity-based.kml"
+                                }
+                            },
+                            "LHS": {
+                                "Cracking": {
+                                    "chartData": LHScrack,
+                                    "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Cracking_severity-based.kml"
+                                },
+                                "Potholes": {
+                                    "chartData": LHSpotholes,
+                                    "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Potholes_severity-based.kml"
+                                },
+                                "Patch Work": {
+                                    "chartData": LHSpatchwork,
+                                    "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Patch_work_severity-based.kml"
+                                },
+                                "Alligator Crack": {
+                                    "chartData": LHSalligator,
+                                    "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Alligator_crack.kml"
+                                },
+                                "Longitudinal": {
+                                    "chartData": LHSlongitudinal,
+                                    "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Longitudinal_crack.kml"
+                                },
+                                "Transverse": {
+                                    "chartData": LHStransverse,
+                                    "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Transverse_crack.kml"
+                                },
+                                "Edge Crack": {
+                                    "chartData": LHSedgecrack,
+                                    "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Edge_crack_severity-based.kml"
+                                },
+                                "Bleeding": {
+                                    "chartData": LHSbleeding,
+                                    "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Bleeding_severity-based.kml"
+                                },
+                                "Depression": {
+                                    "chartData": LHSdepression,
+                                    "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Depression_severity-based.kml"
+                                },
+                                "Rutting": {
+                                    "chartData": LHSrutting,
+                                    "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Rutting.kml"
+                                },
+                                "Shoving": {
+                                    "chartData": LHSshoving,
+                                    "url": "http://localhost:8000/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Shoving_severity-based.kml"
+                                }
+                            }
+    }
+}
+                },
+            }
         }
 
 

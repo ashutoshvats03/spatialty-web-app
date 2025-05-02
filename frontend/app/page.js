@@ -11,7 +11,7 @@ export default function Home() {
   }
 
   return (
-    <div className=" flex flex-col items-center justify-center h-screen ">
+    <div className="bg-slate-900 text-white flex flex-col items-center justify-center h-screen ">
       {user ? (
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">Welcome, {user.username}!</h1>
