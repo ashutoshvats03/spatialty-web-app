@@ -82,7 +82,7 @@ function Map() {
     }
 
     return (
-        <div className="p-10 mx-16 bg-slate-300  border-black  border-4 border-r-4 border-b-4 rounded-sm">
+        <div className="p-10 mx-16 bg-slate-800 text-white border-4 border-r-4 border-b-4 rounded-sm">
             <div className="text-center font-bold text-3xl">
                 Pavement Distress
             </div>
@@ -94,7 +94,7 @@ function Map() {
             </div>
             <div className="flex gap-2">
                 <select
-                    className="rounded-lg px-3 py-1"
+                    className="rounded-lg px-3 py-1 bg-black text-white border"
                     onChange={mapSide === "LHS" ? handleLowerlimitLHS : handleLowerLimitRHS}
                 >
                     {mapSide === "LHS" ? LHS_chainage.map((item, index) => (
@@ -104,7 +104,7 @@ function Map() {
                     ))}
                 </select>
                 <select
-                    className="rounded-lg px-3 py-1"
+                    className="rounded-lg px-3 py-1 bg-black text-white border"
                     onChange={mapSide === "LHS" ? handleUpperLimitLHS : handleUpperLimitRHS}
                 >
                     {mapSide === "LHS" ? LHS_chainage.map((item, index) => (
@@ -119,10 +119,9 @@ function Map() {
                 <>
                     <div className="   ">
                         {message[project] && Object.keys(message[project][mapSide]).length > 0 ? (
-                            Object.keys(message[project][mapSide]).map((index, key) => (
-                                <div key={key} className="w-100vw h-fit flex ">
+                                <div className="w-100vw h-fit flex ">
                                     <Component
-                                        given={message["one"][mapSide][index]}
+                                        given={message["one"][mapSide]}
                                         mapSide={mapSide}
                                         Lowerlimit_LHS={Lowerlimit_LHS}
                                         Upperlimit_LHS={Upperlimit_LHS}
@@ -131,7 +130,7 @@ function Map() {
                                     />
 
                                 </div>
-                            ))
+                            
                         ) : (
                             <div>No data available</div>
                         )}

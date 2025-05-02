@@ -42,7 +42,7 @@ export default function Home() {
   };
 
   return (
-    <div className=" bg-white border-b-2 border-black ">
+    <div className=" bg-slate-800 border-b-2 border-black ">
       <div className="flex justify-between px-20">
         <div className="text-3xl font-bold m-2">
           <NavLink href="/">
@@ -51,14 +51,14 @@ export default function Home() {
         </div>
         <div className="flex gap-16 my-auto">
           <div>
-            <IoIosNotifications  size={40} />
+            <IoIosNotifications className="invert" size={40} />
           </div>
 
           {/* Arrow to toggle menu */}
           <div className="relative cursor-pointer" onClick={toggleArrowMenu}>
-            {showMenu ? <FaChevronCircleUp   size={40} /> : <FaChevronCircleDown   size={40} />}
+            {showMenu ? <FaChevronCircleUp className="invert"  size={40} /> : <FaChevronCircleDown className="invert"  size={40} />}
             <div
-              className={`absolute bg-white text-black z-10 gap-3 py-2 px-3 font-extrabold text flex-col w-fit my-2 shadow-sm shadow-black transform -translate-x-10 translate-y-10 top-0 left-0 ${showMenu ? "flex" : "hidden"
+              className={`absolute border p-3 bg-slate-800 text-white z-10  my-2 mx-3 font-extrabold text flex-col w-fit  shadow-sm shadow-black transform -translate-x-10 translate-y-10 top-0 left-0 ${showMenu ? "flex" : "hidden"
                 }`}
             >
               {user ? (
@@ -67,9 +67,9 @@ export default function Home() {
                   <span>Logout</span>
                 </div>
               ) : (
-                <div className="flex flex-col gap-2">
-                  <div className="login flex">
-                    <RiLoginCircleFill   size={30} />
+                <div className="flex flex-col  ">
+                  <div className="login flex gap-3">
+                  <RiLoginCircleFill size={30} />
                     <NavLink href="/login">Login</NavLink>
                   </div>
                 </div>
@@ -79,9 +79,9 @@ export default function Home() {
 
           {/* Profile icon */}
           <div className="relative cursor-pointer" onClick={toggleProfileMenu}>
-            <MdAccountCircle   size={40} />
+            <MdAccountCircle className="invert"  size={40} />
             <div
-              className={`absolute bg-white text-black z-10 gap-3 py-2 px-3 font-extrabold text flex-col w-fit my-2 shadow-sm shadow-black transform -translate-x-10 translate-y-10 top-0 left-0 ${profileMenu ? "flex" : "hidden"
+              className={`absolute bg-slate-800 text-black z-10 gap-3 py-2 px-3 font-extrabold text flex-col w-fit my-2 shadow-sm shadow-black transform -translate-x-10 translate-y-10 top-0 left-0 ${profileMenu ? "flex" : "hidden"
                 }`}
             >
               {user ? (
@@ -101,7 +101,7 @@ export default function Home() {
             <NavLink href="/wayVision1">
               <MdSpaceDashboard
                 size={40}
-                className="cursor-pointer "
+                className="cursor-pointer invert "
               />
             </NavLink>
 

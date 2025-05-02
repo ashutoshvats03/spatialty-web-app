@@ -33,7 +33,7 @@ function Page() {
 
     return (
         <div className="mt-14 ">
-            <div className={`text bg-slate-300 text-center border-r-4 border-b-4 text-[16px] border-white rounded-lg border-2 mx-16 ${displayContent ? "block" : "hidden"}`}>
+            <div className={`text text-white bg-slate-800 text-center border-r-4 border-b-4 text-[16px] border-white rounded-lg border-2 mx-16 ${displayContent ? "block" : "hidden"}`}>
                 <div className="location text-2xl font-extrabold mx-16 mt-5 mb-10">Projects Content</div>
                 <div onMouseLeave={() => setShowInfoIndex(null)}>
                     {projects && projects.map((project, index) => (
@@ -49,11 +49,11 @@ function Page() {
                     ))}
                 </div>
             </div>
-            <div className={`border-4 border-black mx-16 text-center my-10 ${displayContent ? "hidden" : "block"}`}>
-                <div className='font-extrabold text-3xl bg-slate-300  rounded-lg py-5'>
+            <div className={`border-4 text-white mx-16 text-center my-10 ${displayContent ? "hidden" : "block"}`}>
+                <div className='font-extrabold text-3xl bg-slate-800  rounded-lg py-5'>
                     {header}
                 </div>
-                <div className={`bg-slate-300  px-10`}>
+                <div className={`bg-slate-800   px-10`}>
                     {projects && projects[2]}
                     <DataComponents />
                 </div>

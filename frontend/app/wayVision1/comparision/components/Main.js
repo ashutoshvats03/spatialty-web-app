@@ -3,7 +3,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
 import { useEffect, useState } from "react";
 import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts";
-import Map from "./Multi";
 
 
 const chartConfig = {
@@ -11,16 +10,13 @@ const chartConfig = {
   chainage: { label: "Chainage" },
 };
 
-const ChartSelector = (
-  { given, mapSide, Lowerlimit_LHS, Upperlimit_LHS, Lowerlimit_RHS, Upperlimit_RHS, }) => {
+const ChartSelector = ({ given, mapSide, Lowerlimit_LHS, Upperlimit_LHS, Lowerlimit_RHS, Upperlimit_RHS,selectedOption }) => {
 
-  const [selectedOption, setSelectedOption] = useState(Object.keys(given)?.[0]);
   const [isMounted, setIsMounted] = useState(false);
   const [LowerLimit, setLowerLimit] = useState("dfnvc")
   const [UpperLimit, setUpperLimit] = useState("djj")
 
   useEffect(() => {
-    setSelectedOption(Object.keys(given)?.[0] || "");
     if (mapSide === "LHS") {
       setLowerLimit(Lowerlimit_LHS)
       setUpperLimit(Upperlimit_LHS)
@@ -38,11 +34,11 @@ const ChartSelector = (
   }
 
   // console.log(LowerLimit, UpperLimit)
-  const handleOptionChange = (event) => setSelectedOption(event.target.value);
-
-  const selectedData = given[selectedOption];
   
-  const formattedData = selectedData?.chartData
+  const selectedData = given[selectedOption];
+
+  const formattedData = selectedData
+    ?.chartData
     ?.filter((item) => item[0] >= LowerLimit)
     .filter((item) => item[0] <= UpperLimit) // Filter items first
     .map((item) => ({
@@ -50,24 +46,11 @@ const ChartSelector = (
       chainage: item[0]
     }));
 
-  const url = selectedData?.url
 
 
   return (
     <div className="relative w-full ">
-      <div className="optionSelection bg-slate-800  text-white p-4">
-        <select
-          onChange={handleOptionChange}
-          value={selectedOption}
-          className="p-2 bg-slate-500 border border-black text-black font-bold rounded-md"
-        >
-          {Object.keys(given).map((key) => (
-            <option key={key} value={key}>
-              {key}
-            </option>
-          ))}
-        </select>
-      </div>
+      
       <div className="flex gap-16  overflow-hidden mb-10 mx-10">
         <div className="chart-container h-[300px] flex-1  bg-black text-white  rounded-lg">
           <Card className="relative">
@@ -120,9 +103,6 @@ const ChartSelector = (
 
           </Card>
 
-        </div>
-        <div className="flex-1">
-          {url ? <Map key={isMounted} url={url} LowerLimit={LowerLimit}  UpperLimit={UpperLimit} /> : null}
         </div>
       </div>
     </div>

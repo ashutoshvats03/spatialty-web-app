@@ -3,254 +3,195 @@ import { setdisplayContent } from "@/app/redux/slices/contentSlice";
 import { useEffect, useRef, useState } from "react";
 import PrivateRoute from "../middleware/PrivateRoute";
 import { useAppSelector } from "../redux/hooks";
-import Pavement from "./pavementDistress/page";
 import Project from "./projects/page";
-import signage from "./roadfurniture/components/signage";
-import StreetLight from "./roadfurniture/components/StreetLight";
+import Pavement from "./pavementDistress/page";
 import RoadFurniture from "./roadfurniture/page";
-// import AuthContext from "/spatialty/speciality2/app/context/AuthContext";
+import Link from "next/link";
+import { useDispatch } from "react-redux";
 
-function Page() {
-
-    const [array1, setArray1] = useState(null);
-    const [array2, setArray2] = useState(null);
-    const [isMounted, setIsMounted] = useState(false);
-    // const {loading} = useContext(AuthContext);
-    // const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);  // State to track errors
-    const [activeProject, setActiveProject] = useState("Projects"); // Active menu item
-    const [activeSubMenu, setActiveSubMenu] = useState(null); // Track active submenu
-    const projectRef = useRef(null);
-    const pavementRef = useRef(null);
-    const sinagesRef = useRef(null);
-    const roadfurnitureRef = useRef(null);
-    const streetlightRef = useRef(null);
-
-
+export default function Page() {
+    const dispatch = useDispatch();
     const displayContent = useAppSelector((state) => state.displayContent.displayContent);
 
-    useEffect(() => {
-        if (localStorage.getItem("data") !== null) {
-            const a1 = JSON.parse(localStorage.getItem("data")).Road_Furniture;
-            const a2 = JSON.parse(localStorage.getItem("data")).Street_Light;
-            setArray1(a1);
-            setArray2(a2);
-            setIsMounted(true);
+    // Track active section
+    const [activeSection, setActiveSection] = useState(null);
+
+    // Create refs for the sections you want to scroll to
+    const pavementRef = useRef(null);
+    const roadFurnitureRef = useRef(null);
+
+    // Function to handle scrolling and update active section
+    const scrollToSection = (ref, section) => {
+        if (ref && ref.current) {
+            ref.current.scrollIntoView({ behavior: 'smooth' });
+            setActiveSection(section);
         }
-        else {
-            router.push("/")
-        }
+    };
 
-    }, []);
-
-    // Main menu items
-    const menubar = [
-        {
-            name: "Pavement Distress",
-            ref: pavementRef,
-            element: Pavement,
-            id: "pavement-distress",
-            hasSubMenu: false,
-            subMenu:[]
-        },
-        {
-            name: "Road Furniture",
-            ref: roadfurnitureRef,
-            element: RoadFurniture,
-            id: "road-furniture",
-            hasSubMenu: true,
-            subMenu: [
-                { name: "Street Light", ref: streetlightRef, element: StreetLight, id: "street-light" },
-                { name: "Signage", ref: sinagesRef, element: signage, id: "signage" },
-            ]
-        },
-    ];
-
+    // Set up intersection observer to detect which section is in view
     useEffect(() => {
-        const observerOptions = {
+        // Only set up the observer if we're not in displayContent mode
+        if (displayContent) return;
+
+        const options = {
             root: null,
-            rootMargin: "0px",
-            threshold: 0.3,  // 30% visibility triggers observer
+            rootMargin: '-20% 0px -20% 0px', // Add margin to make detection more accurate
+            threshold: [0.1, 0.5], // Multiple thresholds for better detection
         };
 
-        const observerCallback = (entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    // Check main menu items
-                    const activeSection = menubar.find(
-                        (menu) => menu.ref.current === entry.target
-                    );
+        const observer = new IntersectionObserver((entries) => {
+            // Sort entries by intersectionRatio to prioritize the most visible element
+            const visibleEntries = entries
+                .filter(entry => entry.isIntersecting)
+                .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
 
-                    if (activeSection) {
-                        setActiveProject(activeSection.name);
-                        setActiveSubMenu(null);
-                        return;
-                    }
+            // If we have visible entries, use the one with highest intersection ratio
+            if (visibleEntries.length > 0) {
+                const mostVisibleEntry = visibleEntries[0];
 
-                    // Check submenu items
-                    for (const menu of menubar) {
-                        if (menu.hasSubMenu) {
-                            const activeSubSection = menu.subMenu.find(
-                                (submenu) => submenu.ref.current === entry.target
-                            );
-
-                            if (activeSubSection) {
-                                setActiveProject(menu.name); // Set parent as active
-                                setActiveSubMenu(activeSubSection.name); // Set submenu as active
-                                return;
-                            }
-                        }
-                    }
+                if (mostVisibleEntry.target === pavementRef.current) {
+                    setActiveSection('pavement');
+                } else if (mostVisibleEntry.target === roadFurnitureRef.current) {
+                    setActiveSection('roadFurniture');
                 }
-            });
-        };
-
-        const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-        // Observe main menu items
-        menubar.forEach((menu) => {
-            if (menu.ref.current) {
-                observer.observe(menu.ref.current);
             }
+        }, options);
 
-            // Observe submenu items
-            if (menu.hasSubMenu) {
-                menu.subMenu.forEach((submenu) => {
-                    if (submenu.ref.current) {
-                        observer.observe(submenu.ref.current);
-                    }
-                });
-            }
-        });
+        // Observe sections
+        if (pavementRef.current) observer.observe(pavementRef.current);
+        if (roadFurnitureRef.current) observer.observe(roadFurnitureRef.current);
 
         return () => {
-            menubar.forEach((menu) => {
-                if (menu.ref.current) {
-                    observer.unobserve(menu.ref.current);
-                }
-
-                if (menu.hasSubMenu) {
-                    menu.subMenu.forEach((submenu) => {
-                        if (submenu.ref.current) {
-                            observer.unobserve(submenu.ref.current);
-                        }
-                    });
-                }
-            });
+            if (pavementRef.current) observer.unobserve(pavementRef.current);
+            if (roadFurnitureRef.current) observer.unobserve(roadFurnitureRef.current);
+            observer.disconnect();
         };
-    }, [menubar]);
+    }, [displayContent]);
 
-    if (!isMounted) {
-        return <div>Loading vegetation</div>;
-    }
+    // Add a scroll event listener for additional reliability
+    useEffect(() => {
+        // Only set up the scroll listener if we're not in displayContent mode
+        if (displayContent) return;
 
-    const handleScroll = (ref, menuName, subMenuName = null) => {
-        if (ref.current) {
-            ref.current.scrollIntoView({ behavior: "instant" });
-        }
-        setActiveProject(menuName);
-        setActiveSubMenu(subMenuName);
-    };
+        const handleScroll = () => {
+            if (!pavementRef.current || !roadFurnitureRef.current) return;
+
+            const pavementRect = pavementRef.current.getBoundingClientRect();
+            const roadFurnitureRect = roadFurnitureRef.current.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            // Check if section is in viewport
+            const isPavementVisible =
+                pavementRect.top < windowHeight / 2 &&
+                pavementRect.bottom > windowHeight / 2;
+
+            const isRoadFurnitureVisible =
+                roadFurnitureRect.top < windowHeight / 2 &&
+                roadFurnitureRect.bottom > windowHeight / 2;
+
+            // Update active section based on which one is more visible
+            if (isPavementVisible) {
+                setActiveSection('pavement');
+            } else if (isRoadFurnitureVisible) {
+                setActiveSection('roadFurniture');
+            }
+        };
+
+        // Add scroll event listener to the window
+        window.addEventListener('scroll', handleScroll, { passive: true });
+
+        // Call once on mount to set initial state
+        handleScroll();
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [displayContent]);
 
     return (
         <PrivateRoute>
-            <div>
-                <div className="transition-opacity duration-500 flex">
-                    {/* Left Navigation */}
-                    <div className={`relative mt-10 ml-6 mr-20 max-h-[85vh] w-[10vw] ${displayContent ? "hidden" : "block"}`} >
-                        <div >
-                            <div className=" relative h-full w-full">
-                                <div className="cursor-pointer px-4 py-2 mb-2 rounded bg-black text-white border-2 border-black" onClick={() => dispatch(setdisplayContent(true))}>
-                                    Projects
-                                </div>
-                                <div className=" absolute top-16">
-                                    {menubar.map((menu, index) => (
-                                        <div key={index}>
-                                            <div
-                                                onClick={() => { handleScroll(menu.ref, menu.name) }}
-                                                className={`px-4 py-2 mb-2 rounded ${activeProject === menu.name
-                                                    ? "bg-red-600 border-2 border-black"
-                                                    : "bg-slate-300 border-2 border-black"
-                                                    }
-                                                    cursor-pointer`}
-                                            >
-                                                <div>
-                                                    {menu.name}
-                                                </div>
-                                            </div>
-                                            {/* Render submenu items if this menu has them */}
-                                            {menu.hasSubMenu && menu.subMenu.map((submenu, subIndex) => (
-                                                <div
-                                                    key={`${index}-${subIndex}`}
-                                                    onClick={() => { handleScroll(submenu.ref, menu.name, submenu.name) }}
-                                                    className={`ml-5 my-2 ${activeSubMenu === submenu.name
-                                                        ? "text-red-600 font-bold"
-                                                        : ""} cursor-pointer`}
-                                                >
-                                                    <div>
-                                                        - {submenu.name}
-                                                    </div>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    ))}
-                                </div>
+            <div className="flex flex-row relative w-full h-screen">
+                {/* Left section */}
+                <div className={` ${displayContent ? "hidden" : "block"} w-1/4 p-5 relative`}>
+
+
+                    <div className="flex flex-col gap-4 mt-10">
+                        {/* Project button */}
+                        <div className="flex flex-col gap-4">
+                            <button
+                                onClick={() => dispatch(setdisplayContent(true))}
+                                className="bg-slate-500 text-white px-4 py-2 rounded-md transition duration-300">
+                                Projects
+                            </button>
+
+                            {/* Apply active styling based on activeSection */}
+                            <button
+                                onClick={() => scrollToSection(pavementRef, 'pavement')}
+                                className={`${activeSection === 'pavement'
+                                    ? 'bg-red-600 text-white'
+                                    : 'bg-slate-500 text-white'
+                                    } px-4 py-2 rounded-md transition duration-300`}>
+                                Pavement Distress
+                            </button>
+
+                            <button
+                                onClick={() => scrollToSection(roadFurnitureRef, 'roadFurniture')}
+                                className={`${activeSection === 'roadFurniture'
+                                    ? 'bg-red-600 text-white'
+                                    : 'bg-slate-500 text-white'
+                                    } px-4 py-2 rounded-md transition duration-300`}>
+                                Road Furniture
+                            </button>
+                        </div>
+                        <div className="flex flex-col gap-4 bottom-36 absolute">
+                            <div>
+                                <a
+                                    className=" h-1 bg-red-700 mx-auto py-1 px-3 text-xl rounded-md text-white"
+                                    href="/AUTH.drawio (2).pdf">
+                                    Download pdf
+                                </a>
+                            </div>
+                            <div>
+                                <a
+                                    className="w-1/2 h-1 bg-blue-700 mx-auto py-1 px-2 text-xl rounded-md text-white"
+                                    href="/RHS_Delhi-NCR_data.csv">
+                                    Download CSV
+                                </a>
+                            </div>
+                            <div>
+                                <Link
+                                    className="w-1/2 h-1 bg-green-700 mx-auto py-1 px-4 text-xl rounded-md text-white"
+                                    href="/wayVision1/comparision">
+                                    Comparision
+                                </Link>
                             </div>
                         </div>
-                        <div className=" absolute bottom-0">
-                            <a
-                                href="/RHS_Delhi-NCR_data.csv"  // Replace with your actual CSV file link
-                                download="RHS_Delhi-NCR_data.csv"
-                                className="bg-blue-500 text-white px-4 py-2 rounded-lg w-full mb-2 hover:bg-blue-700 text-center block"
-                            >
-                                Download CSV
-                            </a>
-                            <a
-                                href="/AUTH.drawio (2).pdf"  // Replace with your actual PDF file link
-                                download="data.pdf"
-                                className="bg-red-500 text-white px-4 py-2 rounded-lg w-full hover:bg-red-700 text-center block"
-                            >
-                                Download PDF
-                            </a>
-                        </div>
                     </div>
-                    <div className="border border-black"></div>
-                    {/* Right Content */}
-                    <div className={`${displayContent ? "w-full" : "w-[80vw]"} max-h-[85vh] overflow-auto`}>
-                        <div ref={projectRef} id="projects">
-                            <Project />
+
+                </div>
+
+                <div className="border-2 h-full"></div>
+
+                {/* Right section */}
+                <div className="w-full overflow-y-auto h-screen" id="scrollable-content">
+                    <div className="min-h-[50vh]">
+                        <Project className='w-full' />
+                    </div>
+
+                    <div className={`flex flex-col ${displayContent ? "hidden" : "block"}`}>
+                        {/* Add clear ID and class names to make sections more identifiable */}
+                        <div
+                            ref={pavementRef}
+                            id="pavement-section"
+                            className="min-h-screen py-10 section-container">
+                            <Pavement />
                         </div>
-                        <div className={`${displayContent ? "hidden" : "block"}`}>
-                            {/* Render main menu sections */}
-                            {menubar.map((menu, index) => (
-                                <div key={index} className="mt-10">
-                                    <div
-                                        ref={menu.ref}
-                                        id={menu.id}
-                                        className="section w-full">
-                                        <menu.element />
-                                    </div>
-                                </div>
-                            ))}
-                            {/* Render submenu sections */}
-                            {menubar.filter(menu => menu.hasSubMenu).flatMap(menu =>
-                                menu.subMenu.map((submenu, subIndex) => (
-                                    <div key={`sub-${subIndex}`} className="mt-10">
-                                        <div
-                                            ref={submenu.ref}
-                                            id={submenu.id}
-                                            className="section w-full">
-                                            {submenu.element === StreetLight ? (
-                                                <submenu.element array={array2} />
-                                            ) : submenu.element === signage ? (
-                                                <submenu.element array={array1} />
-                                            ) : (
-                                                <submenu.element />
-                                            )}
-                                        </div>
-                                    </div>
-                                ))
-                            )}
+
+                        <div
+                            ref={roadFurnitureRef}
+                            id="roadfurniture-section"
+                            className="min-h-screen py-10 section-container">
+                            <RoadFurniture />
                         </div>
                     </div>
                 </div>
@@ -258,5 +199,3 @@ function Page() {
         </PrivateRoute>
     );
 }
-
-export default Page;
