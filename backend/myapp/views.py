@@ -23,12 +23,14 @@ import numpy as np  # Add this at the top of your script
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # RHS CSV
-csv_file_path_RHS = os.path.join(BASE_DIR, "spatialty", "backend", "media", "csv", "RHS_Delhi-NCR_data.csv")
+csv_file_path_RHS = os.path.abspath(
+    os.path.join(BASE_DIR, "..", "media", "csv", "RHS_Delhi-NCR_data.csv")
+)
 df = pd.read_csv(csv_file_path_RHS)
 # print(df.columns.tolist())  
 
 chainage_column = "Chainage" 
-chainage_values_RHS = df[chainage_column].tolist() # Get all chainage values of RHS 
+chainage_values_RHS = df[chainage_column].tolist()  # Get all chainage values of RHS 
 
 columns = [
     "Cracking(%)",
@@ -49,7 +51,7 @@ columns = [
 results = {}
 for col in columns:
     df[col] = pd.to_numeric(df[col], errors="coerce")  # Convert to numeric
-    filtered_df = df[df[col] > 0][["Chainage", col]] # Get top 100 non-zero
+    filtered_df = df[df[col] > 0][["Chainage", col]]  # Get top 100 non-zero
     results[col] = filtered_df.values.tolist()  # Store in dictionary
 
 # Access each list
@@ -68,12 +70,14 @@ RHSrutting = results["Rutting(%)"]
 
 
 # LHS CSV
-csv_file_path_LHS = os.path.join(BASE_DIR, "spatialty", "backend", "media", "csv", "LHS_Delhi-NCR_data.csv")
+csv_file_path_LHS = os.path.abspath(
+    os.path.join(BASE_DIR, "..", "media", "csv", "LHS_Delhi-NCR_data.csv")
+)
 df = pd.read_csv(csv_file_path_LHS)
 # print(df.columns.tolist())  # Check actual column names
 
 chainage_column = "Chainage" 
-chainage_values_LHS = df[chainage_column].tolist() # Get all chainage values of LHS 
+chainage_values_LHS = df[chainage_column].tolist()  # Get all chainage values of LHS 
 
 columns = [
     "Cracking(%)",
@@ -113,8 +117,10 @@ LHSrutting = results["Rutting(%)"]
 
 
 # Plantation CSV
-csv_file_path_LHS = os.path.join(BASE_DIR, "spatialty", "backend", "media", "csv", "plantation.csv")
-df = pd.read_csv(csv_file_path_LHS)
+csv_file_path_plantation = os.path.abspath(
+    os.path.join(BASE_DIR, "..", "media", "csv", "plantation.csv")
+)
+df = pd.read_csv(csv_file_path_plantation)
 # print(df.columns.tolist())  # Check actual column names
 
 chainage_column = "Chainage" 
@@ -130,8 +136,10 @@ print(plantation)
 
 
 # Street Light CSV
-csv_file_path_LHS = os.path.join(BASE_DIR, "spatialty", "backend", "media", "csv", "Street_light.csv")
-df = pd.read_csv(csv_file_path_LHS)
+csv_file_path_street_light = os.path.abspath(
+    os.path.join(BASE_DIR, "..", "media", "csv", "Street_light.csv")
+)
+df = pd.read_csv(csv_file_path_street_light)
 
 # Define the columns we want to work with
 chainage_column = "Chainage"
@@ -183,10 +191,12 @@ Street_light_pie_chart = [
 
 
 # Road Furniture CSV
-csv_file_path_LHS = os.path.join(BASE_DIR, "spatialty", "backend", "media", "csv", "LHS_Road furniture.csv")
+csv_file_path_furniture = os.path.abspath(
+    os.path.join(BASE_DIR, "..", "media", "csv", "LHS_Road furniture.csv")
+)
 
 # Read the CSV
-df = pd.read_csv(csv_file_path_LHS)
+df = pd.read_csv(csv_file_path_furniture)
 
 chainage_column = "Chainage"
 data_columns = ["Mandatory", "Cautionary", "Informatory"]
@@ -220,7 +230,6 @@ Road_furniture = [
 
 # print("\nRoad Furniture Data:")
 # print(Road_furniture)
-
 
 data = {
             "Road_Furniture": {
