@@ -2,6 +2,8 @@
 import { useContext } from "react";
 import AuthContext from "./context/AuthContext";
 import Link from "next/link";
+import '../src/styles.css';  // Make sure this is the correct path
+
 
 export default function Home() {
   const { user, loading } = useContext(AuthContext); // Access user and loading state

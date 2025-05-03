@@ -4,6 +4,6 @@ export default {
     images: {
       unoptimized: true
     },
-    basePath: '/your-repo-name',
+    basePath: '/spatialty',
   };
   
