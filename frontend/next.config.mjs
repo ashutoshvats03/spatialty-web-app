@@ -1,3 +1,4 @@
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -10,11 +11,3 @@ const nextConfig = {
 
 export default nextConfig;
 
-  // /** @type {import('next').NextConfig} */
-  // const nextConfig = {
-  //   output: 'export', // Assuming you are using static export for GitHub Pages
-  //   basePath: '/spatialty', // Set the base path to your subdirectory name
-  //   // ... other configurations
-  // };
-
-  // module.exports = nextConfig;
