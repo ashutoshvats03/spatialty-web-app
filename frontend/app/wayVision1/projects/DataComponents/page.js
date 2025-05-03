@@ -1,3 +1,4 @@
+"use client"
 import { useState, useEffect, React } from 'react';
 
 const YourComponent = () => {
