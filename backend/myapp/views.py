@@ -22,8 +22,8 @@ import numpy as np  # Add this at the top of your script
 # Define BASE_DIR and construct the absolute path to the CSV file
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-
-csv_file_path_RHS = os.path.join(BASE_DIR, r"\spatialty\backend\media\csv\RHS_Delhi-NCR_data.csv")
+# RHS CSV
+csv_file_path_RHS = os.path.join(BASE_DIR, "spatialty", "backend", "media", "csv", "RHS_Delhi-NCR_data.csv")
 df = pd.read_csv(csv_file_path_RHS)
 # print(df.columns.tolist())  
 
@@ -67,14 +67,13 @@ RHSedgecrack = results["Edge crack(%)"]
 RHSrutting = results["Rutting(%)"]
 
 
-
-csv_file_path_LHS = os.path.join(BASE_DIR, r"\spatialty\\backend\media\csv\LHS_Delhi-NCR_data.csv")
+# LHS CSV
+csv_file_path_LHS = os.path.join(BASE_DIR, "spatialty", "backend", "media", "csv", "LHS_Delhi-NCR_data.csv")
 df = pd.read_csv(csv_file_path_LHS)
 # print(df.columns.tolist())  # Check actual column names
 
 chainage_column = "Chainage" 
-chainage_values_LHS = df[chainage_column].tolist()# Get all chainage values of LHS 
-
+chainage_values_LHS = df[chainage_column].tolist() # Get all chainage values of LHS 
 
 columns = [
     "Cracking(%)",
@@ -110,13 +109,11 @@ LHSbleeding = results["Bleeding(%)"]
 LHSraveling = results["Raveling(%)"]
 LHSdepression = results["Depression(%)"]
 LHSedgecrack = results["Edge crack(%)"]
-LHSrutting= results["Rutting(%)"]
+LHSrutting = results["Rutting(%)"]
 
 
-
-
-
-csv_file_path_LHS = os.path.join(BASE_DIR, r"\spatialty\backend\media\csv\plantation.csv")
+# Plantation CSV
+csv_file_path_LHS = os.path.join(BASE_DIR, "spatialty", "backend", "media", "csv", "plantation.csv")
 df = pd.read_csv(csv_file_path_LHS)
 # print(df.columns.tolist())  # Check actual column names
 
@@ -132,9 +129,8 @@ plantation = [
 print(plantation)
 
 
-
-
-csv_file_path_LHS = os.path.join(BASE_DIR, r"\spatialty\backend\media\csv\Street_light.csv")
+# Street Light CSV
+csv_file_path_LHS = os.path.join(BASE_DIR, "spatialty", "backend", "media", "csv", "Street_light.csv")
 df = pd.read_csv(csv_file_path_LHS)
 
 # Define the columns we want to work with
@@ -186,9 +182,8 @@ Street_light_pie_chart = [
 # print(Street_light_pie_chart)
 
 
-
-
-csv_file_path_LHS = os.path.join(BASE_DIR, r"\spatialty\backend\media\csv\LHS_Road furniture.csv")
+# Road Furniture CSV
+csv_file_path_LHS = os.path.join(BASE_DIR, "spatialty", "backend", "media", "csv", "LHS_Road furniture.csv")
 
 # Read the CSV
 df = pd.read_csv(csv_file_path_LHS)
@@ -225,10 +220,6 @@ Road_furniture = [
 
 # print("\nRoad Furniture Data:")
 # print(Road_furniture)
-
-
-
-
 
 
 data = {
