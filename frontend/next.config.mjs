@@ -1,6 +1,11 @@
+// frontend/next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export',
+  output: 'export',
+  images: {
+    unoptimized: true
+  },
+  basePath: '/speciality', // Optional, for GitHub Pages compatibility
 };
 
-export default nextConfig;
+module.exports = nextConfig;
