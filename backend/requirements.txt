@@ -2,4 +2,5 @@ Django==5.1.4
 djangorestframework==3.14.0
 djangorestframework-simplejwt==5.2.2
 django-cors-headers==4.0.0
+pandas
 django-ratelimit==4.1.0
