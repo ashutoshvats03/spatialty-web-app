@@ -23,7 +23,9 @@ import numpy as np  # Add this at the top of your script
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # RHS CSV
-csv_file_path_RHS = os.path.join("spatialty", "backend", "media", "csv", "RHS_Delhi-NCR_data.csv")
+csv_file_path_RHS = os.path.abspath(
+    os.path.join(BASE_DIR, "..", "media", "csv", "RHS_Delhi-NCR_data.csv")
+)
 df = pd.read_csv(csv_file_path_RHS)
 # print(df.columns.tolist())  
 
