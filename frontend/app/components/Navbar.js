@@ -46,7 +46,7 @@ export default function Home() {
       <div className="flex justify-between px-20">
         <div className="text-3xl font-bold m-2">
           <NavLink href="/">
-            <Image src="/img/logo.png" width={200} height={200} alt="logo" />
+            <Image src="/speciality/img/logo.png" width={200} height={200} alt="logo" />
           </NavLink>
         </div>
         <div className="flex gap-16 my-auto">
