@@ -6,6 +6,7 @@ const nextConfig = {
   assetPrefix: '/speciality/', // Use your actual repository name
   images: {
     unoptimized: true,
+    path: '/speciality/_next/image'  // Add this line
   },
 }
 
