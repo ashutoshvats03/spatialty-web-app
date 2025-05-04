@@ -1,10 +1,12 @@
+// next.config.mjs
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  experimental: {
-    appDir: true,
+  output: 'export',
+  basePath: '/speciality', // Use your actual repository name
+  assetPrefix: '/speciality/', // Use your actual repository name
+  images: {
+    unoptimized: true,
   },
-  output: 'export', // This is necessary for static export
-};
+}
 
-export default nextConfig;
+export default nextConfig;  // Note: using export default instead of module.exports
