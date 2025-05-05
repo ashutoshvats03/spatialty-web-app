@@ -29,7 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
-    "https://44fe-49-37-10-223.ngrok-free.app",  # your Ngrok subdomain
+    "https://https://44fe-49-37-10-223.ngrok-free.app",  # your Ngrok subdomain
 ]
 
 #import os
