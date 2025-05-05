@@ -850,6 +850,28 @@ class RegisterView(generics.CreateAPIView):
 
 
 # admin , password
+try:
+    # Check if dummy user already exists
+    if not User.objects.filter(username='aak').exists():
+        # Create user
+        dummy_user = User.objects.create_user(
+            username='aak',
+            email='student@example.com',
+            password='student123'
+        )
+        
+        # Create or get student role
+        student_role, created = UserRole.objects.get_or_create(name='student')
+        
+        # Assign role to user
+        UserRole.objects.create(user=dummy_user, role=student_role)
+        
+        # print("✅ Created dummy student account:")
+        # print("   Username: student_user")
+        # print("   Password: student123")
+except Exception as e:
+    print(f"⚠️ Error creating dummy user: {e}")
+    
 class LoginView(APIView):
     serializer_class = LoginSerializer
     
