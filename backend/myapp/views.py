@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # RHS CSV
 csv_file_path_RHS = os.path.abspath(
-    os.path.join(BASE_DIR,"backend", "media", "csv", "RHS_Delhi-NCR_data.csv")
+    os.path.join(BASE_DIR, "csv", "RHS_Delhi-NCR_data.csv")
 )
 df = pd.read_csv(csv_file_path_RHS)
 # print(df.columns.tolist())  
