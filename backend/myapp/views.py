@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # RHS CSV
 csv_file_path_RHS = os.path.abspath(
-    os.path.join(BASE_DIR, "..", "media", "csv", "RHS_Delhi-NCR_data.csv")
+    os.path.join(BASE_DIR, "..","backend", "media", "csv", "RHS_Delhi-NCR_data.csv")
 )
 df = pd.read_csv(csv_file_path_RHS)
 # print(df.columns.tolist())  
@@ -71,7 +71,7 @@ RHSrutting = results["Rutting(%)"]
 
 # LHS CSV
 csv_file_path_LHS = os.path.abspath(
-    os.path.join(BASE_DIR, "..", "media", "csv", "LHS_Delhi-NCR_data.csv")
+    os.path.join(BASE_DIR, "..","backend", "media", "csv", "LHS_Delhi-NCR_data.csv")
 )
 df = pd.read_csv(csv_file_path_LHS)
 # print(df.columns.tolist())  # Check actual column names
@@ -118,7 +118,7 @@ LHSrutting = results["Rutting(%)"]
 
 # Plantation CSV
 csv_file_path_plantation = os.path.abspath(
-    os.path.join(BASE_DIR, "..", "media", "csv", "plantation.csv")
+    os.path.join(BASE_DIR, "..","backend", "media", "csv", "plantation.csv")
 )
 df = pd.read_csv(csv_file_path_plantation)
 # print(df.columns.tolist())  # Check actual column names
@@ -137,7 +137,7 @@ print(plantation)
 
 # Street Light CSV
 csv_file_path_street_light = os.path.abspath(
-    os.path.join(BASE_DIR, "..", "media", "csv", "Street_light.csv")
+    os.path.join(BASE_DIR, "..","backend", "media", "csv", "Street_light.csv")
 )
 df = pd.read_csv(csv_file_path_street_light)
 
@@ -192,7 +192,7 @@ Street_light_pie_chart = [
 
 # Road Furniture CSV
 csv_file_path_furniture = os.path.abspath(
-    os.path.join(BASE_DIR, "..", "media", "csv", "LHS_Road furniture.csv")
+    os.path.join(BASE_DIR, "..","backend", "media", "csv", "LHS_Road furniture.csv")
 )
 
 # Read the CSV
