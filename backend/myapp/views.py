@@ -20,11 +20,16 @@ import pandas as pd
 import numpy as np  # Add this at the top of your script
 
 # Define BASE_DIR and construct the absolute path to the CSV file
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # RHS CSV
 csv_file_path_RHS = os.path.abspath(
-    os.path.join(BASE_DIR, "csv", "RHS_Delhi-NCR_data.csv")
+    os.path.join(MEDIA_ROOT, "csv", "RHS_Delhi-NCR_data.csv")
 )
 df = pd.read_csv(csv_file_path_RHS)
 # print(df.columns.tolist())  
