@@ -31,9 +31,13 @@ ALLOWED_HOSTS = [
     "c6e7-49-37-10-223.ngrok-free.app",  # your Ngrok subdomain
 ]
 
-# settings.py
+#import os
+
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 # Application definition
