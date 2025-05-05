@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-bf%^m_fv$yb&)vlte4t=p6lns#shs_!s9-$6=a_ylo70340ou2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "c6e7-49-37-10-223.ngrok-free.app",  # your Ngrok subdomain
+]
 
 # settings.py
 MEDIA_URL = '/media/'
