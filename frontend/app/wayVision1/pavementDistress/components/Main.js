@@ -29,7 +29,7 @@ const ChartSelector = (
       setUpperLimit(Upperlimit_RHS)
     }
     setIsMounted(true);
-  }, [mapSide, given, Lowerlimit_LHS, Upperlimit_LHS, Lowerlimit_RHS, Upperlimit_RHS]);
+  }, [mapSide, given, Lowerlimit_LHS, Upperlimhttps://github.com/ashutoshvats03/speciality/pull/15/conflict?name=frontend%252Fapp%252FwayVision1%252FpavementDistress%252Fcomponents%252FMain.js&ancestor_oid=22217e140ff0461189e91b33a944228f27665905&base_oid=74bd7d69a860f75904931d6287e70bc1f0b8be69&head_oid=742a25ee9f174124daac093a29c9cfab64e0f8f8it_LHS, Lowerlimit_RHS, Upperlimit_RHS]);
 
 
 
@@ -51,7 +51,8 @@ const ChartSelector = (
     }));
 
   const url = selectedData?.url
-    console.log("url", url)
+  console.log("url", url)
+
 
 
   return (
