@@ -376,49 +376,6 @@ data = {
                                 "Shoving": {
                                     "chartData": RHSshoving,
                                     "url": "https://44fe-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Shoving_severity-based.kml"
-
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Cracking_severity-based.kml"
-                                },
-                                "Potholes": {
-                                    "chartData": RHSpotholes,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Potholes_severity-based.kml"
-                                },
-                                "Patch Work": {
-                                    "chartData": RHSpatchwork,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Patch_work_severity-based.kml"
-                                },
-                                "Alligator Crack": {
-                                    "chartData": RHSalligator,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Alligator_crack.kml"
-                                },
-                                "Longitudinal": {
-                                    "chartData": RHSlongitudinal,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Longitudinal_crack.kml"
-                                },
-                                "Transverse": {
-                                    "chartData": RHStransverse,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Transverse_crack.kml"
-                                },
-                                "Edge Crack": {
-                                    "chartData": RHSedgecrack,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Edge_crack_severity-based.kml"
-                                },
-                                "Bleeding": {
-                                    "chartData": RHSbleeding,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Bleeding_severity-based.kml"
-                                },
-                                "Depression": {
-                                    "chartData": RHSdepression,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Depression_severity-based.kml"
-                                },
-                                "Rutting": {
-                                    "chartData": RHSrutting,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Rutting.kml"
-                                },
-                                "Shoving": {
-                                    "chartData": RHSshoving,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Shoving_severity-based.kml"
-
                                 }
                             },
                             "LHS": {
@@ -466,49 +423,6 @@ data = {
                                 "Shoving": {
                                     "chartData": LHSshoving,
                                     "url": "https://44fe-49-37-10-223.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Shoving_severity-based.kml"
-
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Cracking_severity-based.kml"
-                                },
-                                "Potholes": {
-                                    "chartData": LHSpotholes,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Potholes_severity-based.kml"
-                                },
-                                "Patch Work": {
-                                    "chartData": LHSpatchwork,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Patch_work_severity-based.kml"
-                                },
-                                "Alligator Crack": {
-                                    "chartData": LHSalligator,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Alligator_crack.kml"
-                                },
-                                "Longitudinal": {
-                                    "chartData": LHSlongitudinal,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Longitudinal_crack.kml"
-                                },
-                                "Transverse": {
-                                    "chartData": LHStransverse,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Transverse_crack.kml"
-                                },
-                                "Edge Crack": {
-                                    "chartData": LHSedgecrack,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Edge_crack_severity-based.kml"
-                                },
-                                "Bleeding": {
-                                    "chartData": LHSbleeding,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Bleeding_severity-based.kml"
-                                },
-                                "Depression": {
-                                    "chartData": LHSdepression,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Depression_severity-based.kml"
-                                },
-                                "Rutting": {
-                                    "chartData": LHSrutting,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Rutting.kml"
-                                },
-                                "Shoving": {
-                                    "chartData": LHSshoving,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Shoving_severity-based.kml"
-
                                 }
                             }
                         }
@@ -695,49 +609,6 @@ data = {
                                 "Shoving": {
                                     "chartData": RHSshoving,
                                     "url": "https://44fe-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Shoving_severity-based.kml"
-
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Cracking_severity-based.kml"
-                                },
-                                "Potholes": {
-                                    "chartData": RHSpotholes,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Potholes_severity-based.kml"
-                                },
-                                "Patch Work": {
-                                    "chartData": RHSpatchwork,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Patch_work_severity-based.kml"
-                                },
-                                "Alligator Crack": {
-                                    "chartData": RHSalligator,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Alligator_crack.kml"
-                                },
-                                "Longitudinal": {
-                                    "chartData": RHSlongitudinal,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Longitudinal_crack.kml"
-                                },
-                                "Transverse": {
-                                    "chartData": RHStransverse,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Transverse_crack.kml"
-                                },
-                                "Edge Crack": {
-                                    "chartData": RHSedgecrack,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Edge_crack_severity-based.kml"
-                                },
-                                "Bleeding": {
-                                    "chartData": RHSbleeding,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Bleeding_severity-based.kml"
-                                },
-                                "Depression": {
-                                    "chartData": RHSdepression,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Depression_severity-based.kml"
-                                },
-                                "Rutting": {
-                                    "chartData": RHSrutting,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Rutting.kml"
-                                },
-                                "Shoving": {
-                                    "chartData": RHSshoving,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Shoving_severity-based.kml"
-
                                 }
                             },
                             "LHS": {
@@ -785,49 +656,6 @@ data = {
                                 "Shoving": {
                                     "chartData": LHSshoving,
                                     "url": "https://44fe-49-37-10-223.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Shoving_severity-based.kml"
-
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Cracking_severity-based.kml"
-                                },
-                                "Potholes": {
-                                    "chartData": LHSpotholes,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Potholes_severity-based.kml"
-                                },
-                                "Patch Work": {
-                                    "chartData": LHSpatchwork,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Patch_work_severity-based.kml"
-                                },
-                                "Alligator Crack": {
-                                    "chartData": LHSalligator,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Alligator_crack.kml"
-                                },
-                                "Longitudinal": {
-                                    "chartData": LHSlongitudinal,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Longitudinal_crack.kml"
-                                },
-                                "Transverse": {
-                                    "chartData": LHStransverse,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Transverse_crack.kml"
-                                },
-                                "Edge Crack": {
-                                    "chartData": LHSedgecrack,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Edge_crack_severity-based.kml"
-                                },
-                                "Bleeding": {
-                                    "chartData": LHSbleeding,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Bleeding_severity-based.kml"
-                                },
-                                "Depression": {
-                                    "chartData": LHSdepression,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Depression_severity-based.kml"
-                                },
-                                "Rutting": {
-                                    "chartData": LHSrutting,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Rutting.kml"
-                                },
-                                "Shoving": {
-                                    "chartData": LHSshoving,
-                                    "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Shoving_severity-based.kml"
-
                                 }
                             }
                         }
