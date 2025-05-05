@@ -51,6 +51,7 @@ const ChartSelector = (
     }));
 
   const url = selectedData?.url
+    console.log("url", url)
 
 
   return (
