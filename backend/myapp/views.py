@@ -132,7 +132,7 @@ plantation = [
         row for row in result
         if not (isinstance(row[0], float) and np.isnan(row[0]))
     ]
-print(plantation)
+# print(plantation)
 
 
 # Street Light CSV
@@ -328,49 +328,49 @@ data = {
                     "RHS": {
                         "Cracking": {
                             "chartData": RHScrack,
-                            "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Cracking_severity-based.kml"
+                            "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Cracking_severity-based.kml"
                         },
                         "Potholes": {
                             "chartData": RHSpotholes,
-                            "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Potholes_severity-based.kml"
+                            "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Potholes_severity-based.kml"
                         },
                         "Patch Work": {
                             "chartData": RHSpatchwork,
-                            "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Patch_work_severity-based.kml"
+                            "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Patch_work_severity-based.kml"
                         },
                         "Alligator Crack": {
                             "chartData": RHSalligator,
-                            "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Alligator_crack.kml"
+                            "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Alligator_crack.kml"
                         },
                         "Longitudinal": {
                             "chartData": RHSlongitudinal,
-                            "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Longitudinal_crack.kml"
+                            "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Longitudinal_crack.kml"
                         },
                         "Transverse": {
                             "chartData": RHStransverse,
-                            "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Transverse_crack.kml"
+                            "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Transverse_crack.kml"
                         },
                         "Edge Crack": {
                             "chartData": RHSedgecrack,
-                            "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Edge_crack_severity-based.kml"
+                            "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Edge_crack_severity-based.kml"
                         },
                         "Bleeding": {
                             "chartData": RHSbleeding,
-                            "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Bleeding_severity-based.kml"
+                            "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Bleeding_severity-based.kml"
                         },
                         "Depression": {
                             "chartData": RHSdepression,
-                            "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Depression_severity-based.kml"
+                            "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Depression_severity-based.kml"
                         },
                         "Rutting": {
                             "chartData": RHSrutting,
-                            "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Rutting.kml"
+                            "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Rutting.kml"
                         },
                         "Shoving": {
                             "chartData": RHSshoving,
-                            "url": "http://localhost:8000/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Shoving_severity-based.kml"
+                            "url": "https://c6e7-49-37-10-223.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Shoving_severity-based.kml"
                         }
-                    },
+                    },             
                     "LHS": {
                         "Cracking": {
                             "chartData": LHScrack,
@@ -848,8 +848,6 @@ class RegisterView(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = RegisterSerializer
 
-
-# admin , password
 try:
     # Check if dummy user already exists
     if not User.objects.filter(username='aak').exists():
@@ -871,7 +869,7 @@ try:
         # print("   Password: student123")
 except Exception as e:
     print(f"⚠️ Error creating dummy user: {e}")
-    
+# admin , password
 class LoginView(APIView):
     serializer_class = LoginSerializer
     
