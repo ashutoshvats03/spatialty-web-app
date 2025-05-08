@@ -16,7 +16,7 @@ export const AuthProvider = ({ children }) => {
             const refreshToken = localStorage.getItem("refreshToken");
             if (refreshToken) {
                 try {
-                    const response = await axios.post("https://44fe-49-37-10-223.ngrok-free.app/token/refresh/", {
+                    const response = await axios.post("https://16f8-49-37-10-223.ngrok-free.app/token/refresh/", {
                         refresh: refreshToken,
                     });
                     const { access } = response.data;
@@ -40,7 +40,7 @@ export const AuthProvider = ({ children }) => {
 
     const fetchUserData = async (token) => {
         try {
-            const response = await axios.get("https://44fe-49-37-10-223.ngrok-free.app/dashboard/", );
+            const response = await axios.get("https://16f8-49-37-10-223.ngrok-free.app/dashboard/", );
             setUser(response.data.user);
         } catch (error) {
             console.log("Error fetching user data:", error);
@@ -49,7 +49,7 @@ export const AuthProvider = ({ children }) => {
 
     const login = async (username, password) => {
         try {
-            const response = await axios.post("https://44fe-49-37-10-223.ngrok-free.app/login/", {
+            const response = await axios.post("https://16f8-49-37-10-223.ngrok-free.app/login/", {
                 username,
                 password,
             });
