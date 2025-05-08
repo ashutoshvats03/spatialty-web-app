@@ -39,12 +39,15 @@ const Home = ({ url, LowerLimit, UpperLimit }) => {
       setLoading(true);
 
       try {
+        console.log("Fetching KML file from URL:", url);
         const response = await fetch(url, { headers: { "Content-Type": "application/xml; charset=UTF-8" } });
         if (!response.ok) throw new Error("Failed to fetch KML file.");
 
+        console.log(response);
         const kmlText = await response.text();
+        console.log(kmlText);
         const kmlDom = new DOMParser().parseFromString(kmlText, "application/xml");
-
+        console.log(kmlDom);
         if (!kmlDom || kmlDom.getElementsByTagName("parsererror").length) {
           setError("Invalid KML or parsing error.");
           setLoading(false);
