@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import "leaflet/dist/leaflet.css";
 import { DOMParser } from "xmldom";
+import { redirect } from "next/dist/server/api-utils";
+import { useRouter } from "next/navigation";
 
 // Import Leaflet only in the browser
 let L;
@@ -33,26 +35,53 @@ const Home = ({ url, LowerLimit, UpperLimit }) => {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
   const [mapKey, setMapKey] = useState(0); // Force remount of MapContainer
+  const router = useRouter();
 
   useEffect(() => {
     const fetchKMLFiles = async () => {
       setLoading(true);
 
       try {
-        console.log("Fetching KML file from URL:", url);
-        const response = await fetch(url, { headers: { "Content-Type": "application/xml; charset=UTF-8" } });
-        if (!response.ok) throw new Error("Failed to fetch KML file.");
+        // console.log("Fetching KML file from URL:", url);
+        // const response = await fetch(url, { headers: { "Content-Type": "application/xml; charset=UTF-8" } });
 
-        console.log(response);
+        // if (!response.ok) throw new Error("Failed to fetch KML file.");
+        // const kmlText = await response.text();
+        // console.log(kmlText);
+
+        const response = await fetch(url);
+        // router.push(url); // Redirect to the URL
+        // console.log("Content-Type:", response.headers.get("Content-Type"));
+        // console.log("Content-Disposition:", response.headers.get("Content-Disposition"));
+
+        if (!response.ok) throw new Error("Failed to fetch KML file.");
+        console.log("Response status:", response); // Log the response status
+        // Check if response is HTML (ngrok error page)
+        const contentType = response.headers.get("Content-Type") || "";
+        if (contentType.includes("text/html")) {
+          const errorText = await response.text();
+          console.error("Received HTML instead of KML:", errorText);
+          throw new Error("Received HTML instead of KML");
+        }
+
         const kmlText = await response.text();
-        console.log(kmlText);
         const kmlDom = new DOMParser().parseFromString(kmlText, "application/xml");
-        console.log(kmlDom);
+
+
+
+        // Proceed to use `kmlDom`...
+
+
+
+
+
         if (!kmlDom || kmlDom.getElementsByTagName("parsererror").length) {
           setError("Invalid KML or parsing error.");
           setLoading(false);
           return;
         }
+
+
 
         const placemarks = kmlDom.getElementsByTagName("Placemark");
         const styles = {};

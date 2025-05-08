@@ -334,94 +334,94 @@ data = {
                             "RHS": {
                                 "Cracking": {
                                     "chartData": RHScrack,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Cracking_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Cracking_severity-based.kml"
                                 },
                                 "Potholes": {
                                     "chartData": RHSpotholes,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Potholes_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Potholes_severity-based.kml"
                                 },
                                 "Patch Work": {
                                     "chartData": RHSpatchwork,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Patch_work_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Patch_work_severity-based.kml"
                                 },
                                 "Alligator Crack": {
                                     "chartData": RHSalligator,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Alligator_crack.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Alligator_crack.kml"
                                 },
                                 "Longitudinal": {
                                     "chartData": RHSlongitudinal,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Longitudinal_crack.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Longitudinal_crack.kml"
                                 },
                                 "Transverse": {
                                     "chartData": RHStransverse,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Transverse_crack.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Transverse_crack.kml"
                                 },
                                 "Edge Crack": {
                                     "chartData": RHSedgecrack,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Edge_crack_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Edge_crack_severity-based.kml"
                                 },
                                 "Bleeding": {
                                     "chartData": RHSbleeding,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Bleeding_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Bleeding_severity-based.kml"
                                 },
                                 "Depression": {
                                     "chartData": RHSdepression,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Depression_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Depression_severity-based.kml"
                                 },
                                 "Rutting": {
                                     "chartData": RHSrutting,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Rutting.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Rutting.kml"
                                 },
                                 "Shoving": {
                                     "chartData": RHSshoving,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Shoving_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Shoving_severity-based.kml"
                                 }
                             },
                             "LHS": {
                                 "Cracking": {
                                     "chartData": LHScrack,
 
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Cracking_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Cracking_severity-based.kml"
                                 },
                                 "Potholes": {
                                     "chartData": LHSpotholes,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Potholes_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Potholes_severity-based.kml"
                                 },
                                 "Patch Work": {
                                     "chartData": LHSpatchwork,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Patch_work_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Patch_work_severity-based.kml"
                                 },
                                 "Alligator Crack": {
                                     "chartData": LHSalligator,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Alligator_crack.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Alligator_crack.kml"
                                 },
                                 "Longitudinal": {
                                     "chartData": LHSlongitudinal,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Longitudinal_crack.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Longitudinal_crack.kml"
                                 },
                                 "Transverse": {
                                     "chartData": LHStransverse,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Transverse_crack.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Transverse_crack.kml"
                                 },
                                 "Edge Crack": {
                                     "chartData": LHSedgecrack,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Edge_crack_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Edge_crack_severity-based.kml"
                                 },
                                 "Bleeding": {
                                     "chartData": LHSbleeding,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Bleeding_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Bleeding_severity-based.kml"
                                 },
                                 "Depression": {
                                     "chartData": LHSdepression,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Depression_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Depression_severity-based.kml"
                                 },
                                 "Rutting": {
                                     "chartData": LHSrutting,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Rutting.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Rutting.kml"
                                 },
                                 "Shoving": {
                                     "chartData": LHSshoving,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Shoving_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Shoving_severity-based.kml"
                                 }
                             }
                         }
@@ -567,94 +567,94 @@ data = {
                                 "Cracking": {
                                     "chartData": RHScrack,
 
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Cracking_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Cracking_severity-based.kml"
                                 },
                                 "Potholes": {
                                     "chartData": RHSpotholes,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Potholes_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Potholes_severity-based.kml"
                                 },
                                 "Patch Work": {
                                     "chartData": RHSpatchwork,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Patch_work_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Patch_work_severity-based.kml"
                                 },
                                 "Alligator Crack": {
                                     "chartData": RHSalligator,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Alligator_crack.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Alligator_crack.kml"
                                 },
                                 "Longitudinal": {
                                     "chartData": RHSlongitudinal,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Longitudinal_crack.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Longitudinal_crack.kml"
                                 },
                                 "Transverse": {
                                     "chartData": RHStransverse,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Transverse_crack.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Transverse_crack.kml"
                                 },
                                 "Edge Crack": {
                                     "chartData": RHSedgecrack,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Edge_crack_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Edge_crack_severity-based.kml"
                                 },
                                 "Bleeding": {
                                     "chartData": RHSbleeding,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Bleeding_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Bleeding_severity-based.kml"
                                 },
                                 "Depression": {
                                     "chartData": RHSdepression,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Depression_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Depression_severity-based.kml"
                                 },
                                 "Rutting": {
                                     "chartData": RHSrutting,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Rutting.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Rutting.kml"
                                 },
                                 "Shoving": {
                                     "chartData": RHSshoving,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Shoving_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Shoving_severity-based.kml"
                                 }
                             },
                             "LHS": {
                                 "Cracking": {
                                     "chartData": LHScrack,
 
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Cracking_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Cracking_severity-based.kml"
                                 },
                                 "Potholes": {
                                     "chartData": LHSpotholes,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Potholes_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Potholes_severity-based.kml"
                                 },
                                 "Patch Work": {
                                     "chartData": LHSpatchwork,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Patch_work_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Patch_work_severity-based.kml"
                                 },
                                 "Alligator Crack": {
                                     "chartData": LHSalligator,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Alligator_crack.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Alligator_crack.kml"
                                 },
                                 "Longitudinal": {
                                     "chartData": LHSlongitudinal,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Longitudinal_crack.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Longitudinal_crack.kml"
                                 },
                                 "Transverse": {
                                     "chartData": LHStransverse,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Transverse_crack.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Transverse_crack.kml"
                                 },
                                 "Edge Crack": {
                                     "chartData": LHSedgecrack,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Edge_crack_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Edge_crack_severity-based.kml"
                                 },
                                 "Bleeding": {
                                     "chartData": LHSbleeding,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Bleeding_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Bleeding_severity-based.kml"
                                 },
                                 "Depression": {
                                     "chartData": LHSdepression,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Depression_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Depression_severity-based.kml"
                                 },
                                 "Rutting": {
                                     "chartData": LHSrutting,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Rutting.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Rutting.kml"
                                 },
                                 "Shoving": {
                                     "chartData": LHSshoving,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Shoving_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Shoving_severity-based.kml"
                                 }
                             }
                         }
@@ -757,93 +757,93 @@ data = {
                             "RHS": {
                                 "Cracking": {
                                     "chartData": RHScrack,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Cracking_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Cracking_severity-based.kml"
                                 },
                                 "Potholes": {
                                     "chartData": RHSpotholes,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Potholes_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Potholes_severity-based.kml"
                                 },
                                 "Patch Work": {
                                     "chartData": RHSpatchwork,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Patch_work_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Patch_work_severity-based.kml"
                                 },
                                 "Alligator Crack": {
                                     "chartData": RHSalligator,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Alligator_crack.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Alligator_crack.kml"
                                 },
                                 "Longitudinal": {
                                     "chartData": RHSlongitudinal,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Longitudinal_crack.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Longitudinal_crack.kml"
                                 },
                                 "Transverse": {
                                     "chartData": RHStransverse,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Transverse_crack.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Transverse_crack.kml"
                                 },
                                 "Edge Crack": {
                                     "chartData": RHSedgecrack,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Edge_crack_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Edge_crack_severity-based.kml"
                                 },
                                 "Bleeding": {
                                     "chartData": RHSbleeding,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Bleeding_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Bleeding_severity-based.kml"
                                 },
                                 "Depression": {
                                     "chartData": RHSdepression,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Depression_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Depression_severity-based.kml"
                                 },
                                 "Rutting": {
                                     "chartData": RHSrutting,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Rutting.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Rutting.kml"
                                 },
                                 "Shoving": {
                                     "chartData": RHSshoving,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/RHS-20250208T155709Z-001/RHS/RHS_Shoving_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/RHS-20250208T155709Z-001/RHS/RHS_Shoving_severity-based.kml"
                                 }
                             },
                             "LHS": {
                                 "Cracking": {
                                     "chartData": LHScrack,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Cracking_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Cracking_severity-based.kml"
                                 },
                                 "Potholes": {
                                     "chartData": LHSpotholes,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Potholes_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Potholes_severity-based.kml"
                                 },
                                 "Patch Work": {
                                     "chartData": LHSpatchwork,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Patch_work_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Patch_work_severity-based.kml"
                                 },
                                 "Alligator Crack": {
                                     "chartData": LHSalligator,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Alligator_crack.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Alligator_crack.kml"
                                 },
                                 "Longitudinal": {
                                     "chartData": LHSlongitudinal,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Longitudinal_crack.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Longitudinal_crack.kml"
                                 },
                                 "Transverse": {
                                     "chartData": LHStransverse,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Transverse_crack.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Transverse_crack.kml"
                                 },
                                 "Edge Crack": {
                                     "chartData": LHSedgecrack,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Edge_crack_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Edge_crack_severity-based.kml"
                                 },
                                 "Bleeding": {
                                     "chartData": LHSbleeding,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Bleeding_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Bleeding_severity-based.kml"
                                 },
                                 "Depression": {
                                     "chartData": LHSdepression,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Depression_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Depression_severity-based.kml"
                                 },
                                 "Rutting": {
                                     "chartData": LHSrutting,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Rutting.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Rutting.kml"
                                 },
                                 "Shoving": {
                                     "chartData": LHSshoving,
-                                    "url": "https://unicorn-summary-ladybug.ngrok-free.app/media/kml/LHS-20250208T155709Z-001/LHS/LHS_Shoving_severity-based.kml"
+                                    "url": "http://127.0.0.1:8000//media/kml/LHS-20250208T155709Z-001/LHS/LHS_Shoving_severity-based.kml"
                                 }
                             }
                         }

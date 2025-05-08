@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="12706">
+        <Style id="12709">
+            <IconStyle id="12710">
+                <color>ff00ffff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="12711">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="12714">
+            <IconStyle id="12715">
+                <color>ff00ffff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="12716">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="12719">
+            <IconStyle id="12720">
+                <color>ff00ffff</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="12721">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="12724">
+            <IconStyle id="12725">
+                <color>ff008000</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="12726">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="12729">
+            <IconStyle id="12730">
+                <color>ff008000</color>
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="12731">
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Placemark id="12708">
+            <name>15+522</name>
+            <description>Chainage: 15+522 to 15+532&lt;br/&gt;&lt;br/&gt;Latitude: 28.1497&lt;br/&gt;&lt;br/&gt;Longitude: 77.06929&lt;br/&gt;&lt;br/&gt;Defect Present: Edge crack (1.582907%)&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#12709</styleUrl>
+            <Point id="12707">
+                <coordinates>77.06929,28.1497,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="12713">
+            <name>19+162</name>
+            <description>Chainage: 19+162 to 19+172&lt;br/&gt;&lt;br/&gt;Latitude: 28.1821&lt;br/&gt;&lt;br/&gt;Longitude: 77.07224&lt;br/&gt;&lt;br/&gt;Defect Present: Edge crack (1.406532%)&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#12714</styleUrl>
+            <Point id="12712">
+                <coordinates>77.07224,28.1821,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="12718">
+            <name>23+302</name>
+            <description>Chainage: 23+302 to 23+312&lt;br/&gt;&lt;br/&gt;Latitude: 28.21716&lt;br/&gt;&lt;br/&gt;Longitude: 77.06081&lt;br/&gt;&lt;br/&gt;Defect Present: Edge crack (1.217278%)&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#12719</styleUrl>
+            <Point id="12717">
+                <coordinates>77.06081,28.21716,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="12723">
+            <name>24+452</name>
+            <description>Chainage: 24+452 to 24+462&lt;br/&gt;&lt;br/&gt;Latitude: 28.22678&lt;br/&gt;&lt;br/&gt;Longitude: 77.06458&lt;br/&gt;&lt;br/&gt;Defect Present: Edge crack (0.634278%)&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#12724</styleUrl>
+            <Point id="12722">
+                <coordinates>77.06458,28.22678,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="12728">
+            <name>24+592</name>
+            <description>Chainage: 24+592 to 24+602&lt;br/&gt;&lt;br/&gt;Latitude: 28.22793&lt;br/&gt;&lt;br/&gt;Longitude: 77.06517&lt;br/&gt;&lt;br/&gt;Defect Present: Edge crack (0.476843%)&lt;br/&gt;&lt;br/&gt;</description>
+            <styleUrl>#12729</styleUrl>
+            <Point id="12727">
+                <coordinates>77.06517,28.22793,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>
