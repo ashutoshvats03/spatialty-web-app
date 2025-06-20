@@ -1,5 +1,5 @@
 "use client";
-import { useState, useContext } from "react";
+import { useContext, useState } from "react";
 import AuthContext from "../context/AuthContext";
 
 export default function Register() {

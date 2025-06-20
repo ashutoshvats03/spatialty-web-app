@@ -109,7 +109,7 @@ export default function Page() {
     }, [displayContent]);
 
     return (
-        <PrivateRoute>
+        // <PrivateRoute>
             <div className="flex flex-row relative w-full h-screen">
                 {/* Left section */}
                 <div className={` ${displayContent ? "hidden" : "block"} w-1/4 p-5 relative`}>
@@ -196,6 +196,6 @@ export default function Page() {
                     </div>
                 </div>
             </div>
-        </PrivateRoute>
+        // </PrivateRoute>
     );
 }

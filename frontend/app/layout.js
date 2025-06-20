@@ -1,10 +1,10 @@
 "use client";
-import Navbar from "./components/Navbar";
-import "./globals.css";
 import { Provider } from "react-redux";
-import store from "./redux/store";
-import { AuthProvider } from "./context/AuthContext";
 import '../src/styles.css';
+import Navbar from "./components/Navbar";
+import { AuthProvider } from "./context/AuthContext";
+import "./globals.css";
+import store from "./redux/store";
 
 export default function RootLayout({ children }) {
   return (

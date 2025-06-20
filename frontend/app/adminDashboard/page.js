@@ -1,8 +1,7 @@
 "use client"
-import React from 'react'
-import PrivateRoute from '../middleware/PrivateRoute';
-import AuthContext from '../context/AuthContext';
 import { useContext } from 'react';
+import AuthContext from '../context/AuthContext';
+import PrivateRoute from '../middleware/PrivateRoute';
 function page() {
   const { user, loading, users } = useContext(AuthContext);
   if (loading) {

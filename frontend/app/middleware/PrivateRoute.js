@@ -1,6 +1,6 @@
 "use client";
-import { useContext, useEffect } from "react";
 import { useRouter } from "next/navigation"; // Corrected import for App Router
+import { useContext, useEffect } from "react";
 import AuthContext from "../context/AuthContext";
 
 const PrivateRoute = ({ children }) => {

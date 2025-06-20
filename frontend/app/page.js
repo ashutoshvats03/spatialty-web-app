@@ -1,8 +1,8 @@
 "use client";
-import { useContext } from "react";
-import AuthContext from "./context/AuthContext";
 import Link from "next/link";
-import '../src/styles.css';  // Make sure this is the correct path
+import { useContext } from "react";
+import '../src/styles.css'; // Make sure this is the correct path
+import AuthContext from "./context/AuthContext";
 
 
 export default function Home() {
