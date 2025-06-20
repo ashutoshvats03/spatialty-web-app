@@ -14,11 +14,12 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from django_ratelimit.decorators import ratelimit
 from django.utils.decorators import method_decorator
-from myapp.models import UserRole
 import os
 import pandas as pd
 import numpy as np  # Add this at the top of your script
 from pathlib import Path
+from django.db.models import F
+from myapp.models import Role, UserRole
 
 # Define BASE_DIR and construct the absolute path to the CSV file
 # BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -860,28 +861,7 @@ class RegisterView(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = RegisterSerializer
 
-try:
-    # Check if dummy user already exists
-    if not User.objects.filter(username='aak').exists():
-        # Create user
-        dummy_user = User.objects.create_user(
-            username='aak',
-            email='student@example.com',
-            password='student123'
-        )
-        
-        # Create or get student role
-        student_role, created = UserRole.objects.get_or_create(name='student')
-        
-        # Assign role to user
-        UserRole.objects.create(user=dummy_user, role=student_role)
-        
-        # print("✅ Created dummy student account:")
-        # print("   Username: student_user")
-        # print("   Password: student123")
-except Exception as e:
-    print(f"⚠️ Error creating dummy user: {e}")
-# admin , password
+
 class LoginView(APIView):
     serializer_class = LoginSerializer
     
@@ -892,11 +872,12 @@ class LoginView(APIView):
         
         if user is not None:
             refresh = RefreshToken.for_user(user)
-            
-            user_role = UserRole.objects.filter(user=user).first()
-            role = user_role.role.name if user_role else None
-            
             user_serializer = UserSerializer(user)
+
+            user_roles = UserRole.objects.select_related('user', 'role').all()
+
+            for ur in user_roles:
+                print(f"Username: {ur.user.username}, Email: {ur.user.email}, Role: {ur.role.name}")
             
             return Response({
                 'refresh': str(refresh),
@@ -919,5 +900,104 @@ class Dashboard(APIView):
             'user': user_serializer.data,
         }, status=200)
     
+from django.apps import apps
 
 
+try:
+    if not User.objects.filter(username='admin').exists():
+        dummy_user = User.objects.create_user(
+            username='admin',
+            email='student@example.com',
+            password='admin'
+        )
+        admin_role, _ = Role.objects.get_or_create(name='admin')
+        UserRole.objects.create(user=dummy_user, role=admin_role)
+
+    if not User.objects.filter(username='root').exists():
+        dummy_user = User.objects.create_user(
+            username='root',
+            email='student@example.com',
+            password='admin'
+        )
+        admin_role, _ = Role.objects.get_or_create(name='admin')
+        UserRole.objects.create(user=dummy_user, role=admin_role)
+
+    if not User.objects.filter(username='ashu').exists():
+        dummy_user = User.objects.create_user(
+            username='ashu',
+            email='student@example.com',
+            password='admin'
+        )
+        student_role, _ = Role.objects.get_or_create(name='student')
+        UserRole.objects.create(user=dummy_user, role=student_role)
+
+    if not User.objects.filter(username='aak').exists():
+        dummy_user = User.objects.create_user(
+            username='aak',
+            email='student@example.com',
+            password='student123'
+        )
+        student_role, _ = Role.objects.get_or_create(name='student')
+        UserRole.objects.create(user=dummy_user, role=student_role)
+    
+    user_roles = UserRole.objects.select_related('user', 'role').all()
+
+    for ur in user_roles:
+        print(f"Username: {ur.user.username}, Email: {ur.user.email}, Role: {ur.role.name}")
+
+except Exception as e:
+    print(f"⚠️ Error creating dummy user: {e}")
+
+username = 'aak'
+try:
+    user = User.objects.get(username=username)
+    
+    # Delete UserRole first if needed
+    UserRole.objects.filter(user=user).delete()
+    
+    # Then delete the user
+    user.delete()
+    print(f"✅ User and related roles for '{username}' deleted.")
+except User.DoesNotExist:
+    print(f"❌ User '{username}' does not exist.")
+
+class AdminLogin(APIView):
+    serializer_class = LoginSerializer
+    
+    def post(self, request, *args, **kwargs):
+        username = request.data['username']
+        password = request.data['password']
+        user = authenticate(username=username, password=password)
+        
+        if user is not None:
+            users = UserRole.objects.all().annotate(
+                    username=F('user__username'),
+                    email=F('user__email'),
+                    Urole=F('role__name')
+            ).values('username', 'email', 'Urole')
+
+            if UserRole.objects.filter(user=user, role__name='admin').exists():
+                # refresh = RefreshToken.for_user(user)
+                # user_serializer = UserSerializer(user)
+                # return Response({
+                #     # 'refresh': str(refresh),
+                #     'access': str(refresh.access_token),
+                #     # 'user': user_serializer.data, # Include the role in the response
+                #     # 'data': data
+                #     'message': 'Welcome to the dashboard', 
+                #     'user': user_serializer.data
+                # })
+                
+
+                user_serializer = UserSerializer(user)
+                refresh = RefreshToken.for_user(user)
+                return Response({
+                    'users': users,
+                    'access': str(refresh.access_token),
+                    'user': user_serializer.data,
+                })
+                
+            else:
+                return Response({'error': 'Invalid credentials'}, status=401)
+        else:
+            return Response({'error': 'Invalid credentials'}, status=401)

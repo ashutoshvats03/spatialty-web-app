@@ -8,6 +8,7 @@ const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
+    const [users, setUsers] = useState(null);
     const [loading, setLoading] = useState(true);
     const router = useRouter();
 
@@ -59,6 +60,7 @@ export const AuthProvider = ({ children }) => {
             localStorage.setItem("data", JSON.stringify(data))
             localStorage.setItem("token", access);
             localStorage.setItem("refreshToken", refresh);
+            localStorage.setItem("user", JSON.stringify(user));
 
             axios.defaults.headers.common["Authorization"] = `Bearer ${access}`;
             setUser(user);
@@ -73,13 +75,41 @@ export const AuthProvider = ({ children }) => {
         localStorage.removeItem("token");
         localStorage.removeItem("refreshToken");
         localStorage.removeItem("data");
+        localStorage.removeItem("user");
+        localStorage.removeItem("users");
         delete axios.defaults.headers.common["Authorization"];
         setUser(null);
-        router.push("/login");
+        setLoading(true);
+        setUsers(null);
+        router.push("/");
+    };
+
+    const admin = async (username, password) => {
+        try {
+            const response = await axios.post("http://127.0.0.1:8000//adminLogin/", {
+                username,
+                password,
+            });
+
+            const {users,access,user } = response.data;
+            // Store tokens in localStorage
+            localStorage.setItem("users", JSON.stringify(users))
+            localStorage.setItem("token", access);
+            localStorage.setItem("user", JSON.stringify(user));
+
+            axios.defaults.headers.common["Authorization"] = `Bearer ${access}`;
+            setUsers(users);
+            setUser(user);
+            setLoading(false);
+            router.push("/adminDashboard");
+        } catch (error) {
+            console.log("Error logging in:", error);
+            alert("Login failed. Please check your credentials.");
+        }
     };
 
     return (
-        <AuthContext.Provider value={{ user, loading, login, logout }}>
+        <AuthContext.Provider value={{ user,users, loading, login, logout,admin }}>
             {children}
         </AuthContext.Provider>
     );

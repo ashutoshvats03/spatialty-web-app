@@ -56,21 +56,25 @@ export default function Home() {
 
           {/* Arrow to toggle menu */}
           <div className="relative cursor-pointer" onClick={toggleArrowMenu}>
-            {showMenu ? <FaChevronCircleUp className="invert"  size={40} /> : <FaChevronCircleDown className="invert"  size={40} />}
+            {showMenu ? <FaChevronCircleUp className="invert" size={40} /> : <FaChevronCircleDown className="invert" size={40} />}
             <div
               className={`absolute border p-3 bg-slate-800 text-white z-10  my-2 mx-3 font-extrabold text flex-col w-fit  shadow-sm shadow-black transform -translate-x-10 translate-y-10 top-0 left-0 ${showMenu ? "flex" : "hidden"
                 }`}
             >
               {user ? (
                 <div className="logout flex" onClick={logout}>
-                  <RiLogoutCircleFill   size={30} />
+                  <RiLogoutCircleFill size={30} />
                   <span>Logout</span>
                 </div>
               ) : (
                 <div className="flex flex-col  ">
                   <div className="login flex gap-3">
-                  <RiLoginCircleFill size={30} />
-                    <NavLink href="/login">Login</NavLink>
+                    <RiLoginCircleFill size={30} />
+                    <NavLink href="/login">Login User</NavLink>
+                  </div>
+                  <div className="login flex gap-3">
+                    <RiLoginCircleFill size={30} />
+                    <NavLink href="/adminLogin">Login Admin</NavLink>
                   </div>
                 </div>
               )}
@@ -79,7 +83,7 @@ export default function Home() {
 
           {/* Profile icon */}
           <div className="relative cursor-pointer" onClick={toggleProfileMenu}>
-            <MdAccountCircle className="invert"  size={40} />
+            <MdAccountCircle className="invert" size={40} />
             <div
               className={`absolute bg-slate-800 text-black z-10 gap-3 py-2 px-3 font-extrabold text flex-col w-fit my-2 shadow-sm shadow-black transform -translate-x-10 translate-y-10 top-0 left-0 ${profileMenu ? "flex" : "hidden"
                 }`}
