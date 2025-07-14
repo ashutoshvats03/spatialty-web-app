@@ -25,7 +25,6 @@ export const AuthProvider = ({ children }) => {
                     // Save new access token
                     localStorage.setItem("token", access);
                     axios.defaults.headers.common["Authorization"] = `Bearer ${access}`;
-
                     // Optionally fetch user data if needed
                     await fetchUserData(access);
                 } catch (error) {
@@ -41,8 +40,9 @@ export const AuthProvider = ({ children }) => {
 
     const fetchUserData = async (token) => {
         try {
-            const response = await axios.get("http://127.0.0.1:8000//dashboard/", );
+            const response = await axios.get("http://127.0.0.1:8000//dashboard/",);
             setUser(response.data.user);
+            
         } catch (error) {
             console.log("Error fetching user data:", error);
         }
@@ -79,7 +79,7 @@ export const AuthProvider = ({ children }) => {
         localStorage.removeItem("users");
         delete axios.defaults.headers.common["Authorization"];
         setUser(null);
-        setLoading(true);
+        setLoading(false);
         setUsers(null);
         router.push("/");
     };
@@ -91,11 +91,12 @@ export const AuthProvider = ({ children }) => {
                 password,
             });
 
-            const {users,access,user } = response.data;
+            const { users, access, refresh, user } = response.data;
             // Store tokens in localStorage
             localStorage.setItem("users", JSON.stringify(users))
             localStorage.setItem("token", access);
             localStorage.setItem("user", JSON.stringify(user));
+            localStorage.setItem("refreshToken", refresh);
 
             axios.defaults.headers.common["Authorization"] = `Bearer ${access}`;
             setUsers(users);
@@ -109,7 +110,7 @@ export const AuthProvider = ({ children }) => {
     };
 
     return (
-        <AuthContext.Provider value={{ user,users, loading, login, logout,admin }}>
+        <AuthContext.Provider value={{ user, users, loading, login, logout, admin }}>
             {children}
         </AuthContext.Provider>
     );

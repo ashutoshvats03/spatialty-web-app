@@ -13,4 +13,7 @@ urlpatterns = [
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('dashboard/', views.Dashboard.as_view(), name='Dashboard'),
     path('adminLogin/', views.AdminLogin.as_view(), name='AdminLogin'),
+    path('deleteUser/<str:username>/', views.DeleteUser.as_view(), name='DeleteUser'),
+    path('addUser/', views.AddUser.as_view(), name='AddUser'),
+    path('modifyUser/', views.ModifyUser.as_view(), name='ModifyUser'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -21,6 +21,8 @@ from pathlib import Path
 from django.db.models import F
 from myapp.models import Role, UserRole
 
+from rest_framework import status
+
 # Define BASE_DIR and construct the absolute path to the CSV file
 # BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -889,8 +891,8 @@ class LoginView(APIView):
             return Response({'error': 'Invalid credentials'}, status=401)
 
 class Dashboard(APIView):
-    permission_classes = [IsAuthenticated,HasRole]
-    required_role='student'
+    # permission_classes = [IsAuthenticated,HasRole]
+    # required_role='student'
 
     def get(self, request):
         user = request.user
@@ -903,6 +905,7 @@ class Dashboard(APIView):
 from django.apps import apps
 
 
+# User.objects.all().delete()
 try:
     if not User.objects.filter(username='admin').exists():
         dummy_user = User.objects.create_user(
@@ -913,53 +916,54 @@ try:
         admin_role, _ = Role.objects.get_or_create(name='admin')
         UserRole.objects.create(user=dummy_user, role=admin_role)
 
-    if not User.objects.filter(username='root').exists():
-        dummy_user = User.objects.create_user(
-            username='root',
-            email='student@example.com',
-            password='admin'
-        )
-        admin_role, _ = Role.objects.get_or_create(name='admin')
-        UserRole.objects.create(user=dummy_user, role=admin_role)
+    # if not User.objects.filter(username='root').exists():
+    #     dummy_user = User.objects.create_user(
+    #         username='root',
+    #         email='student@example.com',
+    #         password='admin'
+    #     )
+    #     admin_role, _ = Role.objects.get_or_create(name='admin')
+    #     UserRole.objects.create(user=dummy_user, role=admin_role)
 
-    if not User.objects.filter(username='ashu').exists():
-        dummy_user = User.objects.create_user(
-            username='ashu',
-            email='student@example.com',
-            password='admin'
-        )
-        student_role, _ = Role.objects.get_or_create(name='student')
-        UserRole.objects.create(user=dummy_user, role=student_role)
+    # if not User.objects.filter(username='ashu').exists():
+    #     dummy_user = User.objects.create_user(
+    #         username='ashu',
+    #         email='student@example.com',
+    #         password='admin'
+    #     )
+    #     student_role, _ = Role.objects.get_or_create(name='student')
+    #     UserRole.objects.create(user=dummy_user, role=student_role)
 
-    if not User.objects.filter(username='aak').exists():
-        dummy_user = User.objects.create_user(
-            username='aak',
-            email='student@example.com',
-            password='student123'
-        )
-        student_role, _ = Role.objects.get_or_create(name='student')
-        UserRole.objects.create(user=dummy_user, role=student_role)
+    # if not User.objects.filter(username='aak').exists():
+    #     dummy_user = User.objects.create_user(
+    #         username='aak',
+    #         email='student@example.com',
+    #         password='student123'
+    #     )
+    #     student_role, _ = Role.objects.get_or_create(name='student')
+    #     UserRole.objects.create(user=dummy_user, role=student_role)
     
     user_roles = UserRole.objects.select_related('user', 'role').all()
 
-    for ur in user_roles:
-        print(f"Username: {ur.user.username}, Email: {ur.user.email}, Role: {ur.role.name}")
+    # for ur in user_roles:
+    #     print(f"Username: {ur.user.username}, Email: {ur.user.email}, Role: {ur.role.name}")
 
 except Exception as e:
     print(f"⚠️ Error creating dummy user: {e}")
 
-username = 'aak'
-try:
-    user = User.objects.get(username=username)
+
+# username = 'aak'
+# try:
+#     user = User.objects.get(username=username)
     
-    # Delete UserRole first if needed
-    UserRole.objects.filter(user=user).delete()
+#     # Delete UserRole first if needed
+#     UserRole.objects.filter(user=user).delete()
     
-    # Then delete the user
-    user.delete()
-    print(f"✅ User and related roles for '{username}' deleted.")
-except User.DoesNotExist:
-    print(f"❌ User '{username}' does not exist.")
+#     # Then delete the user
+#     user.delete()
+#     print(f"✅ User and related roles for '{username}' deleted.")
+# except User.DoesNotExist:
+#     print(f"❌ User '{username}' does not exist.")
 
 class AdminLogin(APIView):
     serializer_class = LoginSerializer
@@ -994,6 +998,7 @@ class AdminLogin(APIView):
                 return Response({
                     'users': users,
                     'access': str(refresh.access_token),
+                    'refresh': str(refresh),
                     'user': user_serializer.data,
                 })
                 
@@ -1001,3 +1006,128 @@ class AdminLogin(APIView):
                 return Response({'error': 'Invalid credentials'}, status=401)
         else:
             return Response({'error': 'Invalid credentials'}, status=401)
+
+
+class DeleteUser(APIView):
+    def delete(self, request, username):
+        try:
+            user = User.objects.get(username=username)
+
+            # ✅ Now safe to delete
+            UserRole.objects.filter(user=user).delete()
+            user.delete()
+
+            # Updated user list
+            users = UserRole.objects.all().annotate(
+                username=F('user__username'),
+                email=F('user__email'),
+                Urole=F('role__name')
+            ).values('username', 'email', 'Urole')
+            print(users)
+            return Response({'users': users}, status=status.HTTP_200_OK)
+
+        except User.DoesNotExist:
+            return Response({'error': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
+        
+
+
+class ModifyUser(APIView):
+    serializer_class = RegisterSerializer
+
+    def post(self, request):
+        username = request.data['username']
+        password = request.data['password']
+        email = request.data['email']
+        role_name = request.data['role']
+
+        
+        if not username:
+            return Response({'no username'})
+        else:
+            user = User.objects.filter(username=username).first()
+            if email:
+                user.email =email
+            if password:
+                user.set_password(password)
+            user.save()
+            if role_name:
+                userRole = UserRole.objects.filter(user__username=username).first()
+                if userRole:
+                    role = Role.objects.filter(name=role_name).first()
+                    if not role:
+                        return Response({'error': 'Role not found'}, status=status.HTTP_400_BAD_REQUEST)
+                    userRole.role = role
+                    userRole.save()
+            users = UserRole.objects.all().annotate(
+                username=F('user__username'),
+                email=F('user__email'),
+                Urole=F('role__name')
+            ).values('username', 'email', 'Urole')
+            print(users)
+            return Response({'users': users}, status=status.HTTP_200_OK)
+            
+
+# class ModifyUser(APIView):
+#     def post(self, request):
+#         username = request.data.get('username')
+#         email = request.data.get('email')
+#         password = request.data.get('password')
+#         role_name = request.data.get('role')
+
+#         if not username:
+#             return Response({'error': 'Username is required'}, status=status.HTTP_400_BAD_REQUEST)
+
+#         user = User.objects.filter(username=username).first()
+#         if not user:
+#             return Response({'error': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
+
+#         # Update fields conditionally
+#         if email:
+#             user.email = email
+#         if password:
+#             user.set_password(password)
+#         user.save()
+
+#         # Handle role update if provided
+#         if role_name:
+#             role = Role.objects.filter(name=role_name).first()
+#             if not role:
+#                 return Response({'error': 'Role not found'}, status=status.HTTP_400_BAD_REQUEST)
+
+#             UserRole.objects.update_or_create(user=user, defaults={'role': role})
+
+#         return Response({'user':user ,'email':email,"role":role_name}, status=status.HTTP_200_OK)
+
+
+
+class AddUser(APIView):
+    serializer_class = RegisterSerializer
+
+    def post(self, request):
+        username = request.data['username']
+        password = request.data['password']
+        email = request.data['email']
+        role_name = request.data['role']
+
+        if not username or not email or not password or not role_name:
+            return Response({'error': 'All fields are required'}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            user = User.objects.create_user(username=username, email=email, password=password)
+            role,_ = Role.objects.get_or_create(name=role_name)
+            UserRole.objects.create(user=user, role=role)
+
+            # Updated user list
+            users = UserRole.objects.all().annotate(
+                username=F('user__username'),
+                email=F('user__email'),
+                Urole=F('role__name')
+            ).values('username', 'email', 'Urole')
+            print(users)
+            return Response({'users': users}, status=status.HTTP_201_CREATED)
+
+        except Exception as e:
+            return Response({'error  hhhh': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+ 
+    
+    
