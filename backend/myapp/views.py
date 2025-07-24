@@ -993,30 +993,37 @@ class ModifyUser(APIView):
 
         
         if not username:
-            return Response({'no username'})
-        else:
-            user = User.objects.filter(username=username).first()
-            if email:
-                user.email =email
-            if password:
-                user.set_password(make_password(password))
-            user.save()
-            if role_name:
-                userRole = UserRole.objects.filter(user__username=username).first()
-                if userRole:
-                    role = Role.objects.filter(name=role_name).first()
-                    if not role:
-                        return Response({'error': 'Role not found'}, status=status.HTTP_400_BAD_REQUEST)
-                    userRole.role = role
-                    userRole.save()
-            users = UserRole.objects.all().annotate(
-                userid=F('user__id'),
-                username=F('user__username'),
-                email=F('user__email'),
-                Urole=F('role__name')
-            ).values('userid','username', 'email', 'Urole')
-            print(users)
-            return Response({'users': users}, status=status.HTTP_200_OK)
+            return Response({'error': 'No username provided'}, status=400)
+
+        user = User.objects.filter(username=username).first()
+        if not user:
+            return Response({'error': 'User not found'}, status=404)
+
+        if email:
+            user.email = email
+        if password:
+            user.set_password(password)  # set_password handles hashing internally
+        user.save()
+
+
+        if role_name:
+            userRole = UserRole.objects.filter(user__username=username).first()
+            if userRole:
+                role = Role.objects.filter(name=role_name).first()
+                if not role:
+                    return Response({'error': 'Role not found'}, status=status.HTTP_400_BAD_REQUEST)
+                userRole.role = role
+                userRole.save()
+        users = UserRole.objects.all().annotate(
+            userid=F('user__id'),
+            username=F('user__username'),
+            email=F('user__email'),
+            Urole=F('role__name')
+        ).values('userid','username', 'email', 'Urole')
+        print(users)
+        return Response({'users': users}, status=status.HTTP_200_OK)
+            
+
             
 
 
