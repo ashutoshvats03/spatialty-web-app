@@ -5,46 +5,14 @@ function login() {
   const [Username, setUsername] = useState("");
   const [Password, setPassword] = useState("");
 
-  const { login } = useContext(AuthContext);
-
+  const { login,loading } = useContext(AuthContext);
+  if (!loading) {
+    return <div>Loading...</div>; // Show a loading state while fetching user data
+  }
   const handleSubmit = (e) => {
     e.preventDefault();
     login(Username, Password);
   }
-//   if(localStorage.getItem("token")!==null){
-//     return (
-//       <div className="flex items-center justify-center h-screen bg-black text-white">
-//   <div className="w-full max-w-md p-8 bg-gray-800 rounded-lg shadow-lg">
-//     <h1 className="text-2xl font-bold text-center text-red-500 mb-6">
-//       You are logged in another tab too
-//     </h1>
-//     <p className="text-center text-gray-300 mb-4">
-//       Either close the other tab or log out to continue using this session.
-//     </p>
-//     <div className="flex justify-center gap-4">
-//       <button
-//         className="px-4 py-2 bg-teal-400 text-black font-semibold rounded-lg hover:bg-teal-500"
-//         onClick={() => window.close()} // Closes the current tab
-//       >
-//         Close Tab
-//       </button>
-//       <button
-//         className="px-4 py-2 bg-red-500 text-white font-semibold rounded-lg hover:bg-red-600"
-//         onClick={() => {
-//           localStorage.removeItem("token");
-//           localStorage.removeItem("refreshToken");
-//           localStorage.removeItem("data");
-//           window.location.href = "/login";
-//         }}
-//       >
-//         Logout
-//       </button>
-//     </div>
-//   </div>
-// </div>
-
-//     )
-//   }
   return (
     <div className="flex items-center justify-center bg-black h-screen ">
       <div className="w-full max-w-sm p-8 bg-gray-800 rounded-lg shadow-lg">

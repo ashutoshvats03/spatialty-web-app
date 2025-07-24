@@ -7,18 +7,13 @@ import { IoIosNotifications } from "react-icons/io";
 import { MdAccountCircle, MdSpaceDashboard } from "react-icons/md";
 import { RiLoginCircleFill, RiLogoutCircleFill } from "react-icons/ri";
 import AuthContext from "../context/AuthContext";
-  
+
 export default function Home() {
   const { user, logout } = useContext(AuthContext); // Get user and logout from AuthContext
   const [dashboard, setDashboard] = useState(false);
   const [profileMenu, setProfileMenu] = useState(false); // State for profile dropdown
   const [showMenu, setShowMenu] = useState(false); // State for the arrow and menu
-const { login } = useContext(AuthContext);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    login("admin", "admin");
-  }
   const toggleArrowMenu = () => {
     setShowMenu(!showMenu);
     setProfileMenu(false);
@@ -106,16 +101,15 @@ const { login } = useContext(AuthContext);
           </div>
 
           {/* Dashboard icon and dropdown */}
-          {/* {user && ( */}
+          {user && (
             <NavLink href="/wayVision1">
               <MdSpaceDashboard
                 size={40}
                 className="cursor-pointer invert "
-                onClick={handleSubmit}
               />
             </NavLink>
 
-          {/*  )} */}
+          )}
         </div>
       </div>
       <div className="border-2 border-white"></div>
