@@ -1,10 +1,10 @@
 "use client"
+import axios from 'axios';
 import { useContext, useEffect, useState } from 'react';
 import AuthContext from '../context/AuthContext';
 import PrivateRoute from '../middleware/PrivateRoute';
-import axios from 'axios';
 function page() {
-  const { user: admin, loading } = useContext(AuthContext);
+  const { user: admin } = useContext(AuthContext);
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
@@ -13,9 +13,10 @@ function page() {
       setUsers(JSON.parse(storedUsers));
     }
   }, []);
+  // const token = localStorage.getItem('token');
 
 
-  if (loading || !admin) {
+  if (!admin) {
     return <div>Loading...</div>; // Show a loading state while fetching user data
   }
   const handleDelete = async (e) => {
@@ -57,6 +58,8 @@ function page() {
         email,
         role,
       });
+      // const access = localStorage.getItem('token');
+      // axios.defaults.headers.common["Authorization"] = `Bearer ${access}`;
       console.log("Response:", response);
       const { users } = response.data;
       if (response.status === 201) {
@@ -73,6 +76,8 @@ function page() {
       alert("Not able to register user.");
     }
   }
+
+
   const handleModify = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
@@ -137,7 +142,7 @@ function page() {
                 <p><strong>Role:</strong> {user.Urole}</p>
                 <button
                   className="mt-4 bg-red-500 hover:bg-red-600 px-4 py-2 rounded"
-                  onClick={() => handleDelete(user.username)}
+                  onClick={() => handleDelete(user.userid)}
                 >
                   Delete
                 </button>

@@ -8,7 +8,7 @@ import AuthContext from "./context/AuthContext";
 export default function Home() {
   const { user, loading } = useContext(AuthContext); // Access user and loading state
 
-  if (loading) {
+  if (!loading) {
     return <div>Loading...</div>; // Show a loading state while fetching user data
   }
 

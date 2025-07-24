@@ -3,7 +3,7 @@ from rest_framework import generics
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from django.contrib.auth.models import User
+# from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 from .permission import HasRole
 from rest_framework_simplejwt.tokens import RefreshToken, AccessToken
@@ -19,9 +19,10 @@ import pandas as pd
 import numpy as np  # Add this at the top of your script
 from pathlib import Path
 from django.db.models import F
-from myapp.models import Role, UserRole
-
+from myapp.models import Role, UserRole , User
+from django.contrib.auth.hashers import check_password
 from rest_framework import status
+
 
 # Define BASE_DIR and construct the absolute path to the CSV file
 # BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -857,7 +858,27 @@ data = {
             },
         }
         
+from django.contrib.auth.hashers import make_password
+try:
+    if not User.objects.filter(username='admin').exists():
+        dummy_user = User.objects.create(
+            username='admin',
+            email='student@example.com',
+            password=make_password('admin')
 
+        )
+        
+        admin_role, _ = Role.objects.get_or_create(name='admin')
+        UserRole.objects.create(user=dummy_user, role=admin_role)
+
+    
+    user_roles = UserRole.objects.select_related('user', 'role').all()
+    print("Dummy users created successfully.")
+    # for ur in user_roles:
+    #     print(f"Username: {ur.user.username}, Email: {ur.user.email}, Role: {ur.role.name}")
+
+except Exception as e:
+    print(f"⚠️ Error creating dummy user: {e}")
 
 class RegisterView(generics.CreateAPIView):
     queryset = User.objects.all()
@@ -868,162 +889,90 @@ class LoginView(APIView):
     serializer_class = LoginSerializer
     
     def post(self, request, *args, **kwargs):
-        username = request.data['username']
-        password = request.data['password']
-        user = authenticate(username=username, password=password)
-        
-        if user is not None:
-            refresh = RefreshToken.for_user(user)
-            user_serializer = UserSerializer(user)
+        serializer = LoginSerializer(data=request.data)
+        if serializer.is_valid():
+            username = serializer.validated_data['username']
+            password = serializer.validated_data['password']
 
-            user_roles = UserRole.objects.select_related('user', 'role').all()
+            user = User.objects.filter(username=username).first()
+            if user and check_password(password, user.password):
+                refresh = RefreshToken.for_user(user)
+                user_serializer = UserSerializer(user)
+                
+                return Response({
+                    'refresh': str(refresh),
+                    'access': str(refresh.access_token),
+                    'user': user_serializer.data,
+                    'data' : data
+                }, status=status.HTTP_200_OK)
 
-            for ur in user_roles:
-                print(f"Username: {ur.user.username}, Email: {ur.user.email}, Role: {ur.role.name}")
-            
-            return Response({
-                'refresh': str(refresh),
-                'access': str(refresh.access_token),
-                'user': user_serializer.data, # Include the role in the response
-                'data': data
-            })
-        else:
-            return Response({'error': 'Invalid credentials'}, status=401)
+        return Response({'error': 'Invalid credentials'}, status=status.HTTP_401_UNAUTHORIZED)
 
-class Dashboard(APIView):
-    # permission_classes = [IsAuthenticated,HasRole]
-    # required_role='student'
 
-    def get(self, request):
-        user = request.user
-        user_serializer = UserSerializer(user)
-        return Response({
-            'message': 'Welcome to the dashboard', 
-            'user': user_serializer.data,
-        }, status=200)
-    
-from django.apps import apps
 
 
 # User.objects.all().delete()
-try:
-    if not User.objects.filter(username='admin').exists():
-        dummy_user = User.objects.create_user(
-            username='admin',
-            email='student@example.com',
-            password='admin'
-        )
-        admin_role, _ = Role.objects.get_or_create(name='admin')
-        UserRole.objects.create(user=dummy_user, role=admin_role)
-
-    # if not User.objects.filter(username='root').exists():
-    #     dummy_user = User.objects.create_user(
-    #         username='root',
-    #         email='student@example.com',
-    #         password='admin'
-    #     )
-    #     admin_role, _ = Role.objects.get_or_create(name='admin')
-    #     UserRole.objects.create(user=dummy_user, role=admin_role)
-
-    # if not User.objects.filter(username='ashu').exists():
-    #     dummy_user = User.objects.create_user(
-    #         username='ashu',
-    #         email='student@example.com',
-    #         password='admin'
-    #     )
-    #     student_role, _ = Role.objects.get_or_create(name='student')
-    #     UserRole.objects.create(user=dummy_user, role=student_role)
-
-    # if not User.objects.filter(username='aak').exists():
-    #     dummy_user = User.objects.create_user(
-    #         username='aak',
-    #         email='student@example.com',
-    #         password='student123'
-    #     )
-    #     student_role, _ = Role.objects.get_or_create(name='student')
-    #     UserRole.objects.create(user=dummy_user, role=student_role)
-    
-    user_roles = UserRole.objects.select_related('user', 'role').all()
-
-    # for ur in user_roles:
-    #     print(f"Username: {ur.user.username}, Email: {ur.user.email}, Role: {ur.role.name}")
-
-except Exception as e:
-    print(f"⚠️ Error creating dummy user: {e}")
+# UserRole.objects.all().delete()
+# Role.objects.all().delete()
 
 
-# username = 'aak'
-# try:
-#     user = User.objects.get(username=username)
-    
-#     # Delete UserRole first if needed
-#     UserRole.objects.filter(user=user).delete()
-    
-#     # Then delete the user
-#     user.delete()
-#     print(f"✅ User and related roles for '{username}' deleted.")
-# except User.DoesNotExist:
-#     print(f"❌ User '{username}' does not exist.")
 
 class AdminLogin(APIView):
     serializer_class = LoginSerializer
-    
+    # print("got it")
     def post(self, request, *args, **kwargs):
-        username = request.data['username']
-        password = request.data['password']
-        user = authenticate(username=username, password=password)
-        
-        if user is not None:
-            users = UserRole.objects.all().annotate(
+        serializer = LoginSerializer(data=request.data)
+        if serializer.is_valid():
+            username = serializer.validated_data['username']
+            password = serializer.validated_data['password']
+
+            user = User.objects.filter(username=username).first()
+            
+            if user and check_password(password, user.password):
+                users = UserRole.objects.all().annotate(
+                    userid=F('user__id'),
                     username=F('user__username'),
                     email=F('user__email'),
                     Urole=F('role__name')
-            ).values('username', 'email', 'Urole')
+                    ).values('userid','username', 'email', 'Urole')
 
-            if UserRole.objects.filter(user=user, role__name='admin').exists():
-                # refresh = RefreshToken.for_user(user)
-                # user_serializer = UserSerializer(user)
-                # return Response({
-                #     # 'refresh': str(refresh),
-                #     'access': str(refresh.access_token),
-                #     # 'user': user_serializer.data, # Include the role in the response
-                #     # 'data': data
-                #     'message': 'Welcome to the dashboard', 
-                #     'user': user_serializer.data
-                # })
-                
-
-                user_serializer = UserSerializer(user)
-                refresh = RefreshToken.for_user(user)
-                return Response({
-                    'users': users,
-                    'access': str(refresh.access_token),
-                    'refresh': str(refresh),
-                    'user': user_serializer.data,
+                if UserRole.objects.filter(user=user, role__name='admin').exists():
+                        user_serializer = UserSerializer(user)
+                        refresh = RefreshToken.for_user(user)
+                        return Response({
+                            'users': users,
+                            'access': str(refresh.access_token),
+                            'refresh': str(refresh),
+                            'user': user_serializer.data,
                 })
-                
             else:
-                return Response({'error': 'Invalid credentials'}, status=401)
-        else:
-            return Response({'error': 'Invalid credentials'}, status=401)
+                print("Invalid credentials")
+
+        return Response({'error': 'Invalid credentials'}, status=status.HTTP_401_UNAUTHORIZED)
+
+
 
 
 class DeleteUser(APIView):
-    def delete(self, request, username):
+    permission_classes = [AllowAny]  # <- Important
+    authentication_classes = []
+    def delete(self, request, userid):
         try:
-            user = User.objects.get(username=username)
+            user = User.objects.get(id=userid)
 
             # ✅ Now safe to delete
-            UserRole.objects.filter(user=user).delete()
+            UserRole.objects.get(user=user).delete()
             user.delete()
+            for ur in UserRole.objects.all():
+                print(f"Userid:{ur.user.id},Username: {ur.user.username}, Email: {ur.user.email}, Role: {ur.role.name}")
 
             # Updated user list
             users = UserRole.objects.all().annotate(
+                userid=F('user__id'),
                 username=F('user__username'),
                 email=F('user__email'),
                 Urole=F('role__name')
-            ).values('username', 'email', 'Urole')
-            print(users)
+            ).values('userid','username', 'email', 'Urole')
             return Response({'users': users}, status=status.HTTP_200_OK)
 
         except User.DoesNotExist:
@@ -1032,6 +981,8 @@ class DeleteUser(APIView):
 
 
 class ModifyUser(APIView):
+    permission_classes = [AllowAny]  # <- Important
+    authentication_classes = []  
     serializer_class = RegisterSerializer
 
     def post(self, request):
@@ -1048,7 +999,7 @@ class ModifyUser(APIView):
             if email:
                 user.email =email
             if password:
-                user.set_password(password)
+                user.set_password(make_password(password))
             user.save()
             if role_name:
                 userRole = UserRole.objects.filter(user__username=username).first()
@@ -1059,51 +1010,23 @@ class ModifyUser(APIView):
                     userRole.role = role
                     userRole.save()
             users = UserRole.objects.all().annotate(
+                userid=F('user__id'),
                 username=F('user__username'),
                 email=F('user__email'),
                 Urole=F('role__name')
-            ).values('username', 'email', 'Urole')
+            ).values('userid','username', 'email', 'Urole')
             print(users)
             return Response({'users': users}, status=status.HTTP_200_OK)
             
 
-# class ModifyUser(APIView):
-#     def post(self, request):
-#         username = request.data.get('username')
-#         email = request.data.get('email')
-#         password = request.data.get('password')
-#         role_name = request.data.get('role')
-
-#         if not username:
-#             return Response({'error': 'Username is required'}, status=status.HTTP_400_BAD_REQUEST)
-
-#         user = User.objects.filter(username=username).first()
-#         if not user:
-#             return Response({'error': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
-
-#         # Update fields conditionally
-#         if email:
-#             user.email = email
-#         if password:
-#             user.set_password(password)
-#         user.save()
-
-#         # Handle role update if provided
-#         if role_name:
-#             role = Role.objects.filter(name=role_name).first()
-#             if not role:
-#                 return Response({'error': 'Role not found'}, status=status.HTTP_400_BAD_REQUEST)
-
-#             UserRole.objects.update_or_create(user=user, defaults={'role': role})
-
-#         return Response({'user':user ,'email':email,"role":role_name}, status=status.HTTP_200_OK)
-
-
 
 class AddUser(APIView):
+    permission_classes = [AllowAny]  # <- Important
+    authentication_classes = []  
     serializer_class = RegisterSerializer
-
+    
     def post(self, request):
+        print("AddUser called with data:", request.data)
         username = request.data['username']
         password = request.data['password']
         email = request.data['email']
@@ -1113,16 +1036,17 @@ class AddUser(APIView):
             return Response({'error': 'All fields are required'}, status=status.HTTP_400_BAD_REQUEST)
 
         try:
-            user = User.objects.create_user(username=username, email=email, password=password)
+            user = User.objects.create(username=username, email=email, password=make_password(password))
             role,_ = Role.objects.get_or_create(name=role_name)
             UserRole.objects.create(user=user, role=role)
 
             # Updated user list
             users = UserRole.objects.all().annotate(
+                userid=F('user__id'),
                 username=F('user__username'),
                 email=F('user__email'),
                 Urole=F('role__name')
-            ).values('username', 'email', 'Urole')
+            ).values('userid','username', 'email', 'Urole')
             print(users)
             return Response({'users': users}, status=status.HTTP_201_CREATED)
 

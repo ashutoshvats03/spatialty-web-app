@@ -9,11 +9,11 @@ const PrivateRoute = ({ children }) => {
 
   useEffect(() => {
     if (!loading && !user) {
-      router.push("/login");
+      router.push("/");
     }
   }, [loading, user, router]);
 
-  if (loading) {
+  if (!loading) {
     return <div>Loading...PrivateRoute</div>;
   }
 
