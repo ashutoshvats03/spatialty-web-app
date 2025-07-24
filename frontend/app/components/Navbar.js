@@ -101,7 +101,7 @@ export default function Home() {
           </div>
 
           {/* Dashboard icon and dropdown */}
-          {user && (
+          {user && user.role!='admin' && (
             <NavLink href="/wayVision1">
               <MdSpaceDashboard
                 size={40}
